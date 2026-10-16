@@ -1,0 +1,206 @@
+﻿
+==========================================================================
+MICROSOFT AGENT FRAMEWORK - reasoning  |  autarch - governance
+==========================================================================
+environment variable APPLICATIONINSIGHTS_CONNECTION_STRING not set.
+environment variable AGENT_PROJECT_RESOURCE_ID not set.
+  reasoning engine: Microsoft Agent Framework on 'gpt-4.1-rp' (auth Entra ID)
+
+==========================================================================
+1) GOVERNED READ - Cbe Capito - R3645629.pdf
+==========================================================================
+  read OK: 0 characters   |   read-only guarantee holds: True
+  signed why-record: why_d14e0ae78c6a
+  no text layer found (scanned/image-only PDF) - running governed vision-OCR fallback ...
+  vision OCR recovered 4,157 characters
+
+==========================================================================
+INVOICE
+==========================================================================
+  vendor      : CBE, INC.
+  invoice #   : R3645629   date: 03/11/2025
+  PO / AFE    : 2543082 / 2543082
+  site / state: 4701649 / MO
+  total       : $2,636.54   tax billed: $134.19
+
+==========================================================================
+LINE-ITEM CLASSIFICATION & TAX  (steps 3-5: classify -> tax -> confidence -> route)
+==========================================================================
+  [1] BOSCH TRITECH 360 PIR WHT                                                 $420.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step5  confidence 0.95  ->  AUTO-POST
+  [2] HONEYWELL GLASSBREAK DETECTOR                                             $267.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step5  confidence 0.95  ->  AUTO-POST
+  [3] 22/4 STRANDED NON-SHIELDED, 200' BOX                                      $207.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step5  confidence 0.90  ->  AUTO-POST
+  [4] 2-TN SIREN IN SS ENCL 118DB                                               $120.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step5  confidence 0.95  ->  AUTO-POST
+  [5] 18/2 STRANDED NON-SHIELDED, 200' BOX                                       $75.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step5  confidence 0.90  ->  AUTO-POST
+  [6] ELK 12VDC STROBE - BLUE                                                    $45.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step5  confidence 0.95  ->  AUTO-POST
+  [7] CONTACT, SURFACE MOUNT 1-1/4" GAP GRAY                                     $36.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step5  confidence 0.95  ->  AUTO-POST
+  [8] HARDWARE KIT                                                               $29.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step5  confidence 0.90  ->  AUTO-POST
+  [9] INSTALL ALARM                                                             $882.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Professional Services @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Professional Services = Exempt]
+        step5  confidence 0.95  ->  AUTO-POST
+  [10] INSTALL ALARM TRAVEL (PO)                                                $196.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Professional Services @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Professional Services = Exempt]
+        step5  confidence 0.80  ->  SME REVIEW
+  [11] FUEL SURCHARGE                                                            $10.00
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Professional Services @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Professional Services = Exempt]
+        step5  confidence 0.75  ->  SME REVIEW
+  [12] Shipping                                                                 $211.35
+        step3  CapEx  asset: Security Systems   task: TC-5020 (existing OK: no)  [task TC-5020 (cap_eligible=True)]
+        step4  taxable=False  Professional Services @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Professional Services = Exempt]
+        step5  confidence 0.85  ->  AUTO-POST
+
+==========================================================================
+INVOICE ROLLUP
+==========================================================================
+  CapEx total     : $2,498.35      OpEx total: $0.00
+  expected tax    : $0.00   vs charged $134.19
+  tax reconciliation: ** OVER-COLLECTED $134.19 - vendor charged tax the matrix says isn't due; verify classification / seek credit
+  lines           : 12   tax exceptions: 1   to SME review: 2
+  precedent       : 1 similar past decision(s), avg confidence 0.91  (auto_approved:1)
+
+==========================================================================
+PO / AFE RECONCILIATION  (governed PO master)
+==========================================================================
+  matched PO      : PO-CK-2025-3645  (score 0.858, via id)
+  project / AFE   : Store #2847 Equipment Upgrade ΓÇö Raleigh NC  /  AFE-NA-2025-0629
+  PO vendor/state : CBE Capitol  /  NC
+  PO task / asset : TC-6020  /  Store Fixtures   budget $45,000.00
+  ** discrepancies vs the invoice:
+       - ship-to state MO != PO state NC
+       - no line matches PO task TC-6020 (Store Fixtures); lines use ['TC-5020']
+
+==========================================================================
+ANTI-HALLUCINATION
+==========================================================================
+  every extracted value is grounded in the signed source.
+
+==========================================================================
+QUALITY - deterministic checks + LLM judges
+==========================================================================
+  completeness   1.00  PASS  all checks passed
+  groundedness   1.00  PASS  all 10 claim(s) grounded in the source
+  accuracy       1.00  PASS  All fields are factually supported and correctly attributed from the invoice, including vendor, invoice details, PO#, AFE#, amounts, currency, site number, tax, and state. The description accurately and relevantly lists line items. No invented, misformatted, or misattributed values. No fields are missing that should be present.
+  soundness      1.00  PASS  All asset categories and CapEx-vs-OpEx designations are consistent and justified with clear rationale for capitalizing installation and materials as part of a new security system. The tax determinations are internally consistent for MO, with sound rationale for exemption based on item type and taxability matrix, and expected tax calculations are arithmetically correct. The roll-up correctly identifies an over-collected tax exception, matching the line-level verdicts. Reasoning quality is high, both in logic and clarity, with no internal contradictions.
+  format         1.00  PASS  all checks passed
+  -> quality: PASS   mean score 1.0
+
+==========================================================================
+SAFETY - governance + content safety
+==========================================================================
+  prompt_injection 1.00  PASS  no injection patterns detected
+  pii_exposure     1.00  PASS  no PII detected
+  harmful_content  1.00  PASS  The content is entirely related to an invoice with technical and financial line items for security system equipment and installation services. There is no violence, hate, unfairness, sexual content, self-harm, harassment, or dangerous instructions present throughout the document.
+  governance       1.00  PASS  all checks passed
+  -> safety: PASS
+
+==========================================================================
+FIELD-BY-FIELD VERDICT - per-field judge status
+==========================================================================
+  field          present grounded  judge  reason
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  vendor_name      yes     yes       OK   Matches invoice header: 'CBE, INC.'
+  invoice_number   yes     yes       OK   Matches invoice: 'R3645629'
+  invoice_date     yes     yes       OK   Matches invoice date: '03/11/2025'
+  po_number        yes     yes       OK   Matches purchase order: '2543082'
+  afe_number       yes     yes       OK   Supported by note: 'AFE#2543082'
+  total_amount     yes     yes       OK   Matches 'Invoice Total': '2,636.54'
+  currency         yes     n/a       OK   Supported in invoice: 'Amounts payable in U.S. Dollars (USD)'
+  state            yes     yes       OK   Site address and note reference 'MO'
+  site_number      yes     yes       OK   Matches 'Store Number: 4701649'
+  tax_charged      yes     yes       OK   Matches 'Tax Amount: 134.19'
+  description      yes     yes    WARNING All items in description are substantiated in the invoice, but some lack exact
+                                          wording or details (e.g. cable lengths omitted).
+
+==========================================================================
+SOURCE CITATIONS - supporting passage per field
+==========================================================================
+  vendor_name     "CBE, INC."
+                  [chars 0-9 ┬╖ verbatim 1.00]
+  invoice_number  "INVOICE - R3645629"
+                  [chars 98-116 ┬╖ verbatim 1.00]
+  invoice_date    "03/11/2025             P3813113                MIKE SNYDER          2543082"
+                  [chars 235-310 ┬╖ verbatim 1.00]
+  po_number       "03/11/2025             P3813113                MIKE SNYDER          2543082"
+                  [chars 235-310 ┬╖ verbatim 1.00]
+  afe_number      "03/11/2025             P3813113                MIKE SNYDER          2543082"
+                  [chars 235-310 ┬╖ verbatim 1.00]
+  total_amount    "Invoice Total   2,636.54"
+                  [chars 4011-4035 ┬╖ lexical 0.50]
+  currency        "Dollars (USD)"
+                  [chars 4073-4086 ┬╖ verbatim 1.00]
+  state           "MONTGOMERY, AL 36102 USA"
+                  [chars 22-46 ┬╖ verbatim 1.00]
+  site_number     "Bill To:                                       Service Site:                              Store Number: 4701649"
+                  [chars 312-423 ┬╖ verbatim 1.00]
+  tax_charged     "Tax Amount      134.19"
+                  [chars 3987-4009 ┬╖ verbatim 1.00]
+
+==========================================================================
+GOVERNANCE & CONFIDENCE
+==========================================================================
+  read-only guarantee : True  (agent cannot write or delete)
+  signed why-record   : why_d14e0ae78c6a  (provenance verifies: True)
+  reference data      : history, po_records, task_codes, taxability  (read-only guarantee True, 4 signed reads)
+  all values grounded : True
+  quality panel       : PASS  (mean 1.0)
+  safety panel        : PASS  (mean 1.0)
+  per-line confidence : L1:0.95  L2:0.95  L3:0.90  L4:0.95  L5:0.90  L6:0.95  L7:0.95  L8:0.90  L9:0.95  L10:0.80  L11:0.75  L12:0.85   ->  worst 0.75
+
+==========================================================================
+TOKEN USAGE & COST - per model (cost estimated from list prices)
+==========================================================================
+  model                    calls       input      output      est.$
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  gpt-4.1-rp                   9      16,453       3,713     0.0626
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  TOTAL                        9      16,453       3,713     0.0626
+
+  per LLM call:
+    # kind phase                  start        end              dur    input   output    est.$
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    1 main maf                    17:09:22.501 17:09:31.956   9.46s       30        2   0.0001 
+    2 main vision_ocr:p1          17:09:33.873 17:09:55.962  22.09s      842    1,083   0.0103 
+    3 main extract_invoice        17:09:56.069 17:09:59.410   3.34s    1,267      224   0.0043 
+    4 main extract_lines          17:09:59.411 17:10:03.262   3.85s    1,205      570   0.0070 
+    5 main classify_lines         17:10:03.263 17:10:13.941  10.68s    1,716    1,211   0.0131 
+    6 eval quality_judges         17:10:13.963 17:10:15.843   1.88s    1,495       82   0.0036 
+    7 eval quality_judges         17:10:15.844 17:10:18.582   2.74s    4,217      120   0.0094 
+    8 eval safety_judges          17:10:18.592 17:10:21.133   2.54s    4,256       64   0.0090 
+    9 eval field_verdict          17:10:21.134 17:10:24.163   3.03s    1,425      357   0.0057 
+
+==========================================================================
+DECISION
+==========================================================================
+  ROUTE TO SME REVIEW  (2 line(s) to SME review; tax over-collected $134.19; 2 PO discrepancy(ies); worst-line confidence 0.75 < 0.85).
+  High-confidence lines can auto-post; flagged lines carry evidence + a recommendation,
+  and the reviewer's correction feeds the loop.
+
+  model usage: 9 call(s), 16453 prompt + 3713 completion tokens
+
+  per-line CSV written: sandbox\_t\real_lines.csv

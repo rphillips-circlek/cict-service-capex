@@ -1,0 +1,119 @@
+{
+  "components": [
+    {
+      "name": "capex-flow",
+      "path": "examples",
+      "stack": {
+        "language": "Python",
+        "framework": "Microsoft Agent Framework + Autarch",
+        "version": "Python >=3.9; demo guidance requires 3.10+"
+      },
+      "readiness": {
+        "status": "fixesApplied",
+        "fixes": [
+          "Added a dedicated non-root CapEx batch image in Dockerfile.capex.",
+          "Added a repository .dockerignore without changing the generic Autarch image."
+        ]
+      },
+      "verdicts": {
+        "build": "PASS",
+        "completeness": "PASS",
+        "deployability": "PASS"
+      },
+      "findings": [
+        {
+          "category": "build",
+          "verdict": "PASS",
+          "summary": "The root pyproject defines the CapEx optional dependency set and a supported Python range.",
+          "fix": null
+        },
+        {
+          "category": "completeness",
+          "verdict": "PASS",
+          "summary": "The CapEx CLI entry point, live and rules engines, sample ABBYY data, output generation, review command, documentation, and focused tests are present.",
+          "fix": null
+        },
+        {
+          "category": "deployability",
+          "verdict": "PASS",
+          "summary": "Dockerfile.capex packages the CapEx workflow and sample ABBYY data as a non-root finite batch container without changing the generic Autarch image.",
+          "fix": null
+        },
+        {
+          "category": "deployability",
+          "verdict": "WARN",
+          "summary": "Workflow state, reviews, dashboards, and audit files are stored under a local sandbox path that is ephemeral in a cloud container.",
+          "fix": "For the demo, mount persistent storage or export outputs to Blob Storage; for the target design, move work state and decisions to Azure SQL and immutable evidence to Blob Storage."
+        },
+        {
+          "category": "completeness",
+          "verdict": "WARN",
+          "summary": "Reviewer names are attributed but are not authenticated identities.",
+          "fix": "Use Entra-authenticated reviewer identity before production use; keep the CLI attribution only for the controlled demo."
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "id": "W-LOCAL-STATE",
+      "component": "capex-flow",
+      "axis": "deployability",
+      "summary": "Cloud container state would be ephemeral",
+      "detail": "Case snapshots, review events, generated reports, and signed audit exports are currently written beneath the local workspace.",
+      "fix": "Mount persistent storage or export demo outputs to Blob Storage; use Azure SQL plus immutable Blob Storage for the target architecture.",
+      "fixPhase": "scaffold"
+    },
+    {
+      "id": "W-HEALTH",
+      "component": "capex-flow",
+      "axis": "deployability",
+      "summary": "The CapEx batch workflow has no HTTP health endpoint",
+      "detail": "The generic Autarch CLI has a health command, but the CapEx workflow is a finite batch process rather than an HTTP service.",
+      "fix": "Deploy it as a Container Apps Job for the demo and do not configure an HTTP health probe; add a service-specific readiness endpoint only if an API wrapper is introduced.",
+      "fixPhase": "scaffold"
+    },
+    {
+      "id": "W-REVIEW-AUTH",
+      "component": "capex-flow",
+      "axis": "completeness",
+      "summary": "Human reviewer identity is not authenticated",
+      "detail": "The review CLI requires a name but does not verify that name against Microsoft Entra ID.",
+      "fix": "Use Entra-authenticated reviewer identity and RBAC before production use.",
+      "fixPhase": "post-deploy"
+    }
+  ],
+  "detectedStack": "Python 3.9+ CLI/batch workflow using Microsoft Agent Framework and Autarch",
+  "fastTrackEligible": false,
+  "overallHealth": "readyWithCaveats",
+  "buildRequirements": {
+    "hasNativeModules": false,
+    "hasDockerfile": true,
+    "f1Viable": false,
+    "exposedPort": 8787,
+    "f1BlockReason": "The CapEx use case is a finite batch workload suited to Container Apps Jobs, not an App Service F1 web application."
+  },
+  "healthEndpoint": null,
+  "entryPoint": "examples/capex_flow.py",
+  "postDeployRecommendations": [
+    {
+      "title": "Authenticate finance reviewers",
+      "reason": "Production review decisions need a verified Entra identity rather than a typed reviewer name.",
+      "effort": "medium",
+      "services": [
+        "Microsoft Entra ID",
+        "Power Apps"
+      ]
+    },
+    {
+      "title": "Externalize durable workflow state",
+      "reason": "Local case, review, output, and audit files are not durable in a scale-to-zero container.",
+      "effort": "high",
+      "services": [
+        "Azure SQL Database",
+        "Azure Blob Storage"
+      ]
+    }
+  ],
+  "initCommands": []
+}

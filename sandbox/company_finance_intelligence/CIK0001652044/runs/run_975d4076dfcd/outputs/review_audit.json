@@ -1,0 +1,51 @@
+{
+  "chain": {
+    "broken_sequence": null,
+    "verified": true
+  },
+  "events": [
+    {
+      "created_at": 1789388068.4996111,
+      "event_hash": "ae36d5a00a47187eef5f2ed4ec6f87e9678b68a248506664433bdaecde2af687",
+      "event_type": "submitted",
+      "payload": {
+        "artifact_digest": "8ff5aa0d69235f8c0d3b063aa4fd421d2357686eed7706b69a59cee1f7271260",
+        "expires_at": 1791980068.4996111,
+        "quorum": 2,
+        "release_key": "CIK0001652044:consolidated-financial-release",
+        "required_reviewers": [
+          "finance-review-lead",
+          "risk-review-lead"
+        ]
+      },
+      "previous_hash": "",
+      "request_id": "review_714aff0da35a",
+      "sequence": 1
+    }
+  ],
+  "exported_at": 1789388256.075395,
+  "reviews": [
+    {
+      "artifact_digest": "8ff5aa0d69235f8c0d3b063aa4fd421d2357686eed7706b69a59cee1f7271260",
+      "comments": [],
+      "created_at": 1789388068.4996111,
+      "decided_at": null,
+      "expires_at": 1791980068.4996111,
+      "id": "review_714aff0da35a",
+      "quorum": 2,
+      "rationale": "Review consolidated facts, calculations, source coverage, and intended use.",
+      "release_key": "CIK0001652044:consolidated-financial-release",
+      "requested_by": "autarch-company-finance",
+      "required_reviewers": [
+        "finance-review-lead",
+        "risk-review-lead"
+      ],
+      "status": "pending",
+      "subject": "Alphabet Inc. consolidated financial report",
+      "superseded_by": "",
+      "votes": [],
+      "votes_remaining": 2
+    }
+  ],
+  "schema_version": "autarch.release-review.v1"
+}

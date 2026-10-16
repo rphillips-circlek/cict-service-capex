@@ -1,0 +1,30 @@
+{
+  "evidence_bundle.zip": {
+    "bytes": 2384951,
+    "sha256": "5c8bde13a1a6b9f2b36368319b96f40037d86a02ec4e8786583940aa8060858d"
+  },
+  "financial_report.html": {
+    "bytes": 451225,
+    "sha256": "3e281d66295caa062fdec877fc151d5358f311eb2159a9ae901ce9cd1658365b"
+  },
+  "financial_report.json": {
+    "bytes": 1655177,
+    "sha256": "ae08c83a91d6698751eb111d3e9bf99abbfe1fc7eb5674c34d77d9e59c9bcc44"
+  },
+  "financial_report.md": {
+    "bytes": 6913,
+    "sha256": "a57dc098f3986a2cafea89522f922725a599195ac61b96918a87d8db38aac16c"
+  },
+  "release_content.json": {
+    "bytes": 1058405,
+    "sha256": "8ff5aa0d69235f8c0d3b063aa4fd421d2357686eed7706b69a59cee1f7271260"
+  },
+  "review_audit.json": {
+    "bytes": 1632,
+    "sha256": "64ba6eb56103787843099d08982c1aa4ccab32a3098ca8ced1aa77db9a97b52d"
+  },
+  "signed_audit.jsonl": {
+    "bytes": 8945145,
+    "sha256": "c9cdff0d95a9af345c2be94789f036c798e5e2aa8b5326d93cc38e7c3ac6c375"
+  }
+}

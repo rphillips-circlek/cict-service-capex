@@ -1,0 +1,278 @@
+﻿Fuel Accounting Data - (Microsoft AI POC)-20260807_143012UTC-Meeting Recording
+August 7, 2026, 2:30PM
+1h 2m 41s
+576072292608Srinivas Tattari   0:20Hey, hello, everyone. Good morning, good afternoon.
+576072292608Trujillo, Sharon   0:23Morning.
+576072292608Sameera Sarfaraz   0:30Good morning.
+576072292608Rachael Phillips   0:45Good morning.
+576072292608Sameera Sarfaraz   0:55Sharon, if you can please let us know when you have everyone on your end and then we'll get started. I think we're still a few on our end as well.
+576072292608Trujillo, Sharon   1:01Sure.So, Phyllis, would we want to wait for Winsome?I have a no response from her so I'm not sure.
+576072292608Srinivas Tattari   1:15Yeah, uh, submit a event from our end.
+576072292608Burke, Phyllis   1:16Go ahead and get started.
+576072292608Srinivas Tattari   1:18Yeah, we need a Chinmay, Deepak, get everybody right, I think.
+576072292608Trujillo, Sharon   1:19Okay.
+576072292608Sameera Sarfaraz   1:24Yep, yep, I'm tracking, yeah.
+576072292608Trujillo, Sharon   1:27So, we're good on our side, Phyllis.
+576072292608Burke, Phyllis   1:29Yeates.
+576072292608Trujillo, Sharon   1:30Okay, thanks.
+576072292608Srinivas Tattari   1:33Yeah, just give us a minute. I think Chinmay is joining.So, Chinmay, are we good or we're waiting for someone from Microsoft side because we have Saurabh, you?Uh, Samantha and myself, not sure if Deepak is needed, just checking.
+576072292608Sameera Sarfaraz   2:04We have Rachel as well, so I think we can go ahead and get started. Yep.
+576072292608Srinivas Tattari   2:06Yeah, Rachel as well. Thanks.Yeah, Deepak is also here. I think we are good. Please.
+576072292608Sameera Sarfaraz   2:19Let me see.
+576072292608Chinmay Palei   2:20Sorry, I was talking mute. Happy Friday and good morning, everyone. So, you know, just just to give a little bit context, so we had one meeting the other day. It was a workshop for the field diversion use case, right? And you know, we had a...
+576072292608Sameera Sarfaraz   2:22Good, good.
+576072292608Chinmay Palei   2:39Great discussion there. We had good information around the pure diversion use case. So the idea today is to look at the different data sources and how those can be, you know, accessed, right? Whether they have APIs and other stuff. So that's the agenda for.Today's meeting, so let me start with this, and you know, couple of things I wanted to just confirm before we can deep dive a little bit into the how can the data be accessed, either the, you know, your team has data views or any other where we can access, right?So, let me share this.Let me know once you are able to see my screen.
+576072292608Foltz, Mandie   3:41Is visible.
+576072292608Chinmay Palei   3:43Okay, so I just want to make sure we understand all the data sources first and there is clarity and then we can deep dive a little bit how can this be, you know, accessed while we continue to work on the authentic AI solution, right? So these are the threeBased on what we have discussed, I think there are, you know, there are other sources also, but majorly these are the sources I think we have talked about. One is the PDI enterprise, where they, you know, field accounting and tax accounting takes place, and it's kind of the purpose is basically end to end, right? Keep track of everything there, right?And then the second one is, this is kind of when the diversion happens, the internal fleet operation Power BI report, that's the one kind of a internal source where, you know, every day, end of the day, your team receives whether the diversion happens or not. You know, carrier would update that.Probably right, that's one that's on the internal side, and then the field track, I think I'm not sure if it is also being called as field track, if these are two different, if if your team can, you know, give us a little bit insights into if those are different, but the field track and field track is kind of a...third party tool where the carriers update the diversion information and there is no timing as of today when they update it, right? Whenever the carrier updates it, it could be within a couple of hours, within maybe a couple of days, but we don't have, you know, insights into when that gets updated, right?And we don't have an authoritative source today, which is the one that we should be looking at. So probably when we work on the AI solution piece of it, we have to both look at these two, the internal fleet and fuel track, wherever there is an update. I think that would be the first source of.Truthfully divergent, right? So.I just wanted to make sure we are grounded on this few major data sources before we can deep dive into how can we access these systems, right? I'll stop there and see if there is any discrepancies in our understanding or if there is anything else we are missing here.
+576072292608Burke, Phyllis   6:09No, I think that covers it for now.
+576072292608Chinmay Palei   6:15Okay, sounds good. So let me see if anybody has any other comments or from Microsoft side, anybody has any question before what we want to talk about how can we access these systems, right? Let me stop there and see if we have any question around these data sources first.Okay, if not, we'll go with that. So today, our understanding is the PDI enterprise, right? There is no APIs. There is some work that's being done, but I think maybe this is not within the time frame of this initiative AI solution that we have.
+576072292608Burke, Phyllis   6:56Yeah.
+576072292608Chinmay Palei   7:02going to create. So the ask was basically what other stuff we have to access this. Do we have any data views or reporting views? So if your team can help us, you know, if you guys can share anything.Or if you can demo, if you have the data views, which are the, you know, I would say the best views that you have, which would have all the information that our team can consume it while starting to work on it.
+576072292608Burke, Phyllis   7:33Yeah, I can speak to that. I don't know if you want to see the tables or, but I can start with giving you an overview. There is a...
+576072292608Chinmay Palei   7:45Yep, that would be awesome if we can share Phil, means if you can share any view or anything, we could just talk.
+576072292608Burke, Phyllis   7:53Okay.
+576072292608Chinmay Palei   7:54around that. And then later if we can get a sample, that would be awesome. We can put it in a SharePoint site which is secured so that everybody can have a look at it.
+576072292608Burke, Phyllis   8:05Okay.This is an access database here that I'm showing, but...There is a PDI reporting database, which is essentially a copy of PDI Enterprise production. John, correct me if I'm wrong. But we, IT has made some custom data views off of the raw PDI Enterprise tables.And that's what I'm showing here is there's a field deliveries table, a fuel bill of ladings table, a site table that has different information for the sites, and then a fuel terminal.So essentially, all of the data items needed to identify if a diversion took place is within these two tables here.
+576072292608Chinmay Palei   9:08Okay, and is there a primary key for all of this?
+576072292608Burke, Phyllis   9:17Primary keys, so.
+576072292608Chinmay Palei   9:21Means what I'm trying to understand is that that connects to the PDI, to the internal fleet database or reporting, and then the third party, right? Based on what field we identified, this is the, I would say this is the carrier.
+576072292608Burke, Phyllis   9:43So within this information,I mean, I could give an example and then identify, you know, the primary keys of what would be used, the carrier ID, the bill of lading number, a lift date.Those would be the data items used when going out to field track and.finding the diversion that was recorded.
+576072292608Chinmay Palei   10:20Yeah, that would be awesome if you can just walk us through one of them. Like based on what fields, you basically track the diversion and if you can also show in either fuel truck or the internal fleet.how the divergence are recorded there.
+576072292608Burke, Phyllis   10:39Okay, so I can't speak to the internal fleet.data set, we'll need someone from the Logistics team or Artūrs to talk through that. I don't know what data sources that they use, but I could speak to the PDI Enterprise piece and...Fuel Track, Mandie, you're on the line. Do you have access to Fuel Track?
+576072292608Foltz, Mandie   11:06Yes, I do.
+576072292608Burke, Phyllis   11:07Okay, so are you wanting to are you wanting us to walk through one example or do you want us to pull that information and send it over to you?
+576072292608Chinmay Palei   11:18No, let's just walk through here. Anyway, later on, we will need some sample that can be, you know, we can work on it later. But let's pick up one sample and see in the PDI, okay, this is the carrier, this is the probably ID or something, and then see that same thing in the
+576072292608Foltz, Mandie   11:32Okay.
+576072292608Chinmay Palei   11:37Diversion tools, actually, how it is being recorded.
+576072292608Burke, Phyllis   11:41Okay, I was not ready to do that walkthrough, so let me see if I can identify.
+576072292608Chinmay Palei   11:48No pressure. If we cannot do it, that's fine. I think we can just talk about the how can we access this data views or other stuff. But if we can do, that would be awesome.
+576072292608Burke, Phyllis   11:56Okay.So yeah, this information essentially is coming from PDI. So it's locating a scenario where the state destination on the bill of lading from this data set here, it does not equalthe state destination on where it was delivered to.So these two are the primary data sources. This information here is just linking over to get the state that the site is located in and then the state that the terminal is located in. So these two, again, these two tables are going to be the primary tables to identifythe bill of ladings that are a state to state diversion.And then once that takes place, the information returned shows the bill of lading number, the lift date on the bill of lading, the vendor, the terminal state, all of the data items needed, carrier ID.And then, from here...The field track information can be referenced to find this bill of lading within the field track information and get the diversion number.
+576072292608Chinmay Palei   13:27Okay, so from this view, so you have the carrier ID, that's the one basically we are looking at here. And then what other fields here which shows source state and the actual state that it reached?
+576072292608Burke, Phyllis   13:45Yeah, and I do want to say that this is a PDI enterprise internal carrier ID and a carrier name.What we may want to look at and Mandie, I'm not sure if Fuel Track has like a **** code for the carriers or if it's just carrier name within Fuel Track.
+576072292608Foltz, Mandie   14:05It's based off of FEINs.
+576072292608Burke, Phyllis   14:09Okay, okay.So we can pull back the FEIN number. There's another table. We can pull that back. So I don't have that data set in here, but it's within PDI. It's just another table to reference. So the FEIN number then would be the key to reference.Fuel track information.
+576072292608Chinmay Palei   14:39Awesome. So that's the PIN number. So once we have that, what are the other fields basically we look at from diversion, like as I was talking, the plant state or the source state versus the actual state that it reached, right? So do we have those fields in the PDI?
+576072292608Truman, Ria   14:39Um...
+576072292608Chinmay Palei   15:00Anywhere you?
+576072292608Burke, Phyllis   15:01Yes, yes.Yeah, a terminal state, which is the origin.And then this state that the delivery actually went to.Those data sets are in within PDI within these tables.
+576072292608Chinmay Palei   15:20So, first, is that only the state we look at, or do we look at any of this site inside the state? Because state is a very broad, right? Let's say if it went to news, but there would be different localities there, or I would say fuel stations, right? If it has planned for a specific fuel station, we...to the New Jersey, but it has gone to another field site in the New Jersey. So that's one more granular level. So do we look at that level too?
+576072292608Burke, Phyllis   15:54I'm a bit confused by that question, but what we're showing here is the site that is on the bill of lading, or it's really a destination state that's on the bill of lading itself.versus.
+576072292608Chinmay Palei   16:09Yeah, you mean this site, right? That's what I was asking. Those are the site codes probably you are looking at. Yep, yep.
+576072292608Burke, Phyllis   16:14Get.Yeah, but it's we're not really the actual site information in this diversion process is not really a key piece of information. It's really the state destination of that site.And.
+576072292608Trujillo, Sharon   16:40The scope of this project is state to state. So I don't know if that's answering the question, but there are diversions that exist within a state, but the scope of this project is when it goes from one state to a different state.
+576072292608Burke, Phyllis   16:40That's the key.Yeah.
+576072292608Chinmay Palei   16:51Awesome. Yeah, that's what we wanted to be grounded because then we are pretty good there because generally I think end goal is tax, right? So whether the tax is applicable on those states, use taxes and all that, right? So it completely makes sense.
+576072292608Burke, Phyllis   16:54Okay.
+576072292608Trujillo, Sharon   17:02Mhm.
+576072292608Burke, Phyllis   17:05Yeah.
+576072292608Trujillo, Sharon   17:06Also, I see Ria has a question and has to drop in a few minutes. Can we address that question real quick?
+576072292608Truman, Ria   17:15Thanks, Sharon. Yeah, it was just to clarify what the source of that data is and the process upstream of this, because particularly if some of the data I can see, Council said some of the data is obsolete in some of the fields. So what's the source of the data? Can we go upstream of that?
+576072292608Burke, Phyllis   17:34Yes, this is a PDI reporting database. I can.And John may have to.
+576072292608Truman, Ria   17:51I know we've also been having conversations.
+576072292608Trujillo, Sharon   17:51I suspect John may be having audio trouble. Sorry, I suspect John may be having some audio trouble.
+576072292608Burke, Phyllis   17:51I don't know.
+576072292608Truman, Ria   17:54Yeah, possibly.
+576072292608Trujillo, Sharon   17:58I think he keeps trying to join and can't.
+576072292608Burke, Phyllis   18:00Oh, okay.
+576072292608Trujillo, Sharon   18:02But Klavs, maybe.
+576072292608Burke, Phyllis   18:02So I'm showing, yeah, see it's a PDI reporting database that is, it's essentially a copy of the production PDI Enterprise. So it has all of the underlying tables and custom data views that IT has.
+576072292608Ivanovs, Klavs   18:10Yeah.
+576072292608Burke, Phyllis   18:22built within this PDI reporting database.Does that help to answer the question?
+576072292608Ivanovs, Klavs   18:28Yeah.I think that's correct. I can add from my perspective what I know working with the PDI processes is that these views that we see here. So all this is within PDI ERP systems database. So this is application database and these custom views are created within the database. But according to our database administration,These are legacy views created a long time ago, and they apparently are very inefficient. There's not very good practices in place, and they are not recommended or even they are kind of guiding us to not use these views for new solutions. So like Ria mentioned, we should go upstream and use the...real tables within the ERP system database.But the the the the definitions of these views are available, so I think that shouldn't be a big problem to the codes and go upstream.
+576072292608Truman, Ria   19:27And can we go even further upstream? How does the data get into PDI? Is it coming from a PO or what's the source, the ultimate source? Do we know that? Because in my mind, there may be a point in there where we can capture the data a little bit earlier, rather than trying to get the data out of PDI once it's already potentially been processed.I'm just wondering if that's an option too. John, it looks like you're trying to talk, but I can't.
+576072292608Burke, Phyllis   19:52That would not be an option. It's really once the data is in with PD in PDI is where we need this detection to take place.There's not a there's not a PO generated from another system is what I'm getting at.
+576072292608Truman, Ria   20:10Kay.So how do we know? Is it an update from the carriers? So it might be back on that list of three data sources. So it's coming from one of those sources that we're getting these updates.
+576072292608Burke, Phyllis   20:27No, we're not getting an update. So we're getting data feeds directly from our suppliers, which is bill of lading data feeds.And then we have our site confirmation. So these two data sets right here is the source information where we can determine the state on the bill of lading and the state on the delivery.
+576072292608Truman, Ria   20:53Okay, so that delivery information, is that captured? How is that data coming in?and the bills of laid in. I'm just trying to think what, how does it get it? Like what is that data before it gets into PDI? Is it, is there another system which is capturing that data and giving it to PDI? Is it a form? Is it an e-mail? What is it that?
+576072292608Burke, Phyllis   21:16That's electronic data files that we're receiving in. So the first time that you can read the information is going to be here within PDI.
+576072292608Truman, Ria   21:19Kay.And those electronic data files, sorry, I'm just trying to understand where are they coming from as well. So are they produced in the store by an employee?
+576072292608Burke, Phyllis   21:37No. This information here, this bill of lading information, the bill of lading is generated at fuel terminals. The third party suppliers all have their own systems that they collect that information. They transmit that information through a universaldata source called DTN and we get an electronic data file from DTN that we then pull into PDI.And then this information here, this site is recording this in the back office every day when they're closing their books.
+576072292608Trujillo, Sharon   22:19Are the deliveries still manually logged by the stores?
+576072292608Burke, Phyllis   22:24At this moment, yes.
+576072292608Trujillo, Sharon   22:26Okay, so that's a manually imported field or manually entered field into the directly into the PDI store paperwork, that FIA Fuel deliveries field.
+576072292608Burke, Phyllis   22:32Yes.Yes.
+576072292608Trujillo, Sharon   22:35Okay, thank you.
+576072292608Truman, Ria   22:35Okay, so they're capturing it on paper and then did the stores have access to type that into PDI themselves? Is that how that's working?
+576072292608Burke, Phyllis   22:43Yes.
+576072292608Truman, Ria   22:44Yeah, okay, got it. Thank you. That really helps.
+576072292608Chinmay Palei   22:50OK, sounds good. Uh, so, so I can see the uh...The view there, the fuel deliveries. Regarding the bill of lading, is there another view?De.
+576072292608Burke, Phyllis   23:08This is the data view. As Claus indicated, you know, there's raw tables, but I don't utilize the raw tables, so I'm just giving the overview of this data view. So this data view here of the bill of lading,And it's essentially, you know, these are data tables that are behind forms within PDI Enterprise. So there's a, you know, a bill of lading form, and then there's a delivery form. So this is the data set behind those forms. And then these are the pieces of information that are referenced then.
+576072292608Chinmay Palei   23:50Okay, sounds good. So...So these are the views, couple of views we can refer to read the data at least to start with. And then understanding is that.We have a PDI form. Basically, once we identify the divergent, the data needs to be populated in that form, right?Okay, and do we have a sample form that we can see what information we punch in there before we move to the other system around fleet and fuel truck?
+576072292608Burke, Phyllis   24:24Yes, let me.Let me grab that information.
+576072292608Trujillo, Sharon   24:33And while Phyllis is grabbing that, I want to note that John put, it looks like the tables in the chat. So there's some visibility there with a link. And then also when we're building solutions like this, usually our accounting teams will come to us with these views, and then someone on our side generally goes and gets into the native tables and builds something so that we're not reliant on the views. So I just wanted to be super clear about that.
+576072292608Burke, Phyllis   25:02Place the diversion form in the chat.And I can share again to go over it.
+576072292608Chinmay Palei   25:09Yeah.
+576072292608Burke, Phyllis   25:25You've seen my crazy OneNotes here. This is the diversion form here.
+576072292608Dailey, John   25:26I.
+576072292608Burke, Phyllis   25:32And essentially what we're looking to update is the...the origin or the original state.off of the bill of lading and then input this diversion number here from Fuel Track.
+576072292608Chinmay Palei   25:50OK, and once we enter the division number.If I'm looking this correctly, the state tax authority, that's the source you said, right, Georgia?
+576072292608Burke, Phyllis   26:04Yeah, so.This item down here, this original destination, it would be the state destination off of the bill of lading. So as I was showing the, let me get to the database. So the state destination,that's on this bill of lading would be the original destination.On that form.
+576072292608Chinmay Palei   26:37Sounds good. Yeah, and then...
+576072292608Burke, Phyllis   26:39So that can be that could be identified immediately with the data. And then by doing that, it's, you know, putting that state destination in and then saving the record that immediately then recalculates the taxes for tax reporting.It captures the diversion state as well as the delivery state. So the taxes are calculated properly. So that's the key action. And then going to get the diversion number is like step 2.
+576072292608Chinmay Palei   27:14So, this division number is today collected from the fuel truck, right?
+576072292608Burke, Phyllis   27:19Yeah. And part of this is, you know, this can be identified immediately and captured, but then this diversion number at that moment in time may not be out in fuel track yet. So if it's not, then there's a, you know, a communication that needs to take place to the carrier that they needto go and record that diversion.And then it's a loop back to, you know, is it there, is it there, is it there, to pull that information.
+576072292608Chinmay Palei   27:55Just rewinding a little bit. So one does actually.the process triggers to come into this form and populate anything or is it like a daily basis someone will just come here manually and try to see if there is a divergent happens.
+576072292608Burke, Phyllis   28:12Right now, this form is PDI just delivered this to us and we're testing it right now. So it's not in production, but we're ready to put it in production. So we'll start manually working with it. But you know, what the key is identifyingyou know, this, did a diversion happen? So right now, that's a manual effort, or we have some BI reports off of the invoicing, but we want to systematically, based on this data, identify this is a diversion. And then.From there.bots to go in and do this versus a human. But until that happens, yeah, it's going to be a manual process.
+576072292608Chinmay Palei   29:01But yeah, it's a manual process, but when does this happen today? Is it every day someone just looks at the carrier information and they figure out there is a divergent, then they come here and do it? Or is it the external trigger happened somewhere?
+576072292608Burke, Phyllis   29:19So this form, this form does not exist in production right now. We recently received this enhancement from PDI and we're testing it right now. So it will be in production that we can use. Right now, it's a completely different process. We identify these diversions in our invoice reconciliation process.
+576072292608Chinmay Palei   29:19means how.
+576072292608Burke, Phyllis   29:41We have Power BI reports that identify it. This form is not available, so tax recalculation doesn't take place. We don't capture this anywhere. We have a completely different process.
+576072292608Chinmay Palei   29:56So it's much later. So once the carrier, you know, delivers it to whatever different location, then the invoice comes from the supplier. It could be like two, three days later from the invoice, we figure out, okay, there is, there could be a divergent here.Is that?
+576072292608Burke, Phyllis   30:15Currently, yes. So that's that, yes. So we're looking to change that process with this new form that we can then identify it earlier in the process. Andflag it to recalculate the taxes appropriately.
+576072292608Chinmay Palei   30:35Yeah, so instead of waiting till the invoice to be generated, look at either fleet operation Power BI or the fuel truck, the sources to see if there is a diversion that's already happened and then trigger this process, right?
+576072292608Burke, Phyllis   30:38Yes.Yes.Per that.
+576072292608Chinmay Palei   31:12Shally.
+576072292608Burke, Phyllis   31:14That form is a subset. Maybe I don't know if it'll help for me to show you the information within PDI so you can see how it's all related.
+576072292608Chinmay Palei   31:29Yeah, that would be helpful, but I was just trying to understand from that form. The form has a diversion ID and a source or the planned state, right? So this diversion information is in field track. So this form automatically goes to the field track.
+576072292608Burke, Phyllis   31:30Sorry.
+576072292608Chinmay Palei   31:47with the diversion ID, gets all the carrier ID information, the actual destination where it delivered, and then compared against the source or the actual plan state ID that's being mentioned in this form. So all of the other info.
+576072292608Burke, Phyllis   32:04This, this.This form is within PDI Enterprise, so it's not.And maybe I misunderstood you. This form is a PDI Enterprise form that, oh, it's actually in test. I need to go into test. I'm sorry. Oh.
+576072292608Chinmay Palei   32:22Hey, Mathieu, you had a question there? We can quickly check that.
+576072292608Maruthi Koiloth   32:24Yeah, so Phyllis, you said that you are testing this form in PDI and this is something that you want to implement in the future. So how do you envision this, the AI that the project that we are working on? Should we be doing something with thewith this form or should we be implementing based on how you're doing it prior to this form, this form not being there in production yet or implemented yet? How do you expect, what are your expectations in terms of this particular initiative that wetry to do with the form or not.
+576072292608Burke, Phyllis   33:09This initiative is based on the form being in place, which it will be, we're just about done testing it. So it will be in place so that it can be utilized for this specific project. And
+576072292608Maruthi Koiloth   33:26Okay, okay, okay, so.
+576072292608Burke, Phyllis   33:27Yeah, here's again, here's the here's the flow that I'm looking to implement, and I put this in the chat is, you know, from the PDI data set, and I'm gonna, I'm gonna pull up a...A bill of lading here and within PDI. So this is this is the delivery, FI deliveries, which is basically.this table, underlying table.So if I pull this up, and I know this might be a little foreign, but I just want to show you where the diversion information is on this. So here's the origin terminal and the data set behind this.you know, here's the delivery and we link over to the fuel terminals table and we get the state. Okay, so that will say, here's the origin state, is the terminal state.from this and then the destination is this site here.
+576072292608Maruthi Koiloth   34:33Yeah.
+576072292608Burke, Phyllis   34:39Which is...Here, and we link over. Yep, we link over to this this table here and get the get the state for that for that. So, this is the confirmed bill of lading, and here's the diversion, the form that I was just showing you. It's just an additional tab within this deliveries table.
+576072292608Maruthi Koiloth   34:43Destination state, okay.Yeah.
+576072292608Burke, Phyllis   35:02Basically.that from here, it's just populating this information. So this is grayed out right now because we don't have it live in production. But yeah.
+576072292608Maruthi Koiloth   35:06Okay.
+576072292608Chinmay Palei   35:18Yeah, so here, here was my question here in this tab only, so...you can go there. So the state tax authority, that's the planned destination state, right? Let's say Georgia.So.
+576072292608Burke, Phyllis   35:35It would be, yeah, go ahead.
+576072292608Chinmay Palei   35:35For any divergent, yeah, for any divergent to be recorded in the PDI, we would need probably...the what actual state it is being diverted to, right? So do we get that information from the divergent number or because that's just a number here, that's what I was trying to understand. How do we actually get the...Actual state it's been delivered.
+576072292608Burke, Phyllis   35:58The state.Yeah, so that is from this data set here.So this original bill of lading.And there is a loading number that is used at the terminal, and we map that loading number to a site because PDI runs everything off of sites. We map that loading number to a site within the state that this loading number is destined to. So at the terminal, it'syou know, ship to Georgia, ship to South Carolina. We map that to a South Carolina site. So this information here will have a site. And I'm saying we use the state that's on the site to indicate.The original.state destination. So all the data items are there.
+576072292608Chinmay Palei   36:59Maybe I am not able to put it right now. I mean, how do we get the actual state which is being delivered here in this screen? Because PDI won't have that data, right? PDI.
+576072292608Burke, Phyllis   37:10Yes, yes, it does. Yes, it does, so...
+576072292608Trujillo, Sharon   37:14So the data is coming from two separate data sets, right? So I think that's the thing maybe we're missing is so like Phyllis is pointing out that BOL data that's coming from where the fuel was actually picked up from. And then the delivery is the store itself where it's actually going to. So she's comparing where it was picked up and where it's supposed to go versus where it actually went.
+576072292608Burke, Phyllis   37:14And I mean...Yeah, so let me show it.Yeah.
+576072292608Trujillo, Sharon   37:34So that's the comparison.
+576072292608Burke, Phyllis   37:34And I'll show you the form that's where this data is held here. So we have a bill of lighting that came from the terminal that indicates everything on there and it, you know, where it's dusted to. And then it's confirmed against a site delivery. And thenbecomes part of this record here, so I'll show you.You shouldn't say you can kind of get a feel for the data flow.I know it's a bit confusing.
+576072292608Chinmay Palei   38:07No, I mean, what I was trying to say is that the divergent information today, as you say, right, it's coming from the internal fleet power BI or the fuel trap.
+576072292608Burke, Phyllis   38:17No, no. Internal, and I know the internal fleet Power BI, that's from an operation carrier perspective. So let's kind of put that aside and let's talk about the accounting piece first and then we can talk about.Um, the Power BI, so...
+576072292608Chinmay Palei   38:40Even in that case also, the divergent information is coming from fuel track or the field track, right? That's the authoritative source.
+576072292608Burke, Phyllis   38:40Um...Correct, and let me see.
+576072292608Chinmay Palei   38:50For the divergent.
+576072292608Burke, Phyllis   38:53So we walk through this, I mean, we have the data in PDI and then we have the fuel track set. So simultaneously, you know, out in the third party environment, the carriers really are the first ones that should see that they.they did a diversion. They have the bill of lighting that they printed from the terminal that says destination South Carolina. They're driving their vehicle to a store in Georgia, let's say. So they know that the diversion took place, and they're supposed to immediately record that diversion in this third-party fuel tracker.system. So that's supposed to take place simultaneously of all of this data being captured and processed through, you know, anybody's back office, if that makes sense. So how we know currently is a different process that we're going to be using.with this diversion process. Right now, we're identifying it through our invoice reconciliation process, and or we can run the fuel track information. So we might find it from fuel track first, or we might find it from the invoice reconciliation piece, but they're completely separate. So what we're trying to do here isWe have the data information within PDI with this bill of lading information that I was showing here. It's all there. We have the information there that we can identify that a diversion took place when this data set comes in within PDI. We want to flag that immediately.Via this form.
+576072292608Chinmay Palei   40:42Yeah, I think this is very again, right? What I'm trying to understand is the diversion number is there. So does this, when you save this, does it go to the fuel truck database and say, this is the diversion ID, what is the actual delivery state from there? And then compare it against the last.
+576072292608Burke, Phyllis   40:42So.No.
+576072292608Chinmay Palei   41:02Row you have state authority, which is the actual planned one, right? So that divergent ID would have all the destination information picked up from the field track, right?
+576072292608Burke, Phyllis   41:14No, that there is no integration between this PDI Enterprise Form and Fill Track.
+576072292608Maruthi Koiloth   41:15Yeah.
+576072292608Chinmay Palei   41:21So, the carrier...
+576072292608Burke, Phyllis   41:22This is a completely manual process. So if we don't automate any of this, my team members would need to go in here and manually click this and then go out and log on to the Fuel Track system, find the record.
+576072292608Maruthi Koiloth   41:36Mhm.
+576072292608Burke, Phyllis   41:41Copy that diversion number and then come back here and put that diversion number in here.
+576072292608Maruthi Koiloth   41:46Yeah, yeah, so that's a point to me. I think you're missing that this particular tab is the outcome. Once the diversion is identified, diversion is not shown here. It is the outcome. After they have identified the diversion, they come and enter the diversion here. Through the form is what they're going to do.when they do that to the form, it gets updated here. Phyllis, please, please stop me or correct me if I'm wrong anywhere, but I think the diversion happens in the delivery details. You look at the delivery details, you look at the site ID, and then based on that site ID, you look at the state.from that table, then you know that the devotion has happened.
+576072292608Chinmay Palei   42:33That's understandable. The question was more of if the diversion information today is stored at field truck or the fuel truck and it has a diversion ID, it has the actual state ID, how does that state ID, the actual state ID where it delivered?comes to the PDI, right? And my understanding is it's through that form that we were looking at that you had the diversion ID, because the source means the planned site would anyway be there in the PDI, right? We saw that the state.Tax authority that's mentioned there, right?
+576072292608Burke, Phyllis   43:14We're not getting that destination state from field track. We're getting that destination, we're understanding that destination state, or I'm sorry, the origin state. We're getting that from the information we have in PDI. So the bill of lading here, based on the loading number that wasUsed.It's a destined to Georgia.
+576072292608Chinmay Palei   43:37Yeah, that's the planned one, right, Phil?
+576072292608Burke, Phyllis   43:40No.This is not, this is what was lifted at the terminal.
+576072292608Chinmay Palei   43:44Oh, so this is the actual where it is being delivered, right?
+576072292608Burke, Phyllis   43:49No, this is, so the carrier goes and loads at the terminal. When they load at the terminal, they select a destination state. So they're saying, I'm pulling this fuel and I'm going to take it to a Georgia site. Then they load the fuel into their truck and then they drive to a store.
+576072292608Chinmay Palei   43:55Kay.
+576072292608Burke, Phyllis   44:09and they actually delivered it to a store that's not in Georgia. They delivered it to a store, let's say, that's in South Carolina.That doesn't change the original destination because they loaded it at the terminal saying, I'm going to Georgia. So that data goes to the supplier and the supplier says, you know, in their system, we're billing Georgia taxes because that's what the carrier lifted at the terminal.So the original.date is whatever the carrier loaded at the terminal on this bill of lading record. So we have this within PDI.Right now with this form, a human would need to look at this and say, okay, it's Georgia. I'm going to go to this form here and I'm going to click this and I'm going to put Georgia in here.
+576072292608Chinmay Palei   44:59Yeah, so that's understandable. But where do we put that actual delivery North Carolina state here? That's what I was trying to understand because that is what.
+576072292608Burke, Phyllis   44:59And then, and...
+576072292608Chinmay Palei   45:10goes to the PDI and then rest everything kicks in, right? Tax calculations and all that. Where exactly is that actual destination delivery statements? And because this is the planned one, right, which is the Georgia one.
+576072292608Burke, Phyllis   45:25The actual is on this delivery record. So it was actually delivered to, well, and this isn't a good example, but this destination is on this delivery record.
+576072292608Chinmay Palei   45:41And how does who updates here because somehow the information from the field track has to come to PDI right?
+576072292608Burke, Phyllis   45:50No, this has all of this has nothing to do with fuel tracks. So this is all within our delivery automation process. So we have a site that received the fuel here and that site recorded a bill of lading in their back office that they received this fuel. Yeah.
+576072292608Chinmay Palei   46:06Oh, okay.So internally somebody updates this information in the PDI.
+576072292608Burke, Phyllis   46:08And then we have the bill of lading.
+576072292608Trujillo, Sharon   46:14That's where the diversion form comes in, right, Phyllis?
+576072292608Burke, Phyllis   46:17So all of this information is already there. We have a confirmed delivery where the site received this fuel. We've got a bill of lading that came from the terminal. This is auto-matched. This is an automated process. And then from here,And in this case, like this isn't a diversion. It's A Georgia destination. It's A Georgia site. Nothing would be done with this form.because it's not a diversion. But in the case that this site said South Carolina.We want to use this underlying data to immediately identify that and for a bot to go in and at least go to this form, click this tab, and put this original state. That's what we're asking.
+576072292608Foltz, Mandie   47:07Question, Phyllis, because I was going to ask Winsome about this. So let's say we have a Georgia to Georgia transaction, but it was originally meant for South Carolina. Are you at that point going to put South Carolina in that destination?
+576072292608Burke, Phyllis   47:22If, if the bill of lading was lifted with the South Carolina destination.
+576072292608Foltz, Mandie   47:27Yeah.
+576072292608Burke, Phyllis   47:28Yes, that would be the origin.
+576072292608Foltz, Mandie   47:30OK, thank you.
+576072292608Burke, Phyllis   47:32Okay.
+576072292608Chinmay Palei   47:33Okay, so if my understanding is correct, so someone internally, as soon as the carrier reaches there, they update the PDI system to show there is a diversion happen and this is the destination, actual destination state now. This form only helpswith tasks recalculations, right?
+576072292608Maruthi Koiloth   47:57To report the devotion has happened, the form helps to report the devotion has happened. The BOL confirmation actually shows that a site ID where it is delivered, actually delivered, not the site ID that was actually in the pickup when the container picked it up.
+576072292608Burke, Phyllis   47:58It, it does.
+576072292608Maruthi Koiloth   48:18So once the site ID is there, we need to look at that site ID and see if there is a diversion that's happened based on that join to the state. If there is a diversion, then we use the form to update the diversion details tab with the state ID where it
+576072292608Burke, Phyllis   48:36Yeah.
+576072292608Maruthi Koiloth   48:36Actually delivered that says June.
+576072292608Burke, Phyllis   48:38So in this scenario, yeah, in this scenario, for this confirmed delivery, the destination is Georgia on the bill of lading. The destination is Georgia on the delivery. So this would be no, it's not a diversion. And then this would not.
+576072292608Chinmay Palei   48:57So the cost, if you can go back for there, so who updates this information? That's what I was trying to understand here.
+576072292608Burke, Phyllis   48:58B.Zach.This is an automated process. I'm sorry, I know I'm not saying it in a way that is helping. When we talked about the confirmation process, so the data sets that come in, they're all electronic.So this is electronic data feeds from our terminal. And then this information originally would have come from the site recording a delivery in the back office. So they reported delivery in their back office. We have this automated process that matches these bill of ladings here to the deliveries.and it confirms that information. So this is all within PDI Enterprise from the automated delivery confirmation process. So, and it's kind of a sequential process. So once within this bill of lading confirmation process, we have both sets of data here.that can be compared to determine if the, whoop, whoop, where'd I go?
+576072292608Chinmay Palei   50:11If the drivers in this happens, right, so...
+576072292608Burke, Phyllis   50:11I do.Yeah, if the diversion is happening.
+576072292608Chinmay Palei   50:16Okay, that makes sense. I mean, internally, the bill of reading will be updated as soon as the carrier is there. So now that we know that the division happened, we go to the form and update.
+576072292608Burke, Phyllis   50:17I just lost PDI.
+576072292608Chinmay Palei   50:30The form.to update the PDI that there is a divergent happened and then to do the recalculation of the taxes, right?
+576072292608Burke, Phyllis   50:39Yep. And then step 2 is, okay, now I need to go, now I know a diversion happened. Now I need to reference field track information and see if the diversion number is out there for me to grab. If it is, grab it and put it in the form. If it isn't, then notification needs to go to the carrier that they need to
+576072292608Chinmay Palei   50:40O.
+576072292608Burke, Phyllis   51:01Record A diversion and field track.
+576072292608Chinmay Palei   51:06Okay, so...
+576072292608Maruthi Koiloth   51:06Is there a is there a trigger for us to know when the confirmation happens, or we just pull everyone's schedule?
+576072292608Burke, Phyllis   51:19So we had talked about having this process run once a day. So through the underlying data set here, it would be, there's confirmation status and confirmation dates that can be used.
+576072292608Maruthi Koiloth   51:23Okay.Got it. Okay.
+576072292608Burke, Phyllis   51:38That that would identify the records to review.
+576072292608Maruthi Koiloth   51:42Yeah, yeah, so we just look by that. I mean, we could always say from previous date to this date, whatever is the confirmed BOLs, we just look at those, look at the sheets, and then see if there is a diversion, then use the form.
+576072292608Burke, Phyllis   51:58Yes, correct.
+576072292608Chinmay Palei   52:00Yeah, I think now it's pretty clear. My understanding was a little different that once we have the field track information, we pull in the information from field track, but it seems that we have the internal team as soon as the carrier reaches, somebody updates the BOL. That means this divergent information is already there.We are just leveraging this form to, you know, update the diversion ID and tax recalculations, right?
+576072292608Burke, Phyllis   52:30And Mandie, you know, I don't know what your thoughts are. If there's a state destination and fuel track, are we wanting to compare that with what we have in PDI and make sure they match?
+576072292608Chinmay Palei   52:43That is where exactly I was, my question was, I was not putting in right terms, but somebody has to also look at the field tracks destination where it raised, right?
+576072292608Burke, Phyllis   52:47Yeah.Yeah.Yeah.
+576072292608Chinmay Palei   52:54Apart from your internal team updating the viewer.
+576072292608Burke, Phyllis   52:57Yeah, I think that should be incorporated, don't you, Mandie?
+576072292608Foltz, Mandie   53:01Yes.
+576072292608Burke, Phyllis   53:02Yeah, so that we don't create a false positive or...Or the reverse, so yeah, that.
+576072292608Foltz, Mandie   53:08It's also, it's also a good cross-check because sometimes the carriers enter an incorrect estimation.
+576072292608Chinmay Palei   53:16Exactly, this is the game I was trying to understand, but I was probably not trying to put it in right term, so yeah.
+576072292608Burke, Phyllis   53:16So yeah.No, that's a good point. Good point. Yeah, so that would be...
+576072292608Chinmay Palei   53:24Yeah, it's kind of a double check, right? So.
+576072292608Burke, Phyllis   53:26Yep, a double check and then if it doesn't match, it would be flagged and it would be an exception for individuals to review.
+576072292608Chinmay Palei   53:38Sounds good. We'll take a note of that actually.
+576072292608Burke, Phyllis   53:41Per perfect.
+576072292608Chinmay Palei   53:43So.Now, coming back again, right, we have the data views for PDI that we can leverage for the fill track. Is there any API or anything else that you leverage today? I mean, we have to do this automatically, right? So, how do we access that data?
+576072292608Burke, Phyllis   54:02Mandie, can you?
+576072292608Foltz, Mandie   54:04Yep, so.
+576072292608Burke, Phyllis   54:06Fuel track. It's all manual right now. It's not, it's going and logging on and like, yeah.
+576072292608Chinmay Palei   54:12Yeah, I know that's why I ask because we are planning to do this automatically, right? So we have to bypass some of that process, looking at manually.
+576072292608Burke, Phyllis   54:19They have, Fuel Track has advertised that they have some API capabilities. So, Sharon, I put a thought out there that, you know, we should huddle with Fuel Track and find out what their capabilities are.and how much it would cost and all of that. So, okay, Mandie, over to you.
+576072292608Foltz, Mandie   54:38Yep. So from the tax perspective, what we do is we go into the report center. We're going to display it by the manifest date. So we'll select the month of July. And now we have a breakdown of every state that has diversion activity for the month of July.Let's say we're doing Alabama. I'll click on that month and it will populate a CSV telling me every single BOL, what the diversion number is, the carrier and the gallon activity and the original destination and the new destination.
+576072292608Chinmay Palei   55:22Sounds good. I think this is straightforward, right? But one thing is that all that you saw in the previous space, all those are the divergence. It's not all the records, right? These are only the divergent records here.
+576072292608Foltz, Mandie   55:36Correct. And you can download the entire.
+576072292608Chinmay Palei   55:40And when we say diversion, we are talking about what we planned is different than where it is delivered, right? Not that, you know, even if it's same, you have the records, all of them here.
+576072292608Foltz, Mandie   55:41Um...Correct.Yes, so for the month of July.As of right now, we have 54 diversions. These were, this one was originating in Tennessee. It was planned for Georgia destination, but it went to Alabama.
+576072292608Chinmay Palei   56:12Yeah, all of these are diverging its source. OK, I think this is good, good information.So yeah, so the only other thing, Mandie, is that if your team can have a discussion with Fuel Track and see if there are APIs that we can read, because the idea is to automate the end-to-end process, right? Otherwise, we have to just skip this one somehow.
+576072292608Foltz, Mandie   56:36And Sharon, your...In the midst of that, correct?
+576072292608Trujillo, Sharon   56:40Yep, I'm on it.
+576072292608Foltz, Mandie   56:41Okay. Okay.
+576072292608Chinmay Palei   56:43Awesome, awesome, awesome.Okay, so I think this is pretty good information. I know we are with the time. So a couple of ask, Phil, if you can help. If you can share in an e-mail, what are the views? Those 2 couple of views you mentioned, right? One is the actualPDI information, the other one is bill of loading. If you can say all the names and then some of the critical primary key data fields from there.And then from basically if you can also share one sample from Fuel Track.Um, you know, we'll start some, we know processing some of this information, actually.
+576072292608Burke, Phyllis   57:32Yep, absolutely.
+576072292608Chinmay Palei   57:34Yeah, but really appreciate it. This was very helpful in understanding how how today the fuel divergence is happening so that we can we can, you know, align our AI implementation accordingly.
+576072292608Burke, Phyllis   57:48Appreciate your time and patience.
+576072292608Chinmay Palei   57:51No, I I was trying to understand so that we don't miss any angle there, right? You know, we have an understanding from our highly, you know, architectural diagrams, but looking at the actual stuff changes stuff, means changes our ideas. So, any other question from Microsoft team?
+576072292608Burke, Phyllis   57:56Yeah.
+576072292608Deepak Balan   58:11So one small question, like out of all this discussion that we had. So since the update to this destination is made manually, let us say, you know, if somebody has...Updated incorrectly, so your current process also have an option to re-correct it later.Let us say Georgia to Florida, somebody has updated incorrectly to let us say to Texas. Now suddenly after you know invoice reconstruction it realized that oh you know what something has been wrongly updated. So let me re-correct it. So do you have that kind of process?Building in your existing system.
+576072292608Burke, Phyllis   58:51Yes.Yes, it would, it we would credit rebuild the record um to the right destination and.Recalculate it.
+576072292608Sourabh Gupta   59:07So one more question, since these diversions are recorded manually, so can we assume that only if a diversion number exists, then only that diversion has happened. So when we pull the data, suppose for a particular day, and we check that field of diversion number, if it exists, then only a diversion has happened.So that understanding is correct, right?
+576072292608Burke, Phyllis   59:33If let me make sure I understand that. Are you saying that that the trigger would be from the fuel tractor versions?
+576072292608Sourabh Gupta   59:44Oh no, so we are storing this diversion number in the tables which you mentioned, right? So.
+576072292608Burke, Phyllis   59:49Uh-huh.
+576072292608Sourabh Gupta   59:50in the PDI. So when we are using that data, so if the diversion number is there for that bill of landing, then only our diversion has happened. If there is no, if that field is basically blank, then there is no diversion on that bill of landing is my assumption.
+576072292608Burke, Phyllis   1:00:08Well, I would say that, you know, the diversion could have happened, but that diversion number is not yet available. That's why I'm hoping we can use the PDI data itself, those data sets to say,a diversion happen, we populate that origin state so that immediately the taxes are recalculated, and then we get the diversion number. So I would say it's a combination of the original state authority being populated,and the diversion number.
+576072292608Sourabh Gupta   1:00:49Okay.
+576072292608Burke, Phyllis   1:00:50Does that make sense?
+576072292608Maruthi Koiloth   1:00:50Yeah, trigger is a state. Trigger is a state if the state is different, not anything else. Don't rely on anything else. Just rely on the original state to the actual confirmed state. And if they are different, then the diversion has happened.
+576072292608Burke, Phyllis   1:00:53Yeah, yeah.Yep, and then, and then we check to see if the diversions number is there and field track.
+576072292608Sourabh Gupta   1:01:07Okay.
+576072292608Burke, Phyllis   1:01:14And then we'd also, you know, to your point, as we're talking, you know, when we get the diversion number, the fuel track information, we also want to cross check the other way and say, okay, I have a diversion number for fuel track. Do I have that flagged as a diversion in the system?
+576072292608Sourabh Gupta   1:01:14Okay, yeah, got it.
+576072292608Burke, Phyllis   1:01:36Did I throw a kink in there?
+576072292608Maruthi Koiloth   1:01:38Yep, yep.
+576072292608Chinmay Palei   1:01:39No, no, that makes sense. You know, we have to do that double verification as we talked about, right? So, that's fine.
+576072292608Sourabh Gupta   1:01:40Yeah.
+576072292608Burke, Phyllis   1:01:41Yeah.Exactly, yes.
+576072292608Chinmay Palei   1:01:47Yeah, we'll try to come up with a little process flow next week sometime, Phil, to show, okay, you know, how the AI solution that we are kicking, how it will be basically interacting with both the internal BOL where the divergent is recorded, and then...You know, pulling in data from the uh fuel track also, so that you know the entire team understand what we're trying to do.from AI solution perspective.
+576072292608Burke, Phyllis   1:02:19Sounds perfect.
+576072292608Chinmay Palei   1:02:23Awesome.If there are another question, I think you are pretty good here. Really appreciate your time, Phil, and the entire team. And have a nice weekend.
+576072292608Trujillo, Sharon   1:02:33Thank you, you too.
+576072292608Burke, Phyllis   1:02:34Thank you and you too. Thank you all.
+576072292608Maruthi Koiloth   1:02:35Thank you.
+576072292608Foltz, Mandie   1:02:35Thank you. Thank you.
+576072292608Sameera Sarfaraz   1:02:35Thank you.
+621792274320Trujillo, Sharon stopped transcription

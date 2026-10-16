@@ -1,0 +1,227 @@
+{
+  "baseline": {
+    "mode": "baseline",
+    "selected_skills": [
+      "architecture",
+      "security",
+      "testing",
+      "operations",
+      "documentation",
+      "frontend",
+      "data-science"
+    ],
+    "selected_sources": [
+      "arch-001",
+      "arch-002",
+      "data-001",
+      "docs-001",
+      "fin-001",
+      "ml-001",
+      "mobile-001",
+      "ops-001",
+      "ops-002",
+      "sec-001",
+      "sec-002",
+      "test-001",
+      "test-002",
+      "ui-001"
+    ],
+    "exposed_tools": [
+      "repo.config",
+      "repo.data",
+      "repo.docs",
+      "repo.search",
+      "repo.symbols",
+      "repo.telemetry",
+      "repo.tests",
+      "repo.ui"
+    ],
+    "provisioned_agents": [
+      "run_65f4d87e3074",
+      "run_aed193897ec1",
+      "run_9a8c2156ccec",
+      "run_45f2260f5e66",
+      "run_aa02f4d24ebc",
+      "run_eb6ce397b81d",
+      "run_404b6a2924f6"
+    ],
+    "model_calls": 8,
+    "prompt_tokens": 7927,
+    "completion_tokens": 554,
+    "total_tokens": 8481,
+    "estimated_cost_usd": 0.0,
+    "latency_ms": 4.084599997440819,
+    "context_tokens": 3836,
+    "citation_score": 1.0,
+    "section_score": 1.0,
+    "traces": [
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 975,
+        "completion_tokens": 51,
+        "duration_ms": 0.24140000459738076,
+        "admitted_tokens": 1155,
+        "truncated": false
+      },
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 972,
+        "completion_tokens": 50,
+        "duration_ms": 0.03229999856557697,
+        "admitted_tokens": 1152,
+        "truncated": false
+      },
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 973,
+        "completion_tokens": 50,
+        "duration_ms": 0.014700002793688327,
+        "admitted_tokens": 1153,
+        "truncated": false
+      },
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 973,
+        "completion_tokens": 50,
+        "duration_ms": 0.02130000211764127,
+        "admitted_tokens": 1153,
+        "truncated": false
+      },
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 975,
+        "completion_tokens": 51,
+        "duration_ms": 0.00960000033956021,
+        "admitted_tokens": 1155,
+        "truncated": false
+      },
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 971,
+        "completion_tokens": 50,
+        "duration_ms": 0.007599999662488699,
+        "admitted_tokens": 1151,
+        "truncated": false
+      },
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 972,
+        "completion_tokens": 51,
+        "duration_ms": 0.02819999644998461,
+        "admitted_tokens": 1152,
+        "truncated": false
+      },
+      {
+        "phase": "synthesis",
+        "model": "mock",
+        "prompt_tokens": 1116,
+        "completion_tokens": 201,
+        "duration_ms": 0.038300000596791506,
+        "admitted_tokens": 1816,
+        "truncated": false
+      }
+    ]
+  },
+  "optimized": {
+    "mode": "optimized",
+    "selected_skills": [
+      "security",
+      "testing",
+      "documentation",
+      "architecture"
+    ],
+    "selected_sources": [
+      "arch-001",
+      "arch-002",
+      "docs-001",
+      "ops-001",
+      "ops-002",
+      "sec-001",
+      "sec-002",
+      "test-001",
+      "test-002"
+    ],
+    "exposed_tools": [
+      "repo.config",
+      "repo.docs",
+      "repo.search",
+      "repo.symbols",
+      "repo.tests"
+    ],
+    "provisioned_agents": [
+      "run_612b181bacda",
+      "run_10b134a564a1",
+      "run_6bd1ead21e11",
+      "run_fa51da03c1d8"
+    ],
+    "model_calls": 5,
+    "prompt_tokens": 3708,
+    "completion_tokens": 403,
+    "total_tokens": 4111,
+    "estimated_cost_usd": 0.0,
+    "latency_ms": 1.8874000015784986,
+    "context_tokens": 1508,
+    "citation_score": 1.0,
+    "section_score": 1.0,
+    "traces": [
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 726,
+        "completion_tokens": 50,
+        "duration_ms": 0.014400000509340316,
+        "admitted_tokens": 906,
+        "truncated": false
+      },
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 727,
+        "completion_tokens": 50,
+        "duration_ms": 0.008000002708286047,
+        "admitted_tokens": 907,
+        "truncated": false
+      },
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 729,
+        "completion_tokens": 51,
+        "duration_ms": 0.005799993232358247,
+        "admitted_tokens": 909,
+        "truncated": false
+      },
+      {
+        "phase": "specialist",
+        "model": "mock",
+        "prompt_tokens": 729,
+        "completion_tokens": 51,
+        "duration_ms": 0.023100001271814108,
+        "admitted_tokens": 909,
+        "truncated": false
+      },
+      {
+        "phase": "synthesis",
+        "model": "mock",
+        "prompt_tokens": 797,
+        "completion_tokens": 201,
+        "duration_ms": 0.015600002370774746,
+        "admitted_tokens": 1497,
+        "truncated": false
+      }
+    ]
+  },
+  "improvement": {
+    "token_reduction_percent": 51.53,
+    "tool_reduction_percent": 37.5,
+    "latency_reduction_percent": 53.79,
+    "quality_preserved": true
+  }
+}

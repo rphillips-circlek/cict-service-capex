@@ -1,0 +1,18 @@
+{
+  "S-SEC-TICKERS": {
+    "authoritative": true,
+    "bytes": 797931,
+    "cache_path": "raw/s-sec-tickers--26602b2fd871aa18.json",
+    "content_type": "application/json",
+    "description": "SEC registrant names, tickers, and CIK identities",
+    "etag": null,
+    "evidence_class": "regulatory filing metadata",
+    "http_status": 200,
+    "last_modified": "Fri, 11 Sep 2026 20:51:33 GMT",
+    "provider": "U.S. Securities and Exchange Commission",
+    "retrieved_at": "2026-09-14T10:45:33.949466+00:00",
+    "sha256": "26602b2fd871aa1815bdc33fa234308f9c82f0ee6b939d16b2e2b9b1b4bfdaef",
+    "source_id": "S-SEC-TICKERS",
+    "url": "https://www.sec.gov/files/company_tickers.json"
+  }
+}

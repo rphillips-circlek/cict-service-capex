@@ -1,0 +1,2 @@
+[console_scripts]
+autarch = autarch.cli:main

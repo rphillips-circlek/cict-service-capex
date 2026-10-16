@@ -1,0 +1,14 @@
+AUTARCH FINANCE INTELLIGENCE — METHODOLOGY
+
+1. Discover latest Microsoft 10-K from SEC submissions metadata.
+2. Discover recent 10-Q/8-K filings and retrieve the prior 10-K for change triage.
+3. Hash and URL-bind every raw response; preserve retrieval metadata.
+4. Normalize annual, quarterly, TTM, balance, segment, and product facts with selected-fact lineage.
+5. Derive quarter values only from defensible cumulative/annual arithmetic and reconcile to annual facts.
+6. Add Microsoft IR, FRED, indicative market history, and SEC peer facts.
+7. Run fifteen deterministic specialists under attenuated capabilities.
+8. Bind synthesis to signed why-records and submit exact release content for two-person review.
+9. Preserve pending/approved/rejected/expired/superseded state in a verified review event chain.
+10. Prohibit external publication and trading; approval does not itself publish.
+
+Valuation is illustrative. Controlled pilot only. Professional review is required.

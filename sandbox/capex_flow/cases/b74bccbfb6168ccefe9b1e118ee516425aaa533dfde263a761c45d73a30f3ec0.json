@@ -1,0 +1,1373 @@
+{
+  "country": "US",
+  "currency": "USD",
+  "exceptions": [
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "line_id": "1",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "line_id": "1",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:2"
+      ],
+      "line_id": "2",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:2"
+      ],
+      "line_id": "2",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:3"
+      ],
+      "line_id": "3",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:3"
+      ],
+      "line_id": "3",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:4"
+      ],
+      "line_id": "4",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:4"
+      ],
+      "line_id": "4",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:5"
+      ],
+      "line_id": "5",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:5"
+      ],
+      "line_id": "5",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:6"
+      ],
+      "line_id": "6",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:6"
+      ],
+      "line_id": "6",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:7"
+      ],
+      "line_id": "7",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:7"
+      ],
+      "line_id": "7",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:8"
+      ],
+      "line_id": "8",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:8"
+      ],
+      "line_id": "8",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:9"
+      ],
+      "line_id": "9",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:9"
+      ],
+      "line_id": "9",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:10"
+      ],
+      "line_id": "10",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:10"
+      ],
+      "line_id": "10",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:11"
+      ],
+      "line_id": "11",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:11"
+      ],
+      "line_id": "11",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:12"
+      ],
+      "line_id": "12",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:12"
+      ],
+      "line_id": "12",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+      "evidence_refs": [
+        "invoice"
+      ],
+      "line_id": "",
+      "type": "Missing Evidence / Uncertainty"
+    }
+  ],
+  "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea",
+  "invoice_number": "INV12-62027",
+  "lines": [
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 253.71,
+      "asset_type": "Shelf/retainer rail component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.85,
+      "coding_status": "MISSING",
+      "commodity": "Layover front retainer rail",
+      "description": "Layover FR 4PK, 727x886\n15 degree front retainer rail slot\nSimplified\nNon-Anodized\nWidth: 28.6 (727mm)\nDepth: 34.9\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:1",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "1",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 1 describes a shelf/retainer rail component ('Layover FR 4PK') for a shelving system. The nature, commodity and technical detail indicate a durable component, likely to be assembled as part of a shelving asset. However, no capitalization (CAPEX/OPEX) policy is provided in evidence; source gaps explicitly state policy evidence is missing so thresholds, useful life, direct cost, and capital unit cannot be determined. Per protocol, capitalization status remains REVIEW.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 253.71,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 201.81,
+      "asset_type": "Shelf/retainer rail component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.85,
+      "coding_status": "MISSING",
+      "commodity": "Layover front retainer rail",
+      "description": "Layover FR 1PK, 727x886\n15 degree front retainer rail slot\nSimplified\nNon-Anodized\nWidth: 28.6 (727mm)\nDepth: 34.9\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:2",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "2",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 2, another shelf/retainer component ('Layover FR 1PK') with identical specifications, is likely to form part of a shelving asset. Lacking any policy definition, thresholds or capitalization unit, no CAPEX/OPEX determination can be made. Source gaps confirm policy is not supplied.",
+      "policy_ids": [],
+      "quantity": 3.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 67.27,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 98.12,
+      "asset_type": "Shelf divider component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.8,
+      "coding_status": "MISSING",
+      "commodity": "Lock-in wire divider",
+      "description": "Reinforced Lock-In 2 Wire divider,\n70x886 50PK\nLayover\nAngled corners\n2-Wire 5mm\nDivider height: 2.75\" (70mm)\nFR depth: 34.9\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:3",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "3",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 3 is a 'Reinforced Lock-In 2 Wire divider', a shelving divider component, permanent nature but no policy evidence or capitalization unit supplied. REVIEW is required per source gaps.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 98.12,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 41.66,
+      "asset_type": "Shelf divider component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.8,
+      "coding_status": "MISSING",
+      "commodity": "Lock-in wire divider",
+      "description": "Reinforced Lock-In 2 Wire divider,\n70x886 10PK\nLayover\nAngled corners\n2-Wire 5mm\nDivider height: 2.75\" (70mm)\nFR depth: 34.9\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:4",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "4",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 4 covers another shelf divider ('Reinforced Lock-In 2 Wire divider'), same uncertainties as above; missing CAPEX/OPEX policy and capital unit definition, so REVIEW remains.",
+      "policy_ids": [],
+      "quantity": 2.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 20.83,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 41.61,
+      "asset_type": "Shelf retainer component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.8,
+      "coding_status": "MISSING",
+      "commodity": "FlexRoller clear retainer",
+      "description": "FlexRoller Clear Retainer 10PK 90x711\nRetainer height: Medium 3.5\" (90mm)\nRetainer width: 28\" (711mm)",
+      "evidence_refs": [
+        "line:5",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "5",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 5, 'FlexRoller Clear Retainer 10PK', a shelving retainer component, is a durable part. However, without a capitalization policy, cost thresholds or grouping guidance, CAPEX/OPEX cannot be confirmed. Source gaps identify policy absence; REVIEW needed.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 41.61,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 21.75,
+      "asset_type": "Shelf retainer component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.8,
+      "coding_status": "MISSING",
+      "commodity": "FlexRoller clear retainer",
+      "description": "FlexRoller Clear Retainer 10PK, 35x711\nRetainer height: Mini 1.375\" (35mm)\nRetainer width: 28\" (711mm)",
+      "evidence_refs": [
+        "line:6",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "6",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 6 ('FlexRoller Clear Retainer, mini') is a permanent shelving retainer component, but absence of policy evidence, capital unit or threshold means CAPEX/OPEX cannot be assigned \u2014 source gaps enforce REVIEW.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 21.75,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 15.69,
+      "asset_type": "Shelf retainer component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.8,
+      "coding_status": "MISSING",
+      "commodity": "FR Back Wire Retainer",
+      "description": "FR Back Wire Retainer 70x723 20PK\nHeight: 2.75\" (70mm)\nShelf Width: 28.5\" (723mm)\nColor: Red",
+      "evidence_refs": [
+        "line:7",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "7",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 7 ('FR Back Wire Retainer') is organizational shelving hardware, durable in nature. Missing policy, threshold, or grouping evidence requires REVIEW per protocol and explicit source gaps.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 15.69,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 18.14,
+      "asset_type": "Labeling strip component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.7,
+      "coding_status": "MISSING",
+      "commodity": "Infostrip label strip",
+      "description": "Infostrip 10PK\nLabel height: 1.25\" (32mm)\nSingle Wire Mount\nLength: 25.5\" (648mm)\nColor: Black\nWindow displayed at 20 degree to\nback",
+      "evidence_refs": [
+        "line:8",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "8",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 8 ('Infostrip 10PK') is a labeling strip component for shelving, potentially permanent, but without policy or threshold evidence, REVIEW is required. Source gaps confirm policy not supplied.",
+      "policy_ids": [],
+      "quantity": 2.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 9.07,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 12.17,
+      "asset_type": "Labeling strip component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.7,
+      "coding_status": "MISSING",
+      "commodity": "Infostrip label strip",
+      "description": "Infostrip 10PK\nLabel height: 1.25\" (32mm)\nDouble Wire Mount\nLength: 27\" (685.8mm)\nColor: BlackOI",
+      "evidence_refs": [
+        "line:9",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "9",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 9 ('Infostrip 10PK', double wire) is another labeling strip for shelving, but lacking policy evidence, capital unit, or threshold means CAPEX/OPEX cannot be determined. Explicit source gaps mandate REVIEW.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 12.17,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 176.22,
+      "asset_type": "Shelf divider component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.8,
+      "coding_status": "MISSING",
+      "commodity": "Lock-In wire divider",
+      "description": "Reinforced Lock-In Wire divider 20-\nPack, 140x886\nLayover\nAngled Corners\n3-Wire\nDivider height: 5.5\" (140mm)\nFR Depth: 34.88\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:10",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "10",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 10 ('Reinforced Lock-In Wire divider 20-Pack') is a shelf divider for permanent shelving installation. No policy or threshold evidence, so CAPEX/OPEX cannot be determined; source gaps mandate REVIEW.",
+      "policy_ids": [],
+      "quantity": 3.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 58.74,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 30.2,
+      "asset_type": "Shelf divider component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.8,
+      "coding_status": "MISSING",
+      "commodity": "Lock-In wire divider",
+      "description": "Reinforced Lock-In Wire divider 10-\nPack, 140x886\nLayover\nAngled Corners\n3-Wire\nDivider height: 5.5\" (140mm)\nFR Depth: 34.88\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:11",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "11",
+      "nature": "COMPONENT",
+      "policy_basis": "Line 11 ('Reinforced Lock-In Wire divider 10-Pack') is same as line 10, permanent hardware for shelving. REVIEW required due to absence of policy and capital unit evidence; confirmed by source gaps.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 30.2,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 617.09,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 1.0,
+      "coding_status": "MISSING",
+      "commodity": "Shipping",
+      "description": "Shipping",
+      "evidence_refs": [
+        "line:12",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "12",
+      "nature": "FREIGHT",
+      "policy_basis": "Line 12 ('Shipping') is freight, not a physical component or asset. While some shipping may be capitalized if directly attributable, no policy or practice is supplied, and source gaps clearly indicate policy evidence is missing. No CAPEX/OPEX determination is possible; recommendation is REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "",
+      "recommended_task": "",
+      "recommended_task_description": "",
+      "unit_price": 0.0,
+      "useful_life_months": null
+    }
+  ],
+  "model": "gpt-4.1-rp",
+  "recommendation": "REVIEW",
+  "reference_sha256": "94a5515f7f7ec58886919ca3668322e93b4d84ed3931a671e9bda7de166548aa",
+  "source_sha256": "974d61a406edf85e3cadfa75a5177795481d3a82ce962dc414e9d276b885ee5b",
+  "stage_outputs": {
+    "asset_classification": {
+      "lines": [
+        {
+          "asset_class_code": null,
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:1",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "1",
+          "rationale": "Line 1 describes 'Layover FR 4PK' with measurements and retainer rail slot details, evidently a wire shelving or shelving component. The catalog contains specific codes for wire shelving, with 'WIRE SHELVING' matching the nature and commodity, so task_code 5225 is selected. Asset_class_code is not directly provided as Europe classes are not listed. AMBIGUOUS is used for residual uncertainty (could cover retainer or divider), but task code is cited.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:2",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "2",
+          "rationale": "Line 2 is nearly identical to line 1: 'Layover FR 1PK' with measurements, for shelving or rail system, matching 'WIRE SHELVING' catalog descriptions. Catalog covers multiple wire shelving entries (5225, 5225A, 5225B), but main 5225 covers generic wire shelving, so task_code 5225 is selected. Asset_class_code unavailable. AMBIGUOUS due to wire retainer versus shelving ambiguity.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.8,
+          "evidence_refs": [
+            "line:3",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "3",
+          "rationale": "Line 3: 'Reinforced Lock-In 2 Wire divider' is a shelf divider or organizational wire shelf part. Catalog 'WIRE SHELVING' matches both shelving and wire divider items, task_code 5225 is closest. Some ambiguity remains (could be auxiliary part), so status AMBIGUOUS. Asset_class_code unavailable.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.8,
+          "evidence_refs": [
+            "line:4",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "4",
+          "rationale": "Line 4: Similar 'Reinforced Lock-In 2 Wire divider', 10PK, matches catalog 'WIRE SHELVING', appropriate for shelf divider wire components. Ambiguity persists regarding exact catalog fit, so status AMBIGUOUS. Asset_class_code unavailable.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.8,
+          "evidence_refs": [
+            "line:5",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "5",
+          "rationale": "Line 5: 'FlexRoller Clear Retainer', a component for shelving or shelf system, best fits 'WIRE SHELVING' in catalog (task_code 5225). No Europe asset class catalog, so AMBIGUOUS status. Asset_class_code unavailable.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.8,
+          "evidence_refs": [
+            "line:6",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "6",
+          "rationale": "Line 6: 'FlexRoller Clear Retainer' (mini), similarly matches 'WIRE SHELVING' catalog item (task_code 5225, organizational shelving/retainer/wire), though may overlap with other subcodes. Asset_class_code unavailable, ambiguity remains.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.8,
+          "evidence_refs": [
+            "line:7",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "7",
+          "rationale": "Line 7: 'FR Back Wire Retainer' for shelving, fits in 'WIRE SHELVING' as retainer/wire shelving component (task_code 5225). Ambiguity persists as catalog does not distinguish retainer from divider. Asset_class_code unavailable.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:8",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "8",
+          "rationale": "Line 8: 'Infostrip 10PK', labeling component for shelving, may not exactly match 'WIRE SHELVING' catalog, but no other code covers shelving label accessory. AMBIGUOUS assigned, task_code 5225 as closest fit.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:9",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "9",
+          "rationale": "Line 9: 'Infostrip 10PK', double wire mount, again a labeling strip for shelving. Catalog lacks dedicated label code but task_code 5225 is closest fit for shelving wire accessories. AMBIGUOUS assigned. Asset_class_code unavailable.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.8,
+          "evidence_refs": [
+            "line:10",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "10",
+          "rationale": "Line 10: 'Reinforced Lock-In Wire divider' for shelving (20-Pack), as above, fits 'WIRE SHELVING' catalog task_code 5225. Some ambiguity persists as catalog does not list separate divider code. Asset_class_code unavailable.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.8,
+          "evidence_refs": [
+            "line:11",
+            "invoice",
+            "task:5225"
+          ],
+          "line_id": "11",
+          "rationale": "Line 11: 'Reinforced Lock-In Wire divider' (10-Pack) for shelving, matches 'WIRE SHELVING' in catalog, with ambiguity as for line 10. Asset_class_code unavailable.",
+          "status": "AMBIGUOUS",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 1.0,
+          "evidence_refs": [
+            "line:12",
+            "invoice"
+          ],
+          "line_id": "12",
+          "rationale": "Line 12: 'Shipping' is freight and not a cataloged asset or component. Task catalog does not cover freight/shipping. UNAVAILABLE assigned; asset_class_code also unavailable.",
+          "status": "UNAVAILABLE",
+          "task_code": null
+        }
+      ]
+    },
+    "asset_relationship": {
+      "bundle_exception": false,
+      "confidence": 0.75,
+      "evidence_refs": [
+        "invoice",
+        "line:1",
+        "line:2",
+        "line:3",
+        "line:4",
+        "line:5",
+        "line:6",
+        "line:7",
+        "line:8",
+        "line:9",
+        "line:10",
+        "line:11",
+        "line:12",
+        "source_gaps"
+      ],
+      "matched_history_ids": [],
+      "rationale": "No component or asset bundling can be confirmed due to lack of historical candidate data. The invoice lines represent permanent shelving-related components (retainer rails, wire dividers, retainers, labeling strips) that would plausibly form part of a larger shelving asset, given the vendor and technical descriptions. However, no prior capitalized asset or invoice records are supplied in evidence (as stated in source_gaps), and history_candidates is empty. Therefore, relationship to an existing asset cannot be determined. Bundle_exception is false due to absence of matching history; uncertainty persists without historical or policy evidence."
+    },
+    "capitalization_decision": {
+      "lines": [
+        {
+          "confidence": 0.9,
+          "evidence_refs": [
+            "line:1",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "1",
+          "policy_ids": [],
+          "rationale": "Line 1 describes a shelf/retainer rail component ('Layover FR 4PK') for a shelving system. The nature, commodity and technical detail indicate a durable component, likely to be assembled as part of a shelving asset. However, no capitalization (CAPEX/OPEX) policy is provided in evidence; source gaps explicitly state policy evidence is missing so thresholds, useful life, direct cost, and capital unit cannot be determined. Per protocol, capitalization status remains REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.9,
+          "evidence_refs": [
+            "line:2",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "2",
+          "policy_ids": [],
+          "rationale": "Line 2, another shelf/retainer component ('Layover FR 1PK') with identical specifications, is likely to form part of a shelving asset. Lacking any policy definition, thresholds or capitalization unit, no CAPEX/OPEX determination can be made. Source gaps confirm policy is not supplied.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:3",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "3",
+          "policy_ids": [],
+          "rationale": "Line 3 is a 'Reinforced Lock-In 2 Wire divider', a shelving divider component, permanent nature but no policy evidence or capitalization unit supplied. REVIEW is required per source gaps.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:4",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "4",
+          "policy_ids": [],
+          "rationale": "Line 4 covers another shelf divider ('Reinforced Lock-In 2 Wire divider'), same uncertainties as above; missing CAPEX/OPEX policy and capital unit definition, so REVIEW remains.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:5",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "5",
+          "policy_ids": [],
+          "rationale": "Line 5, 'FlexRoller Clear Retainer 10PK', a shelving retainer component, is a durable part. However, without a capitalization policy, cost thresholds or grouping guidance, CAPEX/OPEX cannot be confirmed. Source gaps identify policy absence; REVIEW needed.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:6",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "6",
+          "policy_ids": [],
+          "rationale": "Line 6 ('FlexRoller Clear Retainer, mini') is a permanent shelving retainer component, but absence of policy evidence, capital unit or threshold means CAPEX/OPEX cannot be assigned \u2014 source gaps enforce REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:7",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "7",
+          "policy_ids": [],
+          "rationale": "Line 7 ('FR Back Wire Retainer') is organizational shelving hardware, durable in nature. Missing policy, threshold, or grouping evidence requires REVIEW per protocol and explicit source gaps.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.8,
+          "evidence_refs": [
+            "line:8",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "8",
+          "policy_ids": [],
+          "rationale": "Line 8 ('Infostrip 10PK') is a labeling strip component for shelving, potentially permanent, but without policy or threshold evidence, REVIEW is required. Source gaps confirm policy not supplied.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.8,
+          "evidence_refs": [
+            "line:9",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "9",
+          "policy_ids": [],
+          "rationale": "Line 9 ('Infostrip 10PK', double wire) is another labeling strip for shelving, but lacking policy evidence, capital unit, or threshold means CAPEX/OPEX cannot be determined. Explicit source gaps mandate REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:10",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "10",
+          "policy_ids": [],
+          "rationale": "Line 10 ('Reinforced Lock-In Wire divider 20-Pack') is a shelf divider for permanent shelving installation. No policy or threshold evidence, so CAPEX/OPEX cannot be determined; source gaps mandate REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:11",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "11",
+          "policy_ids": [],
+          "rationale": "Line 11 ('Reinforced Lock-In Wire divider 10-Pack') is same as line 10, permanent hardware for shelving. REVIEW required due to absence of policy and capital unit evidence; confirmed by source gaps.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:12",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "12",
+          "policy_ids": [],
+          "rationale": "Line 12 ('Shipping') is freight, not a physical component or asset. While some shipping may be capitalized if directly attributable, no policy or practice is supplied, and source gaps clearly indicate policy evidence is missing. No CAPEX/OPEX determination is possible; recommendation is REVIEW.",
+          "recommendation": "REVIEW"
+        }
+      ]
+    },
+    "coding_validation": {
+      "lines": [
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:1"
+          ],
+          "line_id": "1",
+          "rationale": "No approved business coding or task code was provided for this line in the 'approved_coding' evidence, and the 'approved_business_coding' is empty. Therefore, a comparison cannot be made and the status must be MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:2"
+          ],
+          "line_id": "2",
+          "rationale": "There is no approved business coding or task code evidence for this line in the 'approved_coding' section. As such, coding status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:3"
+          ],
+          "line_id": "3",
+          "rationale": "No approved coding is provided for comparison for this line; coding status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:4"
+          ],
+          "line_id": "4",
+          "rationale": "Line 4 does not have approved business coding or task code in the 'approved_coding' data. Thus coding status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:5"
+          ],
+          "line_id": "5",
+          "rationale": "Approved coding is not present for Line 5, therefore status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:6"
+          ],
+          "line_id": "6",
+          "rationale": "Approved coding is missing for Line 6 in the supplied evidence; status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:7"
+          ],
+          "line_id": "7",
+          "rationale": "There is no approved coding for Line 7; must be classified as MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:8"
+          ],
+          "line_id": "8",
+          "rationale": "There is no approved coding for Line 8 available in 'approved_coding'; status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:9"
+          ],
+          "line_id": "9",
+          "rationale": "Line 9's approved coding is not supplied; result is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:10"
+          ],
+          "line_id": "10",
+          "rationale": "Line 10 has no approved coding in the evidence, so the status remains MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:11"
+          ],
+          "line_id": "11",
+          "rationale": "No approved coding supplied for line 11; status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:12"
+          ],
+          "line_id": "12",
+          "rationale": "There is no approved coding for shipping (line 12) in the 'approved_coding' section. Coding status: MISSING.",
+          "status": "MISSING"
+        }
+      ]
+    },
+    "document_intelligence": {
+      "lines": [
+        {
+          "asset_type": "Shelf/retainer rail component",
+          "commodity": "Layover front retainer rail",
+          "confidence": 0.75,
+          "evidence_refs": [
+            "line:1",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "1",
+          "nature": "COMPONENT",
+          "rationale": "This item is described as a 'Layover FR 4PK' with specific measurements and slot details, likely a shelf or rail component for retail display or storage. Without policy evidence, determination between component or consumable cannot be made definitively, but the nature is more permanent than consumable. Capitalization must remain REVIEW per source_gaps."
+        },
+        {
+          "asset_type": "Shelf/retainer rail component",
+          "commodity": "Layover front retainer rail",
+          "confidence": 0.75,
+          "evidence_refs": [
+            "line:2",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "2",
+          "nature": "COMPONENT",
+          "rationale": "Similar to line 1, this item is a 'Layover FR 1PK' with identical technical details, differing only in quantity. These are likely material or component parts for a larger system. Capitalization remains REVIEW due to missing policy evidence."
+        },
+        {
+          "asset_type": "Shelf divider component",
+          "commodity": "Lock-in wire divider",
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:3",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "3",
+          "nature": "COMPONENT",
+          "rationale": "This line covers 'Reinforced Lock-In 2 Wire divider', implying a wire shelf divider for organizational purposes. Labeling and packaging suggest it is a component used repeatedly or maintained. Without further information, nature is COMPONENT, since this is not a simple consumable nor a service."
+        },
+        {
+          "asset_type": "Shelf divider component",
+          "commodity": "Lock-in wire divider",
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:4",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "4",
+          "nature": "COMPONENT",
+          "rationale": "This item matches line 3 but is a smaller pack. It is also a wire divider for shelving, used as a part rather than a one-off repair or consumable. No policy evidence supplied, so capital/non-capital status is REVIEW."
+        },
+        {
+          "asset_type": "Shelf retainer component",
+          "commodity": "FlexRoller clear retainer",
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:5",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "5",
+          "nature": "COMPONENT",
+          "rationale": "'FlexRoller Clear Retainer 10PK', with dimensions specified. These are likely shelf, roller or display system parts. They are not services or consumables, but rather physical components assembled into a larger entity."
+        },
+        {
+          "asset_type": "Shelf retainer component",
+          "commodity": "FlexRoller clear retainer",
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:6",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "6",
+          "nature": "COMPONENT",
+          "rationale": "Similar to line 5, but described as 'Mini.' It is a retainer part for a shelf or roller system, with permanent installation implied."
+        },
+        {
+          "asset_type": "Shelf retainer component",
+          "commodity": "FR Back Wire Retainer",
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:7",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "7",
+          "nature": "COMPONENT",
+          "rationale": "This is a 'FR Back Wire Retainer' with measurements and color specified, indicating a physical part for retail shelving or organizational systems. Not maintenance or service; more likely a component."
+        },
+        {
+          "asset_type": "Labeling strip component",
+          "commodity": "Infostrip label strip",
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:8",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "8",
+          "nature": "COMPONENT",
+          "rationale": "'Infostrip 10PK' described as label strip with mounting details. This is typically an add-on or component for shelving or display, not a consumable (would be replaced less frequently)."
+        },
+        {
+          "asset_type": "Labeling strip component",
+          "commodity": "Infostrip label strip",
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:9",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "9",
+          "nature": "COMPONENT",
+          "rationale": "Similar to line 8, but 'Double Wire Mount.' This remains a display/shelving label component."
+        },
+        {
+          "asset_type": "Shelf divider component",
+          "commodity": "Lock-In wire divider",
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:10",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "10",
+          "nature": "COMPONENT",
+          "rationale": "'Reinforced Lock-In Wire divider' 20-pack, with technical and color details. As a divider, this is a recurring part, not a consumable, service, or maintenance."
+        },
+        {
+          "asset_type": "Shelf divider component",
+          "commodity": "Lock-In wire divider",
+          "confidence": 0.7,
+          "evidence_refs": [
+            "line:11",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "11",
+          "nature": "COMPONENT",
+          "rationale": "'Reinforced Lock-In Wire divider' 10-pack, identical to line 10 but quantity differs. Component designation is maintained."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Shipping",
+          "confidence": 0.9,
+          "evidence_refs": [
+            "line:12",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "12",
+          "nature": "FREIGHT",
+          "rationale": "'Shipping' is explicitly listed, with no physical description, quantity, or part designation. It is freight, not inventory, service, or component."
+        }
+      ]
+    },
+    "exception_management": {
+      "exceptions": [
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "line_id": "1"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "line_id": "1"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:2"
+          ],
+          "line_id": "2"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:2"
+          ],
+          "line_id": "2"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:3"
+          ],
+          "line_id": "3"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:3"
+          ],
+          "line_id": "3"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:4"
+          ],
+          "line_id": "4"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:4"
+          ],
+          "line_id": "4"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:5"
+          ],
+          "line_id": "5"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:5"
+          ],
+          "line_id": "5"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:6"
+          ],
+          "line_id": "6"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:6"
+          ],
+          "line_id": "6"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:7"
+          ],
+          "line_id": "7"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:7"
+          ],
+          "line_id": "7"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:8"
+          ],
+          "line_id": "8"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:8"
+          ],
+          "line_id": "8"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:9"
+          ],
+          "line_id": "9"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:9"
+          ],
+          "line_id": "9"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:10"
+          ],
+          "line_id": "10"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:10"
+          ],
+          "line_id": "10"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:11"
+          ],
+          "line_id": "11"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:11"
+          ],
+          "line_id": "11"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:12"
+          ],
+          "line_id": "12"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:12"
+          ],
+          "line_id": "12"
+        },
+        {
+          "code": "DQ",
+          "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+          "evidence_refs": [
+            "invoice"
+          ],
+          "line_id": ""
+        }
+      ],
+      "summary": "All invoice lines have unresolved coding (DQ) and policy determination (E4) due to missing approved coding, ambiguous catalog mapping, and absence of capitalization or bundling policy evidence. Capitalization must remain in REVIEW for all items; shipping lacks any policy or catalog coverage, and all exceptions must be reported to Finance."
+    }
+  },
+  "total": 1627.5,
+  "vendor": "Bruegmann USA, Inc."
+}

@@ -1,0 +1,51 @@
+{
+  "chain": {
+    "broken_sequence": null,
+    "verified": true
+  },
+  "events": [
+    {
+      "created_at": 1789388193.3788185,
+      "event_hash": "8a27d61c07b07602fc35671c4763bb49e9ac9d2bbf2ea84bb9c6102fa71f9953",
+      "event_type": "submitted",
+      "payload": {
+        "artifact_digest": "799d6721db012c50f35c5af1b52b3b642d930015ff1c352deffd4dd7155dede5",
+        "expires_at": 1791980193.3788185,
+        "quorum": 2,
+        "release_key": "CIK0000789019:consolidated-financial-release",
+        "required_reviewers": [
+          "finance-review-lead",
+          "risk-review-lead"
+        ]
+      },
+      "previous_hash": "",
+      "request_id": "review_8feb1d83f156",
+      "sequence": 1
+    }
+  ],
+  "exported_at": 1789388193.6746905,
+  "reviews": [
+    {
+      "artifact_digest": "799d6721db012c50f35c5af1b52b3b642d930015ff1c352deffd4dd7155dede5",
+      "comments": [],
+      "created_at": 1789388193.3788185,
+      "decided_at": null,
+      "expires_at": 1791980193.3788185,
+      "id": "review_8feb1d83f156",
+      "quorum": 2,
+      "rationale": "Review consolidated facts, calculations, source coverage, and intended use.",
+      "release_key": "CIK0000789019:consolidated-financial-release",
+      "requested_by": "autarch-company-finance",
+      "required_reviewers": [
+        "finance-review-lead",
+        "risk-review-lead"
+      ],
+      "status": "pending",
+      "subject": "MICROSOFT CORP consolidated financial report",
+      "superseded_by": "",
+      "votes": [],
+      "votes_remaining": 2
+    }
+  ],
+  "schema_version": "autarch.release-review.v1"
+}

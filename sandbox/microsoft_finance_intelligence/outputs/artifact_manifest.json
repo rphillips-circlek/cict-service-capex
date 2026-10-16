@@ -1,0 +1,38 @@
+{
+  "microsoft_finance_intelligence.json": {
+    "bytes": 2363040,
+    "sha256": "95722bdf75962314eb385e67073cf0842908860b20c210980d0489db2c07679d"
+  },
+  "microsoft_finance_intelligence.html": {
+    "bytes": 2171805,
+    "sha256": "ebdf0cda047bce407ae757d40e6fc48be96328afab25062012c553f03fc44faf"
+  },
+  "microsoft_finance_intelligence.md": {
+    "bytes": 188000,
+    "sha256": "f1f08b533483ee35d702ee0722f16cc6709a3064aef74df0656d8293ad8cd4ab"
+  },
+  "evidence_manifest.json": {
+    "bytes": 25481,
+    "sha256": "d6863830a87a88f8bf2b79fc6e81eb36ca3f791a113a9e4de637b74a2ba44500"
+  },
+  "signed_audit.jsonl": {
+    "bytes": 22092367,
+    "sha256": "9cf8315dba60894a54755e77f7648d750e7b9b0ff29c5a24a16c7607ec306681"
+  },
+  "review_audit.json": {
+    "bytes": 3791,
+    "sha256": "ce7635f3f0815c44705d9c5774d9b3948db449294b831226cd9408df309a0ccf"
+  },
+  "METHODOLOGY.txt": {
+    "bytes": 989,
+    "sha256": "6efd0b7368333df8f4d73ea57b15bb09f8473610b6490c79b8dcb0630b8254dc"
+  },
+  "ARCHITECTURE.txt": {
+    "bytes": 622,
+    "sha256": "e539e04890647b562c830fde2055b21a0174605cba12d55b533f58162a61911e"
+  },
+  "microsoft_evidence_bundle.zip": {
+    "bytes": 6052383,
+    "sha256": "fd45e30aaaa0da323df4436cbbcceb25f073dffbe7c4d9b645da854edd1c9d3e"
+  }
+}

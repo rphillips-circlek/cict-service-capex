@@ -1,0 +1,8 @@
+﻿bol_number,lift_date,carrier_name,carrier_type,product,gallons,origin_state,planned_state,actual_state,is_diversion,planned_rate,actual_rate,net_tax_delta,diversion_number,fueltrack_match,dual_validation,confidence,route
+BOL-100234,2026-08-11,Southern Fuel Express,third_party,Unleaded 87,8000,GA,GA,SC,True,0.331,0.2875,-348.0,FT-2026-778901,True,agree,0.97,AUTO_READY
+BOL-100235,2026-08-11,Piedmont Carriers,third_party,Diesel,7500,NC,NC,NC,False,,,,,,,1.0,NO_ACTION
+BOL-100236,2026-08-11,Desert Haul Logistics,third_party,Unleaded 87,8200,GA,GA,AZ,True,0.331,0.19,-1156.2,,,agree,0.9,NOTIFY_CARRIER
+BOL-100237,2026-08-11,Cactus Fuel Transport,third_party,Diesel,6000,AZ,AZ,AZ,False,,,,,,,1.0,NO_ACTION
+BOL-100238,2026-08-11,Cascade Transport,third_party,Unleaded 87,7800,OR,OR,SC,True,0.4,0.2875,-877.5,FT-2026-889012,False,agree,0.5,SME_REVIEW
+BOL-100239,2026-08-11,Circle K Internal Fleet,internal_fleet,Diesel,7000,NC,NC,GA,True,0.405,0.331,-518.0,,,agree,0.9,NOTIFY_CARRIER
+BOL-100240,2026-08-12,Lone Star Fuel,third_party,Unleaded 87,8100,TX,TX,SC,True,,,,,,,1.0,PENDING

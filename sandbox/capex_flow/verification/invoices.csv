@@ -1,0 +1,2 @@
+﻿invoice_id,invoice_number,vendor,region,country,state,currency,total,eligible_total,recommendation,review_status,review_decision,final_decision,exception_count,source,source_sha256,case_digest,model,automatic_posting
+TEST-INVOICE,TEST-001,Test vendor,North America,US,MN,USD,150.0,0.0,REVIEW,RECLASSIFY,RECLASSIFY,OPEX,3,test fixture,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,e51786d3faee8d5d2f22cc7f69bcae8c86d7668f1efa4954d72220bd9ca7f0ab,test-transport-not-Azure,False

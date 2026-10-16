@@ -1,0 +1,222 @@
+﻿Fuel - Use Case Discovery (Microsoft)-20260804_103149-Meeting Recording
+August 4, 2026, 5:31PM
+41m 36s
+621792274320Trujillo, Sharon started transcription
+576072292608Sameera Sarfaraz   0:03Sharon, if you could please get the recordings as well for our Microsoft team. That'll be critical for us moving forward with this. Thank you.
+576072292608Trujillo, Sharon   0:12Absolutely, uh huh.
+576072292608Sameera Sarfaraz   0:13And, Jim, I will hand it off to you again. Thank you.You're speaking on mute.
+576072292608Chinmay Palei   0:23I was talking on mute, I got it. So, thanks, thanks everyone for joining. So, you know, again, I think we have made offline, but again, this is a good forum to, you know, discuss this specific use case, field diversion, and...
+576072292608Sameera Sarfaraz   0:24Okay, okay.
+576072292608Chinmay Palei   0:42Try to get as much information that we have on the source system, and once we have that this week, you know, next week we are planning to have the architectural and AI implementation workshops there. So, today is the, you know, probably I would say first workshops on field diversion. We would have a follow-up.meeting again this week sometime based on whatever remaining questions or discovery items we have and then go with that. So that's a quick logistics. So before we can start discussion about some of the questions that we have around this use case, anything anybody has a comment or any questions before we head?
+576072292608Falcon-O'Toole, Janeth   1:23Yeah, Maria, do we have the folks from Fuel Logistics on the call? Because if not, we'll have to reschedule.
+576072292608Chinmay Palei   1:23Awesome.
+576072292608Alexandre-Gingras, Marie   1:33They are not there. Nope, they are not there.
+576072292608Falcon-O'Toole, Janeth   1:34Do we have like Harry? Yeah.
+576072292608Alexandre-Gingras, Marie   1:39We can still have, so this is the discovery and workshop a little bit. We talked to them this morning with Thomas, we talked to Nile, Janet. We are aligned that the scope of gravitate may be touching each other, but we need to understand it more.
+576072292608Artūrs Blankenfelds   1:55I can represent now, if needed.
+576072292608Alexandre-Gingras, Marie   1:58Oh, perfect. Archer, sorry, I didn't see you. So Niall gave me your name. Perfect. Awesome. We have the right person, Janet.
+576072292608Artūrs Blankenfelds   2:02Thank you.Yeah, and Harley, unfortunately, is traveling today, so he won't be able to train.
+576072292608Falcon-O'Toole, Janeth   2:04Perfect. Thank you.
+576072292608Chinmay Palei   2:15Awesome. Can we start now, or is there anybody else that just good for?
+576072292608Trujillo, Sharon   2:24No, I think we're good to start.
+576072292608Chinmay Palei   2:26Awesome. So let me quickly share my screen. Just one second.Okay, let me know once you're able to see my screen.
+576072292608Falcon-O'Toole, Janeth   2:53We could see.
+576072292608Chinmay Palei   2:54Okay, awesome. So awesome. Just wanted to make sure we all are aligned with this use case. I think we have good conversation in the pre-sales and sales after that we have the SUW. So the idea for this use case is basically how quickly we can identify the divergence, right? We have different
+576072292608Alexandre-Gingras, Marie   2:55I can.
+576072292608Chinmay Palei   3:15Sources today, we have fill track, we have PDI, a lot of different sources. So, how quickly we can identify the divergence, and then once the divergence are, you know, identified, you know, recommend the right tax jurisdictions for the diversion, because the source and destination might have changed, and this is primarily because...if the destination had changed because of XYZ reasons, right? There may be, you know, fuel shortages or, you know, somebody, you know, some stations need it urgently, the fuel, or maybe some delays around travel. There could be different N regions, right? So the tax jurisdictions might change.Based on the, you know, destination, right? And you know, once the diversion and the task jurisdictions are identified, you know, repopulate that information to some of the other data sources, PDI and other similar tasks, right? So...And again, right, that's recalculation based on the destination, right? So these are three, 4 high level requirements that we have got so far. So I thought I'll just put it there so that everybody is grounded on that and then we can discuss a little bit more on this.So let me stop there and see if Ceron, yourself or Mary or anybody has any comments to add there.
+576072292608Trujillo, Sharon   4:39So given the audience, I wanted to clarify the scope that we are looking at because we've gone way more end to end than how this started. So the focus of this is identifying fuel diversions in the fuel accounting software for PDI. So there is a fuel accounting focus. It's not, we're not doing anythingWith the actual logistics of the delivery, we're focused on identifying fuel state-to-state diversions that occur in the fuel accounting, and then that will hit our tax accounting. So that's our scope.
+576072292608Chinmay Palei   5:14Okay, so it's basically first requirement that we have, right? How quickly we can identify the divergence and then, and the idea is to also update, set on the PDI with the divergence, right?
+576072292608Trujillo, Sharon   5:29Correct, yeah. But we're limited to fuel accounting scope within PDI effectively. So we're not in any logistics work or any of that.
+576072292608Chinmay Palei   5:40Okay, makes sense. So yeah, anybody else has anything to add there before we can start talking about some of the questions we have?
+576072292608Paavai Sampath   5:50Sorry, just another clarification on that as well. We're talking about identifying the diversion, but also recalculating some of the tax implications of that and then posting to PDI. So the first three points are still accurate in that sense, orAre we not considering any of those components as well? Just identifying that a diversion would be the primary focus.
+576072292608Trujillo, Sharon   6:18So our primary focus is identifying the diversion and then making a correction in the PDI paperwork. If we can do that correction in PDI paperwork, that recalculation should occur within PDI.
+576072292608Chinmay Palei   6:27But.
+576072292608Trujillo, Sharon   6:31So we wouldn't need the AI tool to do that for us.
+576072292608Chinmay Palei   6:32Yeah.
+576072292608Paavai Sampath   6:32Understood.
+576072292608Chinmay Palei   6:34And when you say recalculation, what exactly are you talking about tax recalculation?
+576072292608Paavai Sampath   6:34Understood.
+576072292608Trujillo, Sharon   6:41Yes.
+576072292608Chinmay Palei   6:43Okay.
+576072292608Trujillo, Sharon   6:43To the appropriate state.
+576072292608Chinmay Palei   6:46Yeah, yeah. So that's what we have, right? If you see here, number one, two, item number one, three, and four, those are the ones you talked about, right? Posting it back to the PDI, tax recalculation. The only other piece left is recommend the correct task jurisdictions, right?
+576072292608Trujillo, Sharon   7:00Mhm.
+576072292608Chinmay Palei   7:05So I think that would be automatic, right? You have the, once you have the destination, the recalculation processor will take care of that, right?
+576072292608Trujillo, Sharon   7:15Yes.
+576072292608Burke, Phyllis   7:15Yeah, it's you just have to trigger it, so it's, yeah, it's it's flagged the diversion.There's a form, update the jurisdiction in there, capture the additional information, and then trigger the refresh.That's kind of the steps that we would want automated.
+576072292608Chinmay Palei   7:38Okay, so Phil, you said the form, right? What is that form? Sorry if I have not gone through that, but understanding is everything is done at PDI, I mean at the PDI level, right? Is that form a different data store or that's a minimal form?
+576072292608Burke, Phyllis   7:56No, it's a form within PDI. It's a form within PDI.
+576072292608Maruthi Koiloth   7:56Three.is 3. Yeah, what do you have in three is what the form that that gets populated. There's a form in PDI that gets populated based on the character tax jurisdiction. Just one quick question, Phyllis, when you say triggers the recalculation, is there something that needs
+576072292608Chinmay Palei   8:10Not even.
+576072292608Maruthi Koiloth   8:19to be done or once that form is updated, is the recalculation automatically triggered or is there some kind of a signal that needs to be sent to PDI to trigger that calculation?
+576072292608Burke, Phyllis   8:37You actually have to, I mean, there's a button basically within the form to recalculate. So you actually have to initiate that.It's not an automatic.
+576072292608Grant, Winsome   8:55So let's just, during the testing yesterday, once you save it, it looks like it's recalculating. I didn't have to do the recalculate. I saved it and I did the, automatically did the recalc, just an FYI.
+576072292608Burke, Phyllis   9:09Perfect. Well, that answers that. We're testing the form as we're discussing this automation as well.
+576072292608Trujillo, Sharon   9:17So that safe step would be critical though, because that's going to be the initiator, right?
+576072292608Chinmay Palei   9:17Yeah.
+576072292608Grant, Winsome   9:20Yeah, as you say, that calculates.
+576072292608Burke, Phyllis   9:20That's right. Yep.
+576072292608Chinmay Palei   9:24I think this brings to a very big question that we had. Is there an API around all of this in the PDI, like saving or anything, or is that completely...
+576072292608Trujillo, Sharon   9:24Great.
+576072292608Chinmay Palei   9:37human click orientation today.
+576072292608Burke, Phyllis   9:40No APIs.
+576072292608Chinmay Palei   9:42Okay, I thought that there was a plan to create unless that's not the right direction.
+576072292608Trujillo, Sharon   9:50We recently reviewed the APIs that are available and none of them apply here. And I don't know, Phyllis, are you aware of any development for new ones that would apply?
+576072292608Burke, Phyllis   9:59No, no, I'm not.
+576072292608Trujillo, Sharon   10:01Okay.
+576072292608Chinmay Palei   10:01So even reading the information from PDF, there is no APH today, right?
+576072292608Trujillo, Sharon   10:06Correct.
+576072292608Chinmay Palei   10:08Okay.
+576072292608Trujillo, Sharon   10:11We do have the information in tables, however, so it can be queried. So there's something we could get to the information. We just don't have an API.
+576072292608Chinmay Palei   10:21Yeah, I think that this is where I think we do have to create some Maruti probably MCP tool to expose it and then start working towards directly on the databases there.
+576072292608Maruthi Koiloth   10:32Yeah.Yeah.But I think the bigger is the is the populating the form, because if there's no API to populate the form, then there is an RPI that we will have to do that will actually populate the form. And then once we are able to populate the form, either we have totrigger or it gets automatically triggered something that can be done.
+576072292608Trujillo, Sharon   11:00Right. And so we have Claus Ivanov on the call. He is our intelligent automation expert, and so he would be the one to consult on our RPA regarding that.
+576072292608Maruthi Koiloth   11:14Do we have somebody from PDI Sharon as well, so we can understand maybe that could be a follow-up call to understand how we actually detect how we retrieve the information from PDI?
+576072292608Trujillo, Sharon   11:29So if it's retrieving the information from the tables, Klaus, I don't know, Klaus has the expertise to be able to assist with that.
+576072292608Ivanovs, Klavs   11:34Yeah.Yeah, I can, I can comment. So, so to retrieve information for PDI, we have built a bridge so we can access the ERP systems, the EPDI systems database. So, PDI, so or PDI software is being replicated, there are multiple instances, and there is reporting instance that we are able to access.for reading the data, of course not writing the data because APIs are not available and the PDI retains the business logic that we need to respect. So we are able to read the data from database. But when it comes to putting the data back, if there's no APIs, which has been the case for the most part that we need to process in PDI.That's where we apply RPA desktop automation to do that processing in PDF. So reading is fine from the database. Writing, we have to go through the user interface to do that.
+576072292608Maruthi Koiloth   12:33Perhaps you will be able to help us with the access from Azure into that database so that we are able to read them with the right access required.
+576072292608Ivanovs, Klavs   12:43Yeah, yeah, we can we can work with that. I can help. We will, of course, involve PDI team, but I can help kind of facilitate that.
+576072292608Maruthi Koiloth   12:56And if it is multiple tables, can we expect some view to be created there so that we are not accessing multiple tables or making joins and things so that we just access one particular object which could be a view that we could retrieve?
+576072292608Ivanovs, Klavs   13:14So I'm sure we are not allowed to create any views in the PDI database. That will be probably on the application layer where you would need to build the.Can joins and everything?
+576072292608Maruthi Koiloth   13:28Okay, okay.
+576072292608Ivanovs, Klavs   13:28But that would not be in the, yeah, system data list.
+576072292608Maruthi Koiloth   13:30Yeah, I, I'm just exploring that, just thinking a lot. We can we can talk in more detail about how we how we get the data, but yeah, sorry, Chinmay, go continue with your.
+576072292608Ivanovs, Klavs   13:35Yep.
+576072292608Chinmay Palei   13:40No, no, I think that's a good discussion. Probably we'll have to schedule this week sometime, specifically for PDA reading and writing. How are we going to work on that, right? So that would take some time.
+576072292608Burke, Phyllis   13:53There are current data views for PDI data views tables that are in place that contain the data that would be referenced. So I'm not sure if that's what your question was.
+576072292608Ivanovs, Klavs   13:53Sounds good.
+576072292608Chinmay Palei   14:08Yeah, I think that's what Maruti was asking if there are views, data views are there. I think let's have a separate meeting completely on PDI. I would want to see some kind of views and then how do we populate that also, right?
+576072292608Burke, Phyllis   14:11Yeah.
+576072292608Ivanovs, Klavs   14:23Yeah, I think that's a good idea. I think there is a there's a data model available where which describes what kind of tables consist of what what data, so we can review that together with PDI team and see what you are what you are missing.
+576072292608Chinmay Palei   14:38And you'd be point of contact for that clubs, right? You could help out.
+576072292608Ivanovs, Klavs   14:41Yeah, I, I, I will, I will facilitate that, yeah.
+576072292608Chinmay Palei   14:45Awesome.Awesome, awesome.So, one of the other questions you know I had is basically, as soon as the diversion happens, what is the, you know, latest system that gets it, you know, updated? I know the PDI gets updated later, but what would be the source?immediate source that it gets populated to. Is it fail track or any other system that is there today?
+576072292608Artūrs Blankenfelds   15:25Field track.This fuel truck.
+576072292608Chinmay Palei   15:27Okay.Okay, and this is also a structured format full track, right? Where we can query that too, just like PDA.
+576072292608Artūrs Blankenfelds   15:40Phyllis, can you help? Field track, I think, is governmental, right? I'm not sure how you can something streamline from there.
+576072292608Burke, Phyllis   15:47Yep, that's it.That's A third-party web portal. So I did see recently that that fuel track system, it's a national system that's utilized by tax agencies and all of the US carriers to report.state to state diversions. So it holds the key, which is the diversion number that's used for reporting in tax returns. They just posted that they have some API capabilities. So I don't know if it would be, you know, extracting data from that system and housing it somewhere within our environment and then utilizing thatThe process is just thinking out loud.
+576072292608Chinmay Palei   16:38I think if they have the APIs, that would be helpful, right? We can post queries to the APIs and see if there is diversion, you know, periodical pulling up the information and seeing if there is a diversion happen, right? Because that's the...
+576072292608Burke, Phyllis   16:52Yeah, right, Sharon.Yeah, sorry, right, Sharon, we'll need to see what capabilities we have with that web portal to extract the information on a regular basis or whatnot to utilize for this process. Right now we just go in there manually and pull the information, but there may be better capabilities.
+576072292608Trujillo, Sharon   16:58Uh-huh.I was gonna be...
+576072292608Russell Despain   17:07So.
+576072292608Trujillo, Sharon   17:17So who can speak to the, who would be the one who would know about these API capabilities with FuelTrack? Do we have a person?
+576072292608Burke, Phyllis   17:26I don't believe we do. We can partner with the tax team and see if they've spoken with anyone.
+576072292608Russell Despain   17:28All right.
+576072292608Trujillo, Sharon   17:28Okay.
+576072292608Russell Despain   17:32Yeah.
+576072292608Foltz, Mandie   17:34We used to have a contact, Phyllis. That was prior to them expanding. So we, they've got generic inboxes. I do have an e-mail for some of them I can forward along.
+576072292608Burke, Phyllis   17:49Okay.
+576072292608Trujillo, Sharon   17:50Thank you.
+576072292608Burke, Phyllis   17:51So, yeah, thanks.
+576072292608Chinmay Palei   17:55So today in the current system, the analyst or someone who is doing the review, they do look at this information manually through the, I mean, how are they looking at this information basically in the field track through these APIs or do they have access to the system to understand, okay,There is a diversion happened. Now let's recalculate taxes and then populate that to the PDS. So how is the current system?Uh, works.
+576072292608Artūrs Blankenfelds   18:26Power BI report, there's a Power BI report which posts live, not live, I think it's once in a day, if I'm not mistaken, refreshing, and then team in Riga is filling out everything which needs to be filled out in field track. And since, and I'll be honest, and I'll fill us out, I assume this is your team or this is Tax team.Not sure who they post this divergence. And I think sometimes, Phil, it's your team also reaching out to them to make these corrections and field track for divergence, right?
+576072292608Burke, Phyllis   18:59So what Archers is talking about is our internal fleet logistics team, our internal fleet team has to record diversions like every other third party carrier does. So what they're doing is on the third party fleet operation side is Iyou know, identifying that a diversion takes place. And more than often, they're utilizing our accounting data to show that a diversion took place, I think. And then their team goes and inputs information into FuelTrack as a carrier that a diversion took place. Then we have the accounting group, our accounting group,and our tax groups that have to go to fuel track to extract the information that the carriers have reported. So there's two components. Archer speaking at the operation side from our internal fleet as a carrier, and then we have the accounting and tax piece. So does that make sense, Archer? We're going in from the accounting and tax piece and pullingnot only Field South Express, but all of our third party carrier diversion information, and then utilizing that to update our accounting records within PDI.
+576072292608Artūrs Blankenfelds   20:14Yeah, I'm mostly speaking about internal feed, of course, because as third parties, their own responsibility to create those diversions. Yeah, and yeah, and then you are probably extracting, yeah.
+576072292608Chinmay Palei   20:27So the Power BI report you are talking about, that's internal, right? Internal diversion logging. And how quickly these are, is it a day, like end of the day that Power BI reports get generated? Or is it like, what I'm trying to understand is how quickly the business needs this diversion information within an hour.
+576072292608Artūrs Blankenfelds   20:32Yes.
+576072292608Chinmay Palei   20:48of hours within a day. Is that the need or or you know, it's all happening whenever it is available basically.
+576072292608Burke, Phyllis   20:57If we're focusing on the accounting piece.So that's the flagging, the delivery, the number one, detecting the information. And again, what Archers was speaking to was the operations internal fleet. And we can talk about that, but I want to make sure that we're focusing on the accounting piece.where the updates are going to be done in a PDI.
+576072292608Chinmay Palei   21:28Pet.
+576072292608Burke, Phyllis   21:28So flagging that number one, flagging that delivery within PDI Enterprise, that will be done regardless if it's internal fleet or third party.So Archers, I don't know what the source is for the BI report that you're talking about. I don't know if that's PDI Enterprise.deliveries or telepoint.
+576072292608Maruthi Koiloth   21:56Yeah, I think, for this, I think what...
+576072292608Artūrs Blankenfelds   21:57I'm trying to find out now. I'm not sure now, Felicia. I'm already asking this question.
+576072292608Burke, Phyllis   22:00OK, OK, OK, OK, if it's if if if internal fleet is utilizing delivery data out of PDI Enterprise, that number one flagging the diversion.would be visible to them for their Power BI reporting. Does that make sense?
+576072292608Maruthi Koiloth   22:22It does, and I think, for us, what we are trying to get to is what is the or what are the different places where we can identify a diversion that has happened as early as possible, right? What are the what are the points?
+576072292608Chinmay Palei   22:22Yeah.
+576072292608Maruthi Koiloth   22:41at which we can say we can look at it either through API or through data query or somehow. If, for example, if PDI is not getting updated at the right time and if there's some other system where it gets updated at the right time, what are those systems that we can actuallylook to see that a devotion has happened as early as possible.
+576072292608Burke, Phyllis   23:08Yeah, so within PDI and the item that we're trying to resolve is within the PDI transactional processing. So it's going to be that number one, when the data is available, which we get bill of lading data within 24 hours.And the delivery confirmation then takes place within, you know, 24 to 48 hours. So that's going to be for the accounting purposes, the earliest that you're going to be able to detect it.
+576072292608Chinmay Palei   23:44The internal fleet, right? That's the one you're talking about, right?
+576072292608Maruthi Koiloth   23:45Okay.
+576072292608Burke, Phyllis   23:47No, this is for everything. So we have loads that are delivered by internal fleet and third party. All of it runs through our PDI accounting system. So we're...We're looking to, you know, handle the accounting piece for these diversions, regardless if it's internal fleet or not, within PDI Enterprise. So, and again, from the accounting side and the tax side, we're expecting the carriers to have already done what they needed to do.And in some cases that has happened and in some cases it has not happened. So we want to detect that a diversion took place and I guess I can put my...data flow out there. And then utilize, you know, go the field track information and say, does a diversion number already exist, yes or no? If it does, great, pull that in and continue with the process of updating everything. If it doesn't, then we want a workflow to notify the carrier.regardless if it's internal, fleet or third party, that a diversion needs to be reported. Does that make sense?
+576072292608Chinmay Palei   25:11Yeah, so from hearing you what it seems that the source of truth is the third body filter then, right? We are just trying to understand what's the first source that would identify the divergent because we can query that source, right, and try to understand, okay, the divergent has happened and then rest all of the accounting other stuff will happen, right?
+576072292608Burke, Phyllis   25:11So.
+576072292608Chinmay Palei   25:30So, what's that source? Is it the internal fleet or the filter third party?
+576072292608Burke, Phyllis   25:36It depends. And that's the problem with state to state diversions is sometimes the carriers report it immediately and sometimes they don't. More times than not, we're detecting it through our reconciliation process. So then, you know, we go out to field track and sometimes the information is available, sometimes it's not.then we have to notify the carriers that they need to report it. So.And.There's not, you know, you're not going to consistently have one source that is going to be your consistent trigger. So we're working on our reconciliation process. So within our reconciliation process, we have to, within the PDI capability,indicated that aversion took place first so that that reconciliation doesn't continue along the process and cause other issues. So that's why we want to do #1 within PDI Enterprise based on the data there, flag it.and then go out and get the fuel tracked information. If it's available, yes. If it's not, notify the carrier and then repeat the process until we have the diversion information.
+576072292608Chinmay Palei   27:01Got you. So if the source is multiple areas, my next question would be, you know, basically, what's the hours you are looking at? Like how quickly the business needs this information, like within four hour, 8 hour, or within a day?Because, based on that, probably we need to, you know, adjust the AI system to look at different sources, whether it is internet fleet or field track or any other system, right? It will just query probably every four hours, 8 hours, 16 hours, and see if there is a divergent, right? Because we are trying to automate a process.So what's the business need there?
+576072292608Burke, Phyllis   27:44I would, I would say we would, we would trigger this once a day. Winsome, what's your thoughts?
+576072292608Grant, Winsome   27:52Yeah, I agree. At least 24 to 48 hours.
+576072292608Burke, Phyllis   27:53Yeah.Yeah, so we we wouldn't expect this process to be running hourly, because our, you know, the reconciliation processes are all automated and we get, you know, the we get BOL data feeds like twice a day, but we would we would want probably this.
+576072292608Grant, Winsome   27:57Once a day would be fine.
+576072292608Burke, Phyllis   28:17process to run once a day to work the diversions.
+576072292608Trujillo, Sharon   28:23Is there a preferable time of day? I know there's auto jobs in different areas. Is there a preferable time of day that this would be most optimal?
+576072292608Burke, Phyllis   28:30That's a good point. We'll have to look at the scheduled jobs and determine what the optimal place is to put that, you know, after we've gotten, you know, the BOLs in for a day and that so that it won't be running at the same time other jobs are running.
+576072292608Trujillo, Sharon   28:48Okay.
+576072292608Chinmay Palei   28:51Sounds good. And today this recalculation and all this process, when is it happening? That's also once in a day or that takes maybe multiple days.
+576072292608Burke, Phyllis   29:05There's it runs upon imports and then we have a nightly job that runs everything again. So it's scheduled.
+576072292608Chinmay Palei   29:15Okay.
+576072292608Burke, Phyllis   29:16Okay.
+576072292608Chinmay Palei   29:19Okay, sounds good. I think those are pretty much the critical ones that I want to touch base. And then I know that we have, we'll be having another meeting to talk about the data piece of it, you know, PDIs, coding the data and all. So let me see.Maruti or other team members, we have any other questions around fuel divergent?
+576072292608Paavai Sampath   29:48I have a few questions in terms of kind of the proposed and state right. So part of what I believe was previously talked about was a certain component of stuff can be automated to a sense where if a diversion is identified and we are confident inin what it looks like from an approval perspective, we can go ahead and automatically post that potentially to PDI. And then there's some that would require manual approval. Is that still kind of the workflow process that we're thinking of as a future state?I guess, does my question make sense?
+576072292608Burke, Phyllis   30:37Um...
+576072292608Grant, Winsome   30:38And I'm not aware of a manual approval of an approval, so...
+576072292608Paavai Sampath   30:44Or it just not some sort of like a queue for some human in the loop process, right? So not everything can or will be automatically approved by the AI. And some components might potentially need to be reviewed at a human needs to look at it just to make sure that this is.
+576072292608Burke, Phyllis   30:45Yeah.
+576072292608Grant, Winsome   30:57Yeah.
+576072292608Paavai Sampath   31:07this is identifying A diversion correctly and this is like recalculating whichever needs to be recalculated correctly prior to populating the PDI. Is that still our expectation from a future state perspective? Or are we expecting that that diversions are identified and we are if we have a high enough confidence score and
+576072292608Trujillo, Sharon   31:20Yeah.
+576072292608Paavai Sampath   31:27there's a threshold of cutoff or something along those lines, it just automatically populates PDI.
+576072292608Trujillo, Sharon   31:33So that's going to remain an open question. Marie seems to have dropped, but she was leading it. We've got our direction that any of our AI, yes, we need a human in the loop and we need to figure that out. So where and exactly how that looks, we don't know, but we do need to bear that in mind.
+576072292608Burke, Phyllis   31:50From a user perspective, I'm hopeful that we don't have to review and approve if we can get to that point. Sharon, thinking some of the other RPA that we currently have going on where we test it out and have the confidence that it's updating things, I would like that to be our approach if possible.
+576072292608Trujillo, Sharon   31:50So, not sure.Mhm.
+576072292608Burke, Phyllis   32:11Yeah.
+576072292608Trujillo, Sharon   32:12No, that's fair. We'll just, we, this is a new world for us, so we're still trying to figure it out. Yeah, but I hear you for sure.
+576072292608Burke, Phyllis   32:15Yep, yep.Yep.Does that make sense, Winsome?
+576072292608Grant, Winsome   32:24It does.
+576072292608Burke, Phyllis   32:25Yeah, okay.
+576072292608Chinmay Palei   32:31OK, any other question from Microsoft site?
+576072292608Paavai Sampath   32:37And I did have one other question on current state. Is there scenarios where it could potentially be diverted to like multi-state or like any of those types of scenarios where it's not like instead of Texas to New Jersey or something, it is going Texas to New York and New Jersey, something along those lines where it'swhere it's like a multi-state diversion or something along those lines that might potentially add additional.
+576072292608Grant, Winsome   33:04Um...
+576072292608Paavai Sampath   33:04Stops are complications.
+576072292608Grant, Winsome   33:06Probably not many of those scenarios. We do have retain where it's lifted to Texas.a portion of the product went to Texas and then an additional volume went to Arkansas.So we do have partial retain, I mean partial diversion, if that makes sense.
+576072292608Burke, Phyllis   33:28The scenario is that it's, there's always a destination, the destination site is going to be on its own. Think about that that way when some in FIDE, even though it's the same bill of lighting, you're going to have a record for destination site one and one for destination site.
+576072292608Paavai Sampath   33:29Gotta end for the per.
+576072292608Burke, Phyllis   33:49Two.
+576072292608Grant, Winsome   33:49Mhm.
+576072292608Burke, Phyllis   33:50So this coding should work for any of those scenarios. So yeah, like they could lift it for destination Texas and a portion of it could go to a site in Texas and a portion of it can go to a site in Nevada, let's say.
+576072292608Grant, Winsome   34:07Mhm.
+576072292608Burke, Phyllis   34:08but they're going to have their separate records such that this process should handle it appropriately in my mind.
+576072292608Grant, Winsome   34:16Yeah, I understand.
+576072292608Maruthi Koiloth   34:18Those will be two different BOL entries. That's how we will. It's the same. Okay.
+576072292608Burke, Phyllis   34:23No. Well, yeah.
+576072292608Grant, Winsome   34:24Same BOL number two different sites or two different states rather.
+576072292608Burke, Phyllis   34:26Same, yeah.
+576072292608Maruthi Koiloth   34:29Okay. Okay.
+576072292608Burke, Phyllis   34:29Yeah.And once you start looking at the data, you'll be able to see that.
+576072292608Chinmay Palei   34:41Yeah, just an additional question. I was just curious: do you have a system where all the diversion reasons are mentioned? Like, what's the topmost reason for the diversion? Is that recorded somewhere? You know, is there a constant of it?
+576072292608Burke, Phyllis   34:56Yeah, we we can provide that.
+576072292608Chinmay Palei   35:00Is it a database, something like that, or it's just noted somewhere in the file system? And so I was just trying to understand if the topmost reasons are known before even the, you know, the driver, the carrier goes through, those can be flagged as high impact or something like that, but I was just curious about it. So we'll do how you're saying that.The system is there where it's recorded, right?
+576072292608Burke, Phyllis   35:27Yeah, I mean, I hear what you're saying. There are some areas that are, you know, more heavy in this than others, but regardless, it's really, it doesn't matter if there's one or if there's 20, we're trying to resolve for all.Um, and...So I don't, I don't know really where you're going with that, sorry.
+576072292608Chinmay Palei   35:55No, I mean, it completely makes sense to resolve everything. I was just trying to understand, is there a, you know, database where we're storing all the regions with, okay, this is the highest impact for the region of diversion, and you know, a lot of the time, you know, having a little bit more eye on those areas.
+576072292608Burke, Phyllis   35:58Yeah.
+576072292608Chinmay Palei   36:14But I think that's a different topic altogether. I was just trying to understand the different results.
+576072292608Paavai Sampath   36:17Billing.
+576072292608Burke, Phyllis   36:18Yeah, we do have that information. Yeah.
+576072292608Paavai Sampath   36:19Maybe if I can read...
+576072292608Burke, Phyllis   36:22We have Power BI reports that we can pull that information and quantify how many diversions are happening in which states. And then, yeah, we have resources that are aware, you know, for these suppliers in these states, you're going to be prone to diversions. So, yes.
+576072292608Paavai Sampath   36:22Cycle.
+576072292608Burke, Phyllis   36:41The answer to that is yes.
+576072292608Chinmay Palei   36:42Yeah, that that's the exactly which which are the state probably prone to divergence. Not that for this AI system that we are building, but that's something you know a lot of the enterprise system also have a look at.
+576072292608Burke, Phyllis   36:44Yep, yep.Yep.
+576072292608Chinmay Palei   36:57Got by you are saying something there.
+576072292608Paavai Sampath   37:00No, actually, I just wanted to clarify on that point as well. Is understanding, do we, is it part, is that part of data we'll be able to use for understanding historical context and potentially kind of coming up with a confidence score of some sort? But yes, I think you answered that question already.
+576072292608Chinmay Palei   37:23Sounds good. I think looking at the time, I think we have just five more minutes. Is there any other questions from anybody or any other comments before we wrap up today's? And then I think we need to have one meeting for the looking at the PDA data source, the data views, and how can weRead from PDA system, and probably also the filter, right, and the internet of the other actual data sources. You know, if we can club all this through together and see how can we read the data and update the data, that's what we can do, and rest all of them, I think we will be talking.through this weekend early, what are the other rules that we have to make sure we take it into consideration in the AI.Implementation.Any other questions or comments from anybody for today?
+576072292608Paavai Sampath   38:23I have a comment and not necessarily to be answered today, but I'm not sure if this was previously discussed, but I'd love to understand kind of a baseline of like how many diversions are being handled maybe manually today and what is ourunderstanding or expectation of success with the new agent to capture like a certain percentage or to capture all of the diversions that are being handled manually and identifying essentially what the success metric looks like. Again, we don't have to answer that today, but some maybe way to quantify what success looks like.at the end of this would be a good way for us to also plan for how do we want to measure and to fine-tune the models as well going forward.If that makes it.
+576072292608Trujillo, Sharon   39:22No, that makes sense. Well, Phyllis and I can have a chat about that and see what she thinks is reasonable.And start from there.
+576072292608Paavai Sampath   39:28Yeah, absolutely. And I can work with you on that as well. And if you have kind of the baseline numbers, we can put together some OKRs or something along those lines that would make sense to track to or at least have the team be all on the same page of like, this is where we're going to directionally. And do we have the data to support that? Do we have the...historical context to support that and do we have all of the necessary pieces in order to get to the end state essentially.
+576072292608Trujillo, Sharon   39:58Sounds good.
+576072292608Chinmay Palei   40:04Okay. If there is no other questions, I think this is a very productive session. So we had quite a bit of information that we have received. Let's have the meeting around the data in the next one. I think then we will be in a pretty good situation to start discussion around the architecture and implementation.sometime next week, start of the week.
+576072292608Trujillo, Sharon   40:30Sounds great.
+576072292608Chinmay Palei   40:34Great, Samira or Srinivas, do you have any other additional thoughts here?
+576072292608Sameera Sarfaraz   40:40Nothing additional, I will get in touch with you, Sharon, for the next scheduling for the next session for this. And then I thank you for scheduling this today. And does anyone have any additional questions from Circle K or Microsoft?
+576072292608Srinivas Tattari   40:56None.Nothing. I think you have already highlighted, Samera. Just to remind that the meeting recording access is a bit critical for everyone, so that during that time tomorrow we would be able to go through and then if there are any follow-up questions, we will try to reach out to you. So let's only ask.
+576072292608Sameera Sarfaraz   41:15Yep.
+576072292608Trujillo, Sharon   41:15So I'm going to create a team and give everyone access to the record, put the recordings there so everyone has access. So I'll get that done today.
+576072292608Srinivas Tattari   41:22Absolutely. Thanks for that, Sharon.
+576072292608Sameera Sarfaraz   41:24Thank you.
+576072292608Trujillo, Sharon   41:25Sure.
+576072292608Sameera Sarfaraz   41:26That, and that's all we have. Thank you.
+576072292608Trujillo, Sharon   41:29Okay, thank you all for your time. All right, bye. Thank you.
+576072292608Srinivas Tattari   41:29Okay, thank you everyone. Bye. Bye-bye.
+576072292608Chinmay Palei   41:29Yeah, thanks. Thanks, everyone. Yeah, have a nice day. Yeah, bye.
+576072292608Rachael Phillips   41:31Thank you. Bye bye.
+621792274320Sameera Sarfaraz stopped transcription

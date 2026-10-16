@@ -1,0 +1,118 @@
+﻿python : AzureCliCredential.get_token_info failed: Failed to invoke the Azure 
+CLI
+At line:1 char:313
++ ... lyContinue; python examples/extract_invoice.py "C:\Users\deepakbalan\ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (AzureCliCredent...e the Azure CLI 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+==========================================================================
+MICROSOFT AGENT FRAMEWORK - reasoning  |  autarch - governance
+==========================================================================
+environment variable APPLICATIONINSIGHTS_CONNECTION_STRING not set.
+environment variable AGENT_PROJECT_RESOURCE_ID not set.
+  MAF/Azure connection failed (ChatClientException: ("<class 'agent_framework_openai._chat_completion_client.OpenAIChatCompletionClient'> service failed to complete the prompt: Failed to invoke the Azure CLI", CredentialUnavailableError('Failed to invoke the Azure CLI')))
+  For a real determination, configure Azure+MAF (or pass --demo to see the full output).
+
+  reasoning engine: offline deterministic provider (no reasoning)
+
+==========================================================================
+1) GOVERNED READ - Cbe Capito - R3645629.pdf
+==========================================================================
+  read OK: 0 characters   |   read-only guarantee holds: True
+  signed why-record: why_0b99b973325b
+  --doci set but no endpoint (pass --doci <url> or set AZURE_DOCINTEL_ENDPOINT); using OCR+LLM.
+  no text layer found (scanned/image-only PDF) - running governed vision-OCR fallback ...
+  vision OCR recovered no text (needs a vision-capable model; the offline provider and non-vision deployments cannot OCR).
+
+==========================================================================
+INVOICE
+==========================================================================
+  vendor      : -
+  invoice #   : -   date: -
+  PO / AFE    : - / -
+  site / state: - / -
+  total       : -   tax billed: -
+  extraction  : OCR + LLM
+
+==========================================================================
+LINE-ITEM CLASSIFICATION & TAX  (steps 3-5: classify -> tax -> confidence -> route)
+==========================================================================
+  (no line items were extracted)
+
+==========================================================================
+INVOICE ROLLUP
+==========================================================================
+  CapEx total     : $0.00      OpEx total: $0.00
+  expected tax    : $0.00   vs charged $0.00
+  tax reconciliation: balanced (within $1.00 tolerance)
+  lines           : 0   tax exceptions: 0   to SME review: 0
+
+==========================================================================
+PO / AFE RECONCILIATION  (governed PO master)
+==========================================================================
+  no PO matched (best score 0.0).  -> unbacked invoice, route to review.
+
+==========================================================================
+ANTI-HALLUCINATION
+==========================================================================
+  every extracted value is grounded in the signed source.
+
+==========================================================================
+QUALITY - deterministic checks + LLM judges
+==========================================================================
+  completeness   0.00  FAIL  failed: vendor_name present; invoice_number present; total_amount present; description present
+  groundedness   1.00  PASS  empty output (vacuously grounded)
+  accuracy       0.00  FAIL  judge response was unparseable
+  soundness      0.00  FAIL  judge response was unparseable
+  format         0.00  FAIL  failed: total_amount is numeric; description is present
+  -> quality: FAIL   mean score 0.2
+
+==========================================================================
+SAFETY - governance + content safety
+==========================================================================
+  prompt_injection 1.00  PASS  no injection patterns detected
+  pii_exposure     1.00  PASS  no PII detected
+  harmful_content  0.00  FAIL  judge response was unparseable
+  governance       1.00  PASS  all checks passed
+  -> safety: FAIL
+
+==========================================================================
+FIELD-BY-FIELD VERDICT - per-field judge status
+==========================================================================
+  (no populated fields to verify)
+
+==========================================================================
+SOURCE CITATIONS - supporting passage per field
+==========================================================================
+  (no populated fields to cite)
+
+==========================================================================
+GOVERNANCE & CONFIDENCE
+==========================================================================
+  read-only guarantee : True  (agent cannot write or delete)
+  signed why-record   : why_0b99b973325b  (provenance verifies: True)
+  reference data      : history, po_records, task_codes, taxability  (read-only guarantee True, 4 signed reads)
+  all values grounded : True
+  quality panel       : FAIL  (mean 0.2)
+  safety panel        : FAIL  (mean 0.75)
+  per-line confidence : (none)   ->  worst 0.00
+
+==========================================================================
+TOKEN USAGE & COST - per model (cost estimated from list prices)
+==========================================================================
+  (no model calls recorded)
+
+==========================================================================
+DECISION
+==========================================================================
+  ROUTE TO SME REVIEW  (worst-line confidence 0.00 < 0.85; quality below threshold; safety concern).
+  High-confidence lines can auto-post; flagged lines carry evidence + a recommendation,
+  and the reviewer's correction feeds the loop.
+
+  model usage: 0 call(s), 0 prompt + 0 completion tokens
+
+  per-line CSV written: sandbox\_t\doci_lines.csv
+  HTML report written: sandbox\_t\doci_report.html

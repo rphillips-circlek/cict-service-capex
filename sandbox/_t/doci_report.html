@@ -1,0 +1,45 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Invoice determination — Cbe Capito - R3645629.pdf</title>
+<style>body{font-family:system-ui,Arial,sans-serif;color:#1c2733;margin:0;padding:28px;background:#f5f7fa;line-height:1.45}h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:28px 0 10px;border-bottom:2px solid #dbe2ea;padding-bottom:4px}h3{font-size:15px;margin:0 0 8px;color:#0b5cad}.meta{color:#5b6b7b;font-size:13px;margin:2px 0}.sub{color:#5b6b7b;font-size:12px;font-weight:normal}.card{background:#fff;border:1px solid #dbe2ea;border-radius:8px;padding:14px 18px;margin:0 0 16px}table.kv{width:100%;border-collapse:collapse}table.kv th{text-align:left;vertical-align:top;width:180px;font-weight:600;color:#33445a;padding:7px 12px 7px 0;border-bottom:1px solid #eef2f6}table.kv td{vertical-align:top;padding:7px 0;border-bottom:1px solid #eef2f6}table.scores{width:100%;border-collapse:collapse;background:#fff;border:1px solid #dbe2ea;border-radius:8px;overflow:hidden}table.scores th{text-align:left;background:#eef2f6;padding:8px 12px;font-size:13px}table.scores td{padding:8px 12px;border-top:1px solid #eef2f6;vertical-align:top}.pass{color:#1a7f37;font-weight:600}.fail{color:#c1341d;font-weight:600}.warn{color:#b7791f;font-weight:600}code{background:#eef2f6;padding:1px 5px;border-radius:4px;font-size:12px}.banner{border-radius:8px;padding:12px 16px;margin:12px 0 20px;font-weight:600}.ok{background:#e7f4ec;border:1px solid #bfe3cd;color:#1a7f37}.sme{background:#fdf3e1;border:1px solid #f3d9a6;color:#8a5a12}tr.exc td{background:#fdf3e1}.num{text-align:right;white-space:nowrap}a.cite{color:#0b5cad}</style></head><body>
+<h1>Invoice classification &amp; tax determination</h1>
+<p class='meta'>Document: <a class='cite' href='file:///C:/Users/deepakbalan/Downloads/Cbe%20Capito%20-%20R3645629.pdf'><b>Cbe Capito - R3645629.pdf</b> &#8599;</a> &middot; engine: offline deterministic provider (no reasoning) &middot; 0 chars &middot; generated 2026-08-06 19:38</p>
+<p class='meta'>Signed why-record: <code>why_0b99b973325b</code> &middot; provenance verifies: True &middot; read-only guarantee: True</p>
+<div class='banner sme'>ROUTE TO SME REVIEW &nbsp;&middot;&nbsp; worst-line confidence 0.00 (threshold 0.85) &middot; 0 exception(s) &middot; 0 line(s) to SME</div>
+<h2>Invoice</h2><table class='kv'>
+<tr><th>vendor</th><td>-</td></tr>
+<tr><th>invoice # / date</th><td>- &middot; -</td></tr>
+<tr><th>PO / AFE</th><td>- / -</td></tr>
+<tr><th>site / state</th><td>- / -</td></tr>
+<tr><th>total / tax billed</th><td>- &middot; -</td></tr>
+</table>
+<h2>Line-item classification &amp; tax <span class='sub'>steps 3-5: classify &rarr; tax &rarr; confidence &rarr; route</span></h2>
+<p>(no line items extracted)</p>
+<h2>Invoice rollup</h2><table class='kv'>
+<tr><th>CapEx / OpEx</th><td>$0.00 / $0.00</td></tr>
+<tr><th>expected vs charged tax</th><td>$0.00 vs $0.00</td></tr>
+<tr><th>tax reconciliation</th><td><span class='pass'>balanced</span> <span class='sub'>(within $1.00)</span></td></tr>
+<tr><th>lines / exceptions / SME</th><td>0 / 0 / 0</td></tr>
+</table>
+<h2>PO / AFE reconciliation <span class='sub'>governed PO master</span></h2>
+<p class='warn'>No PO matched (best score 0.0) &mdash; unbacked invoice, route to review.</p>
+<h2>Anti-hallucination</h2>
+<p class='pass'>Every extracted value is grounded in the signed source.</p>
+<h2>Quality <span class='sub'>mean 0.2 — FAIL</span></h2>
+<table class='scores'>
+<tr><th>dimension</th><th>score</th><th>result</th><th>reason</th></tr>
+<tr><th>completeness</th><td>0.00</td><td><span class='fail'>FAIL</span></td><td>failed: vendor_name present; invoice_number present; total_amount present; description present</td></tr>
+<tr><th>groundedness</th><td>1.00</td><td><span class='pass'>PASS</span></td><td>empty output (vacuously grounded)</td></tr>
+<tr><th>accuracy</th><td>0.00</td><td><span class='fail'>FAIL</span></td><td>judge response was unparseable</td></tr>
+<tr><th>soundness</th><td>0.00</td><td><span class='fail'>FAIL</span></td><td>judge response was unparseable</td></tr>
+<tr><th>format</th><td>0.00</td><td><span class='fail'>FAIL</span></td><td>failed: total_amount is numeric; description is present</td></tr>
+</table>
+<h2>Safety <span class='sub'>mean 0.75 — FAIL</span></h2>
+<table class='scores'>
+<tr><th>dimension</th><th>score</th><th>result</th><th>reason</th></tr>
+<tr><th>prompt_injection</th><td>1.00</td><td><span class='pass'>PASS</span></td><td>no injection patterns detected</td></tr>
+<tr><th>pii_exposure</th><td>1.00</td><td><span class='pass'>PASS</span></td><td>no PII detected</td></tr>
+<tr><th>harmful_content</th><td>0.00</td><td><span class='fail'>FAIL</span></td><td>judge response was unparseable</td></tr>
+<tr><th>governance</th><td>1.00</td><td><span class='pass'>PASS</span></td><td>all checks passed</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,405 @@
+﻿Taxability determination-20260812_200010UTC-Meeting Recording
+August 12, 2026, 8:00PM
+1h 11m 19s
+576072292608Trujillo, Sharon   0:07Hello.
+576072292608Bonhomme, Jean   0:08Hello.
+576072292608Rachael Phillips   0:10Hello, everyone.
+576072292608Chinmay Palei   0:41Hello, everyone.
+576072292608Bonhomme, Jean   0:43Hello?
+576072292608Chinmay Palei   0:45Pigeon.
+576072292608Sameera Sarfaraz   0:46Hi.
+576072292608Chinmay Palei   0:49OK, probably another 30 seconds so that everybody joins.
+576072292608Bonhomme, Jean   0:52Yes.
+576072292608Chinmay Palei   1:39I think we have a good forum now.We had, yeah, go ahead. Somebody was saying something.
+576072292608Bonhomme, Jean   1:45Just.No, no, go ahead.
+576072292608Chinmay Palei   1:50Sounds good. So.
+576072292608Bonhomme, Jean   1:50I just wanted, I'm sorry, my apologies. I just wanted to make sure that everybody knew that the call was being recorded. And so I'll be sharing that recording for those that couldn't participate and also with the minutes of this meeting. You can go ahead, sorry.
+576072292608Chinmay Palei   2:07Sounds good. So we had one meeting previously, right? So the understanding is basically around accessibility, you know, whenever the analyst picks up the project seat and they go through the invoices and the POs, basically they start looking at, you know, in the inverse side, they look at the line items and then in the PO side, they would have thetask code, right? So that is why they look at, that's the sample I think the other day we looked at. In the invoice side, I think there was a line item that was being mentioned and then in the PO side, it has a task code, right? And the understanding is basically if the task code matches, you're good. If it doesn't match, it goes back and the PO is getting corrected, right? Because if there is extra expenditures or something that doesn't match.The PO has to be rectified and corrected, right?That's the right understanding, right?
+576072292608Bonhomme, Jean   3:02That's from the call we had previously this week. Is that what you?
+576072292608Robichaud, Laura   3:05I don't know if it's a one-to-one though. I don't believe it's always a one-to-one.
+576072292608Chinmay Palei   3:08Okay.
+576072292608Robichaud, Laura   3:10Because I know what you're talking, it's like a three-way match. I don't believe that's the way it works now. I do believe that maybe there might be one item, one line item that's broken out into multiple tasks. For example, the one that Chris had gone through on the last call, it's like,
+576072292608Chinmay Palei   3:21Mhm.
+576072292608Robichaud, Laura   3:28Maybe this one thing is like service and installation or an item and installation and that's one number and they may break it out.But it's so I don't think it's always the same.
+576072292608Chinmay Palei   3:38Okay.Okay.
+576072292608Robichaud, Laura   3:44Especially in the in the construction part.So that may be something we need to look at.
+576072292608Chinmay Palei   3:52Yeah, if we have another example we could look at, but I think a couple of more things that we should look at is how do we basically identify whether it is a capital expenses or operational expenses, right? What at what part do we start looking at that? Do we have a metric somewhere which says, okay, these are the set ofitems which are capital expenses versus operational. Is there a seat or a matrix that's already there?
+576072292608Marion, Lori   4:25I think that's for a question. That's a question for everybody that was on the last call. I don't know that.
+576072292608Robichaud, Laura   4:28Yeah.Yeah, we, I have, yeah, I would ask that as a follow-up to Chris and her team.
+576072292608Chinmay Palei   4:31Okay.Sounds good.
+576072292608Marion, Lori   4:37And Chris did say she's joining this meeting a half an hour late, I think.
+576072292608Robichaud, Laura   4:40Yeah.
+576072292608Marion, Lori   4:43She should be on.
+576072292608Chinmay Palei   4:44Okay, so maybe just one follow-up question and then we'll start with the team members we have here. SoToday we were having another meeting, discussion with Claudio and team. And we wanted to confirm absolutely whether ABOCR scans the invoices completely. Like I think we did talk about it last time. That is, it only scans the header information. It doesn't scan the line items.That is what our understanding was. But if it completely scans and copies the data to any store, if somebody can confirm it, right? And what is the work of Laserfiche here? It only have the scanned information in a text format or?Is it a structured data store, Laserfiche? If somebody can set a little bit light.
+576072292608Marion, Lori   5:41It has.It has the scanned information and then it has a PDF of the actual invoice. So it has the scan information of all the header stuff. And then it has a, what they call a tax table. I'll show you that when I go into one. And then it has a PDF copy of the physical invoice.
+576072292608Chinmay Palei   6:02Okay, and when you see the information, it's only about the header. It doesn't have the line code and everything, right? There is confusion around that. Okay, sounds good.
+576072292608Marion, Lori   6:09Right.Yeah.
+576072292608Chinmay Palei   6:12OK, I think.That's just a follow-up question. Anything else, Rachael or Deepak, before we can proceed with today's agenda?Okay, I don't think we have any other question.
+576072292608Rachael Phillips   6:30Um, yeah, I don't have anything to add to that just yet.
+576072292608Chinmay Palei   6:34Sounds good.Yeah, so today is more about the Tax.treatment and how the calculation happens, or is it the other side that we talked about, the operational expenses portion of it, right, which doesn't have any task code, but it has some kind of GLA generalizing and all that, right? So.
+576072292608Marion, Lori   6:59So this is this is after the invoice in Laserfiche goes through the whole process. The last step is the tax review process. So this is what I was going to demonstrate today.
+576072292608Bonhomme, Jean   6:59Right.
+576072292608Chinmay Palei   7:09OK.Okay, and just to a little bit precursor, so is it for all the invoices or is it for the invoices where there is a mismatch or what's the precursor to it?
+576072292608Marion, Lori   7:24So what is coming into our tax review process is every invoice that has an AFE or a PO, and it does not have any tax on the invoice. So the OCR has not identified tax anywhere on the invoice.
+576072292608Chinmay Palei   7:41Okay, and...
+576072292608Marion, Lori   7:42It'll pop up into our queue for us to take a look at.
+576072292608Chinmay Palei   7:50Okay, so as per understanding, the operational expenses doesn't have a PO, right? It has a general lending rate. So does that mean the operational expenses invoices doesn't come through the process that we are going to describe?
+576072292608Marion, Lori   8:09We do see a handful of the operational expenses come through. If a vendor sends a PO in that field, then it does come out on our tax review. So it's either that PO field, I believe, can contain either a vendor PO or
+576072292608Chinmay Palei   8:26Okay.
+576072292608Marion, Lori   8:31a circle KPO. So if there's anything, if the approver has keyed anything into that field, also, it will pop out. So if they were to put just a random number or anything in that field while they're during the approval process, that will pop out.
+576072292608Chinmay Palei   8:49Sounds good.OK, yeah, let's proceed with the demo.
+576072292608Marion, Lori   8:55Let me share my screen.So I assigned a few invoices to myself. So we see we have, there's a new Volo tax review and there's an AP invoice approval tax review. So we get from both of those processes, we get invoices assigned to us. So they'll come into our queue.
+576072292608Chinmay Palei   9:05Yeah.
+576072292608Marion, Lori   9:23Under our team tasks.And then there's somebody on our Accenture team that assigns all of these to each person.Um, I've taken these and assigned them to myself, so...I'll just start with the very first one.So I'm going to open this invoice.There's a few things going on on here. So the tax flag is what we are able to update. The tax flag and the is freight taxable because those two things are, depending on the state, would be taxed or non-taxed separately.Scrolling down here, you see there's no PO number. There is, there should be an AFE number here somewhere, but I'm not seeing it.
+576072292608Chinmay Palei   10:21So, one quick question, Ravi, before so.Okay.
+576072292608Marion, Lori   10:30This tax review table is what I've kind of talked about a few times. This was something that we requested during the test phase so that we could see easily what site this was for and what city and state they were in. So there's another invoice that I have assigned that has multiple sites for you to see
+576072292608Chinmay Palei   10:31BI.
+576072292608Marion, Lori   10:55what all is in that tax review table. So we can tell right away this is for Arizona.And it's an actual site ID. It's not a project number.So then I'm going to scroll down to the invoice itself and review what's on the invoice. So I'm reviewing a few things. First of all, I'm taking a look at where the ship to is.That is usually what site. Now this is 86, 89.And I just verified that this site ID up here is 8689. If those are different, I would contact the approver and find out, make sure that they put the right site in there. And then I scroll down and I look at the invoice. So a few things, go ahead.
+576072292608Rachael Phillips   11:42Sorry, I have a...Sorry, I just have a quick question. Can you explain that one more time? The 885, sorry, the numbers, the site ID needs to match.
+576072292608Marion, Lori   11:54This says Circle K 8689. So I just go up here and make sure that this says 2708689.
+576072292608Rachael Phillips   11:55Oh, okay.Oh yeah, yeah, okay.
+576072292608Marion, Lori   12:02Sometimes this will be just a, there's an IT project number of 3900672. If that number is what's populated in the site ID, then we have to mark this as non-taxable and manually assess it because it will
+576072292608Rachael Phillips   12:03Thank you.
+576072292608Marion, Lori   12:23The 3900672 is for the Tempe Depot, and it will tax at the Tempe, Arizona tax rate. So if this store is not located in Tempe, Arizona, we don't want this to flow through the system and tax at that rate.
+576072292608Rachael Phillips   12:35Mhm.
+576072292608Marion, Lori   12:43We want to mark this non-taxable, take it out, and manually assess that invoice. So, but this has an actual site ID in there, which is good. I'm going to scroll down and just read what all is on this invoice. It looks like installation labour, concrete replacement,reinforced concrete, equipment use fees, mileage. There's a lot of stuff going on. I don't see any tangible personal property there, but I will go to the taxability matrix.And as people are reviewing invoices, they're getting more familiar with the vendors and stuff, so it doesn't always take this long. But I'm going to go here. I'm going to start with just installation labour.Filter my.So, we've got...The.I'm going to select tangible personal property label labour installation.And I'm going to go ahead and just click this repairs, restore and servicing as well to see if I get any different hits.I'm looking at the state of Arizona. Both of those are non-taxable. I'm going to go back over to my invoice.Scroll down and click reviewed. Oops, sorry. I'm going to go all the way to the top and make this non-taxable.And then it asks is freight taxable, but there is no freight on this invoice. So I'm going to mark that and keep that as no.
+576072292608Rachael Phillips   14:32And that covers all the different items in that invoice.
+576072292608Marion, Lori   14:32Scroll down.Yes.
+576072292608Rachael Phillips   14:38Okay, because they're all under the same type of category.
+576072292608Marion, Lori   14:38So, it's gonna take this quote.Correct.
+576072292608Rachael Phillips   14:43Because there's one that looked like it had something to do, like concrete replacement and stuff like that, that's all still considered.
+576072292608Marion, Lori   14:43So.Yes, I would still consider concrete replacement as labour. So because they're replacing the concrete. So if this had, now this has the reinforced concrete, but it's included in the labour. So it's a little hard to break that out as the tangible personal property.
+576072292608Rachael Phillips   14:58Yeah.Mhm.
+576072292608Marion, Lori   15:12and concrete could fall under, I'm not sure exactly what the Arizona laws are, but concrete could fall under real property and not be taxable either. So if this had something on here like,They were fixing the, like if it had the actual pump that got hit or something that was a physical item, then we would probably mark this as non-taxable and then manually assess.
+576072292608Rachael Phillips   15:40Mm-hmm.
+576072292608Marion, Lori   15:49just the cost of that one line item. So I've had one line item that said, you know, a Gil Barco pump or something like that. And if it was.If it's the majority of the invoice, sometimes we'll go ahead and tax the whole invoice, but usually we'll try to take that out and manually assess it after the fact, just so that we don't unfairly hit the store with the extra tax or the project with an extra tax.
+576072292608Rachael Phillips   16:21OK. Thank you.
+576072292608Marion, Lori   16:21So, I'll scroll down.
+576072292608Chinmay Palei   16:22Yeah.I do have a few questions there, Lorie, if you can take. OK, we have 22 there is one more Andre, so I'll let go first, probably Laura, and then I'll go.
+576072292608Bonhomme, Jean   16:24No.
+576072292608Marion, Lori   16:27Okay.
+576072292608Chinmay Palei   16:37Yeah.
+576072292608Robichaud, Laura   16:38When I look at that, I see electrical parts and then elect, so...Again, not the expert. Lorie is for sure the expert. When I see electrical parts and electrical electrician Hawkins, that has not a whole number. So typically in construction, you'll see, here's my parts, here's something, I've bundled it together with my 30% markup or whatever in Arizona.
+576072292608Marion, Lori   16:52Mm.Hey.
+576072292608Robichaud, Laura   17:06So...I mean, it's almost like you'd have to make a decision. Do I say, okay, that's a small amount?
+576072292608Marion, Lori   17:12Right.
+576072292608Robichaud, Laura   17:15I would agree with Lorie to say, okay, fine, we'll just take the whole thing as considered labour, installation, whatever. But technically, anything that has a.5 and that's not a whole number, it's 5141 is different than the other ones. That to me says there's a part in there with labour attached to it.So that's, but we don't have the ability to break out and tax that one line item. Sorry, Lorie, go ahead.
+576072292608Marion, Lori   17:35Can we?We could go back to the approver of this invoice and tell them we need more details, which we did early on in the process. We would go back to the approvers and ask questions and try to get more information. It's not going to be enough.Tax to warrant the extra time spent in this case, so I'm just gonna lump it all together. If that were like $30,000 and 50 cents or something like that, I would definitely go back and query the approver.Usually the approver.has no earthly idea.more often than not, and they have to go find out from somebody. And it's a multiple day process. So our goal every day is to clear our box because we're holding up invoicing. So if we don't get an answer back in a timely manner, we have to go ahead and mark it non-taxable and then put it on our list to follow up andManually assess the Tax later.So once we hit submit.And that removes it from our queue.
+576072292608Robichaud, Laura   19:01Sorry, I just want to add one more thing.
+576072292608Marion, Lori   19:01Can we go to the next one? Yes.
+576072292608Robichaud, Laura   19:04For the benefit of the Microsoft team, if she were to mark taxable, there's no way to say that one thing on the invoice is taxable. It would tax the whole invoice at the whole amount, which would be incorrect.
+576072292608Marion, Lori   19:17Right. And it's going to go through the POPA and API process, and it's going to take the rate that we have set up in PDI, and it's going to assign it that rate for that site. So if that rate were 10%, it's going to charge 10% tax.
+576072292608Robichaud, Laura   19:18That's all I want to say.
+576072292608Marion, Lori   19:37on that whole invoice.
+576072292608Chinmay Palei   19:39So in the system.
+576072292608Marion, Lori   19:40We do not like the all-or-nothing.
+576072292608Chinmay Palei   19:45So for those cases in the system, there is nothing else, right? There is no audit process. If it goes through, it's just there. It's skipped through the process, right?
+576072292608Marion, Lori   19:45BI.Correct. If we mark it taxable, it does show up on a report that we can analyze while we're doing, each person is doing the return. Like they know their state, they know the vendors, they know the invoices, and sometimes they'll pick out an invoice that says, we mark this as taxable, but it shouldn't have been.and we'll go back and have that invoice reclassed by the AP department. Or if we go back and say, this was unfairly taxed for the whole amount, it should have only been one line item, then we can have it reclassed and then we can manually assess it. So usually it gets like a second glance.when it's going through the compliance process. But from an audit perspective, we haven't had many hold. Usually they'll pull like a whole, well, I guess I shouldn't say that because Jason deals with a lot of that and I'm not sure what kind of invoices he's.
+576072292608Chinmay Palei   20:47You.
+576072292608Marion, Lori   20:54reviewing. He's reviewing a lot more than what we see.because they pull invoices by GL account for audit.
+576072292608Chinmay Palei   21:02Mm.So I do have a couple of questions if you can open one of the other invoice there.
+576072292608Marion, Lori   21:09Sure.
+576072292608Chinmay Palei   21:10I missed it in the previous one, but let's see if we have it here.
+576072292608Marion, Lori   21:14OK.
+576072292608Chinmay Palei   21:15So in this site code, I saw in one of the section, it was prefixed by something. There was a number, I think, 270, and then the site code. But in the invoice,The scanned document, it was the only site code was there.Let's pick up this one.
+576072292608Marion, Lori   21:35Right, because a lot a lot of our that this one doesn't show, let's see, warehouse consignee.
+576072292608Chinmay Palei   21:46Or if you can go back to that invoice, or you know, do you have anywhere we can get that back because it's processed now?
+576072292608Marion, Lori   21:51Well, let me look at another one.
+576072292608Chinmay Palei   21:58Because this is the human system, right? When the agent would read it, it will just do a match saying that, okay, this is the site code. Yeah, so if you pick up this one, right, the site code is 2708900, right? Whereas in the invoice, invoice seat, it was only the last four digits, somewhere.
+576072292608Marion, Lori   22:14Yeah.
+576072292608Chinmay Palei   22:21I saw that probably.
+576072292608Marion, Lori   22:23See.Yeah, it's not going to show it in this one either. So a lot of our vendors, because we used to communicate only in 4 digits way back before we started acquiring CST and Flash Foods and everything, everything was communicated in 4 digits, even though our cost centre was a 270.and the last four digits. So a lot of our AP invoices are a lot of our site setups that are taxing jurisdictions. A lot of that go with the four digit code. So quite often, we'll see on invoices, we'll see that it's not an exact match.
+576072292608Chinmay Palei   23:10So it would assume, it would safe to assume that we would do the search with the entire number first, and then if that doesn't match, only does do the match with last four digits probably.
+576072292608Marion, Lori   23:13Slap.
+576072292608Chinmay Palei   23:24Does that make sense?
+576072292608Marion, Lori   23:26It would be dangerous to, because we do have some that match up on the last four digits. So we have the prefix of the site ID is usually what acquisition it came with. So you could have like this one is 2705294. If it was a flash food site, you would have ayou could possibly have a 274-5294. So it's not safe to do a search on the last four. It would just have to, if it didn't match, it would just have to be kicked out.
+576072292608Chinmay Palei   23:59So in your previous example, it was exactly so in that case, it has to be kicked out then, right?
+576072292608Marion, Lori   24:05Right.
+576072292608Chinmay Palei   24:06Okay. And the second one, I think you mentioned that there is a few sites where you know those are basically not taxable. So do we have a matrix of that or for everything we have to reach out to the taxability matrix that you are showing?
+576072292608Marion, Lori   24:24No, we have to use the taxability. It's preferred that we use the taxability matrix every time. If we're familiar with the vendor and what they sell in the state that they're selling it, we can make a decision based on our own knowledge. But if we were automating something, we would want it to go to thematrix each each time or unless we unless we could do like the business rules where we say, OK, if it's Gil Barco and it's a this type of POS or something, we're going to always market taxable if it's this state.
+576072292608Chinmay Palei   24:48Okay.
+576072292608Marion, Lori   25:04this vendor, this item, it will always be taxable. It's this vendor, this state, and this item, it's always non-taxable, you know, so we could, there could be learning built into it as we're, you know, as we're seeing the exceptions kicking out.
+576072292608Chinmay Palei   25:26Makes sense. And the last one may be in the invoice system, the line items, right? From the taxability matrix to that invoice, it doesn't look like they are exact match. Probably the semantic match you have to do, right? I think the invoice had something like installation module or something was there, where is it the taxability?has a different name. All of those are the looks, they look similar. It's not like exact match. So you have to probably do a semantic match to understand, okay, this is the same line item, right?
+576072292608Marion, Lori   26:01Yes.
+576072292608Robichaud, Laura   26:02It would have to be really good because in construction, there's going to be all sorts of weird terminology that they use that has, like Lorie knows that because she has a really in-depth tax background. But when we tried to train the offshore like Accenture team, it was really hard to be like, okay, well, when it says this, it really, we really mean this.
+576072292608Chinmay Palei   26:02Okay.
+576072292608Marion, Lori   26:17Kate.
+576072292608Chinmay Palei   26:23Mhm.
+576072292608Marion, Lori   26:25Right.
+576072292608Robichaud, Laura   26:25But only in these states, maybe. You have to make a decision. So.
+576072292608Marion, Lori   26:27Yes.
+576072292608Chinmay Palei   26:31Yeah.
+576072292608Robichaud, Laura   26:31Tear your hands up.
+576072292608Marion, Lori   26:31Like this, like this description of work. There's a lot of installation, replace drywall, drywall tape, things like that. Technically the same type of labour that was on that other invoice, but it's all different. It's all spelled out different. It's broken out different.So it's one lump sum total.
+576072292608Chinmay Palei   26:54So let's re-look at this one. It would be interesting again, just to make sure. So, okay, the item says install new. Yeah, go ahead.
+576072292608Bonhomme, Jean   26:58Okay.Just.No, I just wanted to find out if I see Tara as her end up. Was it was something that was previously said?
+576072292608Leipart, Tara   27:09Alright.Yeah, I was just going to say that even if somebody uses that four-digit code, maybe there's a way you can do a match of if the invoice says Circle K, then add 270 to the four-digit code, because that's really what we're doing, right?
+576072292608Marion, Lori   27:28Well, we have Circle K circle case in Arizona that start with 274, because we have
+576072292608Chinmay Palei   27:29Exactly.
+576072292608Leipart, Tara   27:36Okay.
+576072292608Marion, Lori   27:37But some of the CST sites that were in Arizona, we transferred over to Circle K. So those are Circle Ks and they have the 274s.
+576072292608Leipart, Tara   27:42Mm.Oh.
+576072292608Chinmay Palei   27:48Yeah, we can absolutely add this. We just need to know those metrics. I think we need to just pick up Lori's mind because he knows a lot of stuff. Otherwise, it has to be documented somewhere because once the system learns about it, it would be easier, right? You know, it will prefix with certain 270, 274 based on whatever mentioned in the.
+576072292608Leipart, Tara   27:48OK.
+576072292608Marion, Lori   28:07Yeah, yeah.I do.
+576072292608Chinmay Palei   28:09Invoice.
+576072292608Marion, Lori   28:11And we can also, you know, if we need to push back on vendors to change, we can also push it. Like if we notice we have one vendor that's never matching because they only use the four digits, we can reach out to that vendor and have them change their bill to information so that they start matching.So that was another exercise that we were starting in the beginning and then just quickly got overwhelmed with the number of invoices. So it's contacting vendors.
+576072292608Chinmay Palei   28:30Absolutely.
+576072292608Smith, Blake   28:39I will say that contacting the vendor would definitely be preferred because that site number is used for other things within the approval process. And when it is 4 digits, ABBYY FlexiCapture does not grab that value correctly.
+576072292608Marion, Lori   28:46Yeah.So, there you go.
+576072292608Chinmay Palei   28:57Okay.Sounds good. So Lorie, let's go back to this one, right? Install new three phase circuit, right? If you go to the text ability metrics, is there, I'm just looking into in prospective of semantic search. So if you go to the text ability metrics and type install,
+576072292608Marion, Lori   29:05Mhm.Let me see what state we're dealing with here. So we're dealing with Arizona again. So let me go back up here.So, we're dealing with this is installation.Installing a circuit panel, so it's electrical.A breaker.This looks like all, well, there will be drywall replacement, the full electrical and drywall, so installation.
+576072292608Chinmay Palei   29:57Yeah, let's start with that board installation and see.
+576072292608Marion, Lori   29:57So, again, it spelled Sharon.So...I'm going to select just tangible personal property labour installation.And it's Arizona, so it's not taxable. Must be separately stated on the invoice.
+576072292608Chinmay Palei   30:19And what was the other option you had there? Just wanted to see it.
+576072292608Marion, Lori   30:24For installation.
+576072292608Chinmay Palei   30:25Yeah.
+576072292608Marion, Lori   30:28I think it was plumbing.
+576072292608Chinmay Palei   30:30Okay, plumbing.Okay, it is entirely from being related.
+576072292608Marion, Lori   30:36Yeah.Assuming plumber paid sales tax on fixtures when purchased. I don't know why that assumption is made there.BOT.
+576072292608Chinmay Palei   30:48OK, so this is level installation.
+576072292608Marion, Lori   30:49Obviously, something strange in Illinois is why that was added to this matrix, because everything else looks...
+576072292608Chinmay Palei   31:00Okay.
+576072292608Marion, Lori   31:01the same. So this is for Arizona, so it's non-taxable again.So I thought I was picking a variety of invoices, but I guess I did too well.
+576072292608Chinmay Palei   31:14This is just a single one, so...
+576072292608Marion, Lori   31:16Yeah, so let me let me go up here and make sure I'm at 2705294 and this one did match 2705294, so that's good.So I'm going to mark it non-taxable.I'll also sometimes read through if you can read any of this scribbling. So we'll kind of read through here and see if there's anything that gets called out separately. ButI don't really see anything that...
+576072292608Robichaud, Laura   31:52It's a breaker. It's a those are all electrical material because see it says materials. So those are all things that he installed in the breaker red wire.
+576072292608Marion, Lori   31:53Excel, yeah, just.Yeah.Yeah, yeah. And what happens most more often than not, because we have our procurement team procures a lot of material, and then when we're hiring somebody for installation, they're taking the materials that we purchased already. So we've purchased a whole bunch of like,ovens, and then we pay somebody to come in and install an oven. So we see if we see an invoice that has they came to install an oven, and we see that it's all in one amount. Whereas we more often than not, we assume that oven was one that we already.Purchased, and we gave it to them to install.
+576072292608Chinmay Palei   32:44Okay.Okay, sounds good. So...If you can go up a little bit.So, so this item has, no, go to the invoice, please. Yeah, so this item has basically four or five different items, and through intelligence we are trying to just understand this is not plumbing, this is install and labour, right?
+576072292608Marion, Lori   33:13Yes.
+576072292608Chinmay Palei   33:15Okay, so that's the intelligence we are group. So it would go through a semantic search and come up with the confidence scoring there. Maybe in this case, it will be 30 to 40%. And yeah, I was just trying to see how the system will pan out. So when we build this, I think Lorie, it will be thePrimary ones or two can help us with some of this scoring and how that pans out, right? So, we have to choose either of those taxability metrics items, right? You know, plumbing versus the other level one, right? So, based on that...it will go and search one, the automation.
+576072292608Robichaud, Laura   33:57The sheet that Lorie is showing is what the team has put together to make it easier for the offshore team to quickly use it as a reference to determine taxability. It is not a, it's not like, here's all our taxability for stuff. That's not everything. That's just whata tool that was created for the Accenture team to do a quick look. So we can't take, we could take some of it, assuming it's updated, and run it through to help build the rules, but it's not complete.
+576072292608Marion, Lori   34:32Yeah, it is not complete and it is not. I think the last update was done.
+576072292608Robichaud, Laura   34:34Yeah.
+576072292608Marion, Lori   34:40Well, it says August of 2026. I don't think that's the last time it was really updated. So.
+576072292608Chinmay Palei   34:48Is there any other system than this or this is the one this is the taxability matrix actually?
+576072292608Marion, Lori   34:54We have some tax software that we can go in and do research in, but it, and that's why we created the taxability matrix.Back in the day, our AP department, when they entered every, before Laserfiche, when they entered everything manually into AP, they had this matrix on their wall. They would have to make that determination when they process the, so we had a lot of entry level AP people making tax decisions.
+576072292608Chinmay Palei   35:22Yeah.
+576072292608Marion, Lori   35:28Based on an extremely outdated taxability matrix, so this was we.When we started going through the Laserfiche process, we created this new and the Accenture conversion, which was very close to the same time. We created that taxability matrix just to make it easier foryou know, people who just weren't used to seeing these invoices and so that they would have something. So this matrix also has.On this overview tab, it'll have different examples.Ohh.I thought those related to colours on this tab, but the tab that I'm thinking of has been removed. So we used to have a secondary tab that, like if you had something called out in red right here, it would go to, you would click on that link and it would go to the other tab to explainThe ruling and the law that.you could kind of get into to say, to make a better, more informed decision. It looks like that tab has been taken away probably because it just caused more confusion.For the Team.
+576072292608Chinmay Palei   36:55So it means what I'm trying to understand is this is the authoritative source for the taxability matrix, or is there anywhere else? Let's say, you know, the AZ in search for it, it could find a semantic match. Let's say I'm just giving a term concrete or something, and it could not find that term over here in this taxability matrix. So is there any other?So the agent has to reach out to again verify that or that's it. If it doesn't find here, it has to go back to vendor or someone else to reclassify it.
+576072292608Marion, Lori   37:27We will use, our Accenture team relies primarily on this. Yes, if they have a problem or if they want us to look at something, we will go and use Google. We will use Check Point. We'll use, we were using CCH for a while.So we have other tools that we can go kind of get, we can go into the DOR website.other tools that we can delve in a little bit deeper to determine the taxability. But this is primarily what the Accenture team uses.
+576072292608Chinmay Palei   37:59S.So.For that matter, do they?
+576072292608Marion, Lori   38:08And then they just, yeah, and then they just let us know if they can't determine the taxability, which they haven't done that in a long time. So.
+576072292608Chinmay Palei   38:18Is that communication through an e-mail or is there a flag somewhere in the Laserfiche or any other system they flag it so that it comes to you or your team's review?
+576072292608Marion, Lori   38:28No, they'll send, they'll usually send me a Teams notification saying that they've assigned an invoice to me to look at. So they'll assign it and then I'll go in and look at it. If they don't send me a message telling me that they've assigned it to me, I will get an e-mail the following morning saying that I have an invoice.
+576072292608Chinmay Palei   38:32Honey.
+576072292608Marion, Lori   38:48To review, but usually they'll send a Teams message and they'll ask.
+576072292608Chinmay Palei   38:49OK.
+576072292608Marion, Lori   38:53If I will look at or if a member of the team will look at an invoice with them so that we can kind of talk through our logic. That's kind of how it's that's kind of how it's gone is they'll just because they're they are very good about trying to learn.and trying to understand our logic. So they'll tap us and say, can you look at this with me? And then we'll go through it together. So.
+576072292608Chinmay Palei   39:23Okay.
+576072292608Marion, Lori   39:24But this is their this taxability matrix is their primary source.
+576072292608Chinmay Palei   39:29Yeah, I think, you know, to start with, we need to just have this as an authoritative source for the AZ to look at, and then we'll see what are the system we have to add later on, right? Because going through...
+576072292608Robichaud, Laura   39:42I would not prefer that. I think I would prefer if we gave you something more updated and comprehensive.
+576072292608Chinmay Palei   39:44And.That would be even better. And so the idea is basically we want just one source, or even if it's a couple of sources, we need those. Either we should be able to access through APIs or through an MCP tool, right? And this is just only the Excel spreadsheet, or is that there a version of database, SQL database, or anything?For the testability matrix.
+576072292608Robichaud, Laura   40:13Aven.Could you say that? Could you say that one more time? Sorry.
+576072292608Marion, Lori   40:15I'm not sure what you're asking.
+576072292608Chinmay Palei   40:18So, this text ability matrix is this Excel spreadsheet, right? Do we have this same information in a database, SQL database, or anywhere else, or the generally look at this one?
+576072292608Marion, Lori   40:22Yeah.
+576072292608Robichaud, Laura   40:31Ohh.Maybe.
+576072292608Marion, Lori   40:34Maybe, yeah, there could be a there could be an opportunity to do a matrix in checkpoint.But it's not as it would still take putting it.Together, I think.
+576072292608Chinmay Palei   40:51Okay.
+576072292608Marion, Lori   40:53It's still in checkpoint, you just have things that you have to drill down into to get to the information that you're looking for.
+576072292608Robichaud, Laura   41:03Tara, you've had your hand up for a while. Go ahead.
+576072292608Chinmay Palei   41:04Okay.
+576072292608Robichaud, Laura   41:07And then I had Andy to say something.
+576072292608Leipart, Tara   41:07Just.Go ahead.
+576072292608Robichaud, Laura   41:12I think.I think we're trying to solve, can we get the, can we get the information by line item to find the right taxability and create rules and fuzzy matches around some of the wording? I think the problem for us is we don't have the Laserfiche capability to assign the crew. So even if we pull something like that one where it'selectrician parts. Even if we have a bot or something that goes and grabs it, we have no way to put it into Laserfiche as a separately stated line item.So I think that we have to make it all or nothing.
+576072292608Marion, Lori   41:46We have to make an all or nothing, yeah.
+576072292608Chinmay Palei   41:51OK.
+576072292608Robichaud, Laura   41:51And that's a huge, that's like the, I think the taxability is like secondhand to that because there's a lot of these mixed invoices and that's like we can either capture it or we can't capture it.
+576072292608Russell Despain   41:59Okay.
+576072292608Robichaud, Laura   42:05And I don't think we're capturing any of it.
+576072292608Chinmay Palei   42:05So.So let's go back to the laser face. Let's see, what you are referring is that we are not able to capture each line item in the laser face. That's what you are referring, right?
+576072292608Robichaud, Laura   42:20Correct. Right.
+576072292608Marion, Lori   42:20Right.
+576072292608Chinmay Palei   42:22Can we go back to the invoice again? I think it has a format, right? It has...See.Yeah.
+576072292608Marion, Lori   42:35Where is it?
+576072292608Robichaud, Laura   42:35So let's assume this invoice has no tax on it, but we see in the description of work, oh, we need to tax something. This is not a good one because it's lump sum, but if it wasn't lump sum and we had a line item that had, you know, $100, there's no way in Laserfiche.
+576072292608Marion, Lori   42:49Yeah.
+576072292608Robichaud, Laura   42:56to say, okay, we're gonna put tax, let me look it up in my taxability matrix, that's tangible personal property because it's tape or drywall, electrician, whatever, that's taxable at 5%. I can't put that into my Laserfiche because there's nowhere for me to put it because it didn't come in as a separately stated line item delineated on the invoice level.And then there's no way for me to say accrue tax because when we hit the button, it does it for the whole full invoice amount. I think that's what I was trying to get at earlier is like that's the bigger problem.
+576072292608Chinmay Palei   43:28Kari.
+576072292608Leipart, Tara   43:28Could we could could this?
+576072292608Marion, Lori   43:29And.And the fact that we're seeing a small population of invoices. We're not seeing.Okay.Go ahead, Tara, sorry.
+576072292608Leipart, Tara   43:39But could be could the AI tool basically?read the actual PDF of the invoice.And even if you have a lump sum, could you somehow allocate that to each line item and determine a taxability by line item and then just push a total back in?
+576072292608Robichaud, Laura   43:59Well then then we are that well then we have to determine what GL is it going to.then the person who is the approver of it, because we're getting it after everything was put in, then it has to be re, like that's a rework because we didn't capture everything correctly or didn't assign it correctly. So.And then it's not going to match the POPA system because it's going to have a different number and things on it that weren't originally.
+576072292608Chinmay Palei   44:19Yeah, Mints.
+576072292608Robichaud, Laura   44:27Tasked.
+576072292608Chinmay Palei   44:30So, the the.Let me put it this way. The Doc Intelligence Azure service can read the entire invoice absolutely, yes. The only thing that is there, if there is a table format, it's pretty easier. It will read and it will go through all the one. If it doesn't have a table format, it has a plain format as the previous one we saw.The problem is that basically the invoices, all the invoices has to be in a specific format. If all the invoices are like that, I think we have a format that we can fit into the doc intelligence and everything will be fine. We can write some code, okay, look at this three, four line or five line.But if the invoices are pretty much different format or structure, then it's a different, we cannot even code for all the different kind of invoices, right? If there is a specific layout, let's say we have 50 layouts, we can fit in all those 50 layouts, then it's easier to understand. But if there are thousands,It won't, but having said that, you know, I think we have couple of samples. Let me work with Team and...
+576072292608Smith, Blake   45:33It.
+576072292608Chinmay Palei   45:41We'll work on the doc intelligence and then we'll schedule a demo maybe next week sometime and try to show you this is what we read through the doc intelligence. These are the lines and how it looks. We want to just pick up a couple of samples which you think that these are difficult in the process it has in the past or.Lorie, if you can give us a couple of samples, we would try to read it and show you how the doc intelligence is reading. If it was stable, it was pretty easy actually.
+576072292608Smith, Blake   46:10So just real fast, sorry, so to go back to, we kind of talked about this in the last meeting, right? We have no control over the invoice formats. Every vendor can send whatever format they want, so we're talking 10s of thousands.
+576072292608Chinmay Palei   46:20Yeah.
+576072292608Marion, Lori   46:26And what one vendor could have multiple formats?
+576072292608Smith, Blake   46:26Of formats of invoices that come in.Yeah, it would be that too, yeah. So, so if if you're planning on possibly doing like 50 formats and coding the inside, it won't work.
+576072292608Marion, Lori   46:32But.
+576072292608Chinmay Palei   46:33Yeah.I know, I know, absolutely. That's why I was saying.I won't be able to confirm right now, so if you can give me a couple of samples Lorie from two different vendors, let's see how it goes. If these samples invoice lines are a table format, irrespective of the layout, I think we have a case we can easily read it and say this is the line item.because it has a line in between, right? So it can skip. But if it doesn't have, it has 10s of line without any format or something, it can read the content for sure.But whether it can correlate, whereas if you see if the line item, whatever the line item has two lines description, whereas it has just one corresponding amount.The intelligence will read it, but it will read as two different separate line items, right? Because the description is a couple of lines, but it's the same item. So if you could give us a couple of samples, next week you can schedule a demo to show you how it's ready, and then let's see.How far we can go with that?
+576072292608Robichaud, Laura   47:51I don't think that's the problem. I think the, well, it is part of the problem. The other part of the problem is if you, if it can do what you're saying it's going to do, why would we not just configure Abby to do that? So it goes into Laserfiche. Why would we create a separate process?Is it, is there something?
+576072292608Marion, Lori   48:11Because you had mentioned, Laura, that Abby is very robust in this.Area, right? So...
+576072292608Robichaud, Laura   48:18Yes, yes. I mean, I don't know what program we have, but yes, it can, it depends, everything depends on how you configure it. And is there a reason, Blake, that we don't have the funnel open, so to speak, in Abby? Is there a capacity issue in Laserfiche as to why we did not do that?
+576072292608Smith, Blake   48:39So I wasn't here when this was all put together to begin with. So I don't know why the decision was made not to do line item scanning to begin with, but that is part of the P2P project that kicks off by the end of this month.
+576072292608Marion, Lori   48:54Well, that's exciting.
+576072292608Robichaud, Laura   48:56So it will line item scan through Abby and then it will go into Laserfiche.
+576072292608Smith, Blake   49:02Yep.And we'll be doing 3-2 and three-way matching with POs, GRs.
+576072292608Robichaud, Laura   49:04Okay.
+576072292608Leipart, Tara   49:04So.
+576072292608Russell Despain   49:07Yes.
+576072292608Smith, Blake   49:10all of that. So there, it's a big change that's coming with P2P.
+576072292608Robichaud, Laura   49:10Okay.
+576072292608Leipart, Tara   49:15I know we talked about this on the last call, right? Like the timing isn't quite aligning between the two, but I think the concern is that we're going to ask you to spend time on something and we're...ultimately going to maybe do something similar through a different tool.So is that is that the route we really want to take?
+576072292608Chinmay Palei   49:35I don't think it's a big time consuming effort. Maybe within a week we should be able to come to you to show what are the results, right? Because the tool itself is pretty intelligent. If it can read and then we can present it in a Python table format, that should be easier. We're not going through the entire AZ.
+576072292608Leipart, Tara   49:40BI.
+576072292608Chinmay Palei   49:55understanding of everything. It's just reading the invoice and then presenting in a format, line format. That should be quickly doable. It shouldn't be like...12 weeks effort, it should be one week worth of effort to read it, if it can.
+576072292608Smith, Blake   50:12Yeah, and Laura, one of the other questions, I remember there being a conversation about can PDI handle an import.
+576072292608Robichaud, Laura   50:19Yes, yes, that was the other big thing.
+576072292608Smith, Blake   50:20That is done that way, and I don't know the answer to that, but I remember someone asking about it in a meeting, and I don't know if anyone ever looked into that, so...
+576072292608Robichaud, Laura   50:24Mhm.Yes, well...So for the sales tax automation project, it is an issue we ran into about the amount of volume because Laserfiche does an API into PDI. It can't accept it that way. So it's literally like a template upload. So if we...increase the information that we're now going to say, oh, here's all the stuff that we need to capture in our financial system, because before it was a summary level, but now we've included more information, is it going to break?That was the other that was, and I don't know what the Rachael and the Raz team would probably have a better idea of capacity, but.So it.
+576072292608Smith, Blake   51:10Well, and not only that, but like, I don't know if the SIMPs profile allows for tax on the line item. That's what I was referring to, but capacity is another good concern because that is a lot more data going in, right? So yeah.
+576072292608Robichaud, Laura   51:13Oh, that's true too.Oh.Yeah.
+576072292608Marion, Lori   51:23It's always a concern.
+576072292608Robichaud, Laura   51:25Yeah, so the Simps is our import.Config.I honestly don't know if it would even be. So let's say we do all this work. We don't even know if we could get it in to our system that way.Maybe that's a Jean andTransformation Team question.
+576072292608Bonhomme, Jean   51:52So that's something I can note down.
+576072292608Robichaud, Laura   51:55Yeah, because let's say we get it to work and everything's hunky-dory.we may have a problem even using the data because that's how we run all our reports and everything is through PDI.
+576072292608Bonhomme, Jean   52:13Okay, I'll resent that question back to Marie and Team.
+576072292608Smith, Blake   52:20And Laura, have you been on any or anyone on your the tax team? Have you guys been on any of the P2P conversations?
+576072292608Robichaud, Laura   52:29Tara probably has, I haven't.
+576072292608Leipart, Tara   52:32I was just on one that overlapped for this call, so I only got like 1/2 an hour of it, but that was the first one I think I've been on.
+576072292608Smith, Blake   52:41Okay, I would, I haven't been on any that have talked about taxes.
+576072292608Leipart, Tara   52:41Maybe the second one.I did already.
+576072292608Smith, Blake   52:47So.
+576072292608Marion, Lori   52:47Aww, nobody cares about Tax.
+576072292608Leipart, Tara   52:48I have.Actually, it's the second.
+576072292608Smith, Blake   52:51So I would bring it up on that on those calls that you're on P2P and make sure that they're contemplating that because.
+576072292608Leipart, Tara   52:54I have.Yeah, I have. That's actually the second call I've been on today. And I had already shared the concerns about it's all or nothing with the invoice, it's taxable or not. The items that we've already talked about, I have shared those via e-mail and on that first call. So.
+576072292608Smith, Blake   52:59Yeah.Okay.
+576072292608Leipart, Tara   53:17Yeah.
+576072292608Smith, Blake   53:17Good, good.Yeah, we're not, the Laserfiche team isn't driving it. We get the requirements and we got to build it. So I just want to make sure you guys have your voice in there.
+576072292608Leipart, Tara   53:26Yeah.Yes.
+576072292608Marion, Lori   53:31There is our voice.
+576072292608Robichaud, Laura   53:33Yeah.
+576072292608Marion, Lori   53:33And Tara.
+576072292608Leipart, Tara   53:35Doing what I can to speak your language, Lorie.
+576072292608Smith, Blake   53:35Yeah.
+576072292608Bonhomme, Jean   53:35Okay.
+576072292608Marion, Lori   53:38I love it, every bit of it.
+576072292608Leipart, Tara   53:39S.
+576072292608Smith, Blake   53:41Yeah.
+576072292608Marion, Lori   53:41Now this invoice, really quick, I wanted to kind of go over because this is a construction contract.So on most of our construction contracts, they're written to where the vendors are paying the tax when they purchase the items and they're accepting the responsibility for the tax. So, and then they enter into a lump sum contract with us.So this particular.Invoice has got kind of a breakdown of was trying to.Go up here a little bit for you.So it has how much work has been completed for this invoice, how much has been retained, like for future work. It's got a breakdown of all of the items. This is probably where the codes come into play in POPA for how they codea project. And then they've also included, which is really nice, a copy of the construction contract.I guarantee very few people are actually reading through this contract to see if it says anything about sales tax.But in this case, and we worked with the construction people also very closely, where they will make sure that they include certain verbiage in the contracts and that they are working with the vendors to charge us the tax if it's necessary, because on these large invoices, they've been hit with enough tax to throw them aover budget. So in this case, I'm going to, this is 1 project for one store and one contract. So I'm going to mark this one as not taxable and mark freight as not taxable because it's all handled within the contract.And click review and submit.
+576072292608Chinmay Palei   55:47OK.
+576072292608Marion, Lori   55:49This one has absolutely no detail in the invoice. It's Omni Logistics. I had to look up who Omni Logistics were and what services they provide. There is nothing on here except for a UPS tracking number. Two different UPS tracking numbers.All they provide is.logistics services, but I don't really care about any of that because it's all in Oregon. There's no sales tax in Oregon.So anything that comes through with a tax in the tax review table is Oregon, we're going to mark it non-taxable anyway.
+576072292608Bonhomme, Jean   56:27Yeah.
+576072292608Marion, Lori   56:35I would mark that non-taxable, but that invoice is an example of how they can come through with just absolutely nothing.
+576072292608Chinmay Palei   56:40So this is all logistics, right? This on logistics.
+576072292608Marion, Lori   56:47So this is basically freight only. They're just shipping something for us.
+576072292608Chinmay Palei   56:47Oh.Okay.
+576072292608Marion, Lori   56:57So I think I already marked that untaxable.Non task.And no.It dude.Select.This one, I think this one had an example of...For different things now, this is one that we already looked at.And this was not taxable, so...
+576072292608Chinmay Palei   57:32Yeah, we looked at this.
+576072292608Marion, Lori   57:34Yeah.Oops.No.So those were the only examples I could come up with. They were being assigned as quickly as I was trying to grab them. So that's what I have for today.
+576072292608Bonhomme, Jean   57:54Thank you.
+576072292608Chinmay Palei   57:58Awesome. And once you review them and submit it, the next process is fairly simple, right? There is nothing bothering at this moment. There is no pinpoints there, right?
+576072292608Leipart, Tara   57:58Code.
+576072292608Robichaud, Laura   58:12BOT.
+576072292608Marion, Lori   58:12Once we review and submit it is when it goes. It either goes into POPA or it gets rejected because there's no tax setup and it goes back to the approver.
+576072292608Russell Despain   58:17So.Yeah.Love you.
+576072292608Chinmay Palei   58:29Sounds good. So yeah, I think I think the biggest problem is that as if now reading that line items and triangle make sure individual line items has taxability, liability or not, right? So that's one I think.
+576072292608Robichaud, Laura   58:44No, that's one thing, but even if we can, even if we can get it by line item, we can't get it into Laserfiche because we can't do it by line item.
+576072292608Chinmay Palei   58:55Correct.
+576072292608Robichaud, Laura   58:55So that's the part that I think, could we assign taxability? Yes. But if we can't get it in the system and we're not seeing all the invoices, then we're only solving for a very small, small piece.
+576072292608Chinmay Palei   59:10So, today, the entire process is at the invoice level, right? Whether it's tax accessibility, you know, is it taxable or not, right? We are not doing it in individual lines. Is the ask then to look at the individual lines also? That's what I'm trying to understand.
+576072292608Robichaud, Laura   59:27No, that's not the ask. I think, I don't know what the ask is, but it's, if we, if tax had their way, we would capture the line item detail through Abby. It would be separately stated with each line, with the correct GL, with the correct assigned taxability, and then it would be able to gopost in the financial system that way.
+576072292608Chinmay Palei   59:51Okay.Okay, yeah, sounds good. I think let's start with this. Could you share us a couple of samples, Lorie, from different vendors? And we'll do the work with the doc intelligence and then come up with a quick demo. Let's start from there.
+576072292608Bonhomme, Jean   1:00:08For her.So, how many samples?
+576072292608Marion, Lori   1:00:10And what example do you need just what kind of sample like just a copy of the invoice or do you need screenshots of the whole Laserfiche screen or?
+576072292608Chinmay Palei   1:00:22So, let's start with the just the sample invoices, because eventually we are reading that, right? We are trying to be trying to get line items, so let's get get some samples, couple of them from different vendors, not the same vendors. If you could share ourselves, we'll start with that.
+576072292608Marion, Lori   1:00:27Okay.And.Okay.
+576072292608Chinmay Palei   1:00:43And then the couple of other items I was jotting it down. As we go on, I think we would like to have the source, the text ability matrix. If the spreadsheet that we were referring is not the source of truth, if there is anything else that we could, when the agent will try to pull the information.what sources it should connect to, right? In terms of comparison, right now for the demo, I think we can just do some coding work. But as the AZ end goes there.Where should it connect to to get that text ability information?
+576072292608Marion, Lori   1:01:19I don't have any idea about what would be a good source of truth.
+576072292608Robichaud, Laura   1:01:19Ha.I don't understand how that's going to do anything.
+576072292608Marion, Lori   1:01:26Thank you, Laura.
+576072292608Leipart, Tara   1:01:26I think today, but today this, but today the source source is the matrix, right? Like if Accenture is doing all this coding today, they're doing their best to read the invoice and match it up to the matrix. Like if we're trying to just replicate what we're doing today, that is what we have to grow in, right or wrong.
+576072292608Marion, Lori   1:01:32Right.
+576072292608Chinmay Palei   1:01:35Mmh.Yeah, that's fine. Means if that's the source of truth, we'll consider that spreadsheet as a source of truth. That's what I was trying to say. But I think Laura did mention there are other sources we do look at. So I was trying to understand if we have an authoritative source or you have to look into different sources, including the spreadsheet.
+576072292608Leipart, Tara   1:01:46Yeah.
+576072292608Marion, Lori   1:01:51Okay.
+576072292608Bonhomme, Jean   1:02:03The website and CCH and.
+576072292608Marion, Lori   1:02:05Yeah, it wouldn't be, it wouldn't be anything that.would be a simple like looking into. You'd have to have a license and...Know how to drill down into each of those applications, so...
+576072292608Chinmay Palei   1:02:19Yeah, so let's...Let's start with this spreadsheet that Accenture is leveraging today, then.Is our so stupid?
+576072292608Marion, Lori   1:02:29Yeah, I think to Tara's point, I think we're trying to like...Laura and I are thinking about like, where can we go in the future and how can we, what is a long term solution instead of, because we're just not used to doing a short term solution for what we're doing now when we've got bigger ideas down the road, you know?
+576072292608Robichaud, Laura   1:02:52Well, yeah, and we're only, you're gonna, we're creating a solution for something that only impacts like what, 10 invoices maybe? We're not even touching the bigger ones. So I think that's where I'm kind of like, I don't understand.
+576072292608Leipart, Tara   1:02:52Okay.
+576072292608Robichaud, Laura   1:03:07I don't understand what the demo would be.
+576072292608Marion, Lori   1:03:07We get on average of about 250 invoices a day through this process, but 250 invoices in a company our size, you know how many we're missing.
+576072292608Chinmay Palei   1:03:13Mhm.
+576072292608Marion, Lori   1:03:21We're just not seeing it, so...
+576072292608Chinmay Palei   1:03:24Okay.
+576072292608Leipart, Tara   1:03:24I think the thought though was, at least when I talked with Marie, even if we came up with something that replicated what we're doing today, even though we clearly don't like what we're doing today, we want to make some changes, even if we replicated what we did today.
+576072292608Marion, Lori   1:03:36Yeah.
+576072292608Leipart, Tara   1:03:40on the small population that we're looking at today, could you open that population and look at things outside of what?has zero tax and an AFP number, right? So.I think that was the idea of how maybe you broaden the scope to some extent, but I hear the concern that we don't like the process today, so it's like...Do we wanna?
+576072292608Marion, Lori   1:04:06It's like spending time developing something on.
+576072292608Leipart, Tara   1:04:09Yeah.that we don't really want the long-term process to be. Yeah.
+576072292608Chinmay Palei   1:04:12Yeah.I got it. And Laura said there are much more to that. Can we have some samples like Lorie, what Lorie was demoing today? Can we look into that so that we understand the broader picture along with this one?
+576072292608Leipart, Tara   1:04:16Yeah.
+576072292608Bonhomme, Jean   1:04:34Is it bigger invoices or more invoices that you don't see?
+576072292608Robichaud, Laura   1:04:38We, the invoice process that we demoed today represents less than 1% of the invoice population that flows through Laserfiche for the company. So these are just the ones that don't have, like Lorie mentioned earlier, that don't have, they have the AFE and they have all this other stuff. That's a tax rule set up within Laserfiche.
+576072292608Chinmay Palei   1:04:55Mhm.
+576072292608Robichaud, Laura   1:04:56that only goes to tax. So we're seeing a like the super small amount. And then on the super small amount, we're determining yes or no for tax. So to provide a solution on that current state process would have an ROI of like nothing. There would be no money value there because it's not correct.
+576072292608Chinmay Palei   1:05:07Mmh.
+576072292608Robichaud, Laura   1:05:16If you wanted to do, if you wanted to overlay a correct taxability from a broader perspective, yes, you could do that.And yes, you could use Google or whatever is the source of truth or a taxability matrix, but it's going to go into how are you going to get that into the system? Because even if you determined each line item for all the invoices for Circle K had a different taxability, you would still need a way to get it in.And then get it pushed to the to the end.So I think that's what I'm trying to say is I understand what we're trying to, I think, solve for, but I'm thinking it's such a small part, like an itsy bitsy part of the population. Why would we not look at a bigger one? And those invoices would be trade invoices and non-trade.
+576072292608Chinmay Palei   1:05:47Okay.Can we look into that? That's what I was trying to say, Laura. OK, in the next meeting.
+576072292608Robichaud, Laura   1:06:05So, I don't know.
+576072292608Marion, Lori   1:06:07Look, trade invoices, we wouldn't really look at just because they're all non-taxable because they're items for resale. If there are items coming in that are taxable from our trade vendors, they're going into a supply category or they're coming through a non-trade vendor number that was set up.
+576072292608Robichaud, Laura   1:06:21Mhm.Mhm.
+576072292608Marion, Lori   1:06:26For that vendor, it's not.
+576072292608Robichaud, Laura   1:06:27Yeah, like stuff that goes in the store that's used. Like the racks.
+576072292608Bonhomme, Jean   1:06:30So, do we need a do we need a follow-up call for those those non-trade ones?
+576072292608Marion, Lori   1:06:30Right.Ly.Non Trade is what we're talking about now.
+576072292608Bonhomme, Jean   1:06:39No, well, that's so small.
+576072292608Chinmay Palei   1:06:40The trade wants, right, Laura was talking about if the trade wants has higher impact and it has higher ROI, let's look into that process. I think we should absolutely look into that process and whatever agentic solution we can build sure.And this was only.What I was saying demo is only from the line reading perspective for a PDF. The entire solution is not this, right? Let's look at the trade system, how the text accessibility treatments are happening, and then that will be the broader scope we'll work on.
+576072292608Robichaud, Laura   1:07:15Well, that's the procurement company. That's what we're doing right now in tandem is the procurement company. That trade stuff's going to flow through there. So I think that goes back to what Tara was saying is, do we have the right time? Because it looks like the organization's already trying to flow through a process for that.
+576072292608Chinmay Palei   1:07:21OK.
+576072292608Robichaud, Laura   1:07:32So I don't know, John, if you and Marie want to talk about it, but...
+576072292608Bonhomme, Jean   1:07:34Welcome.My timing here.
+576072292608Robichaud, Laura   1:07:37Yeah.
+576072292608Bonhomme, Jean   1:07:38OK, and I know we're over time, so thank you for everything that for your time. OK, just maybe a quick wrap-up.
+576072292608Chinmay Palei   1:07:49Yep, from...Today's understanding is Lorie is going to share a couple of samples and then team will work on the demo on the line items. This is just a sample, you know, portion of the agenting solution that will be delivering, but at least it would be good to have the doc intelligence run through the sample invoices, read, say.and try to come up with the line items, right? And then the other action items, I think, is if you can talk to Marie, if the Trade wants Hub to be part of this or not, then we could look at some of the sample and processes entirely. Otherwise, I think this accessibility part would be fairly, as Laura said, right, to a very small percentage
+576072292608Bonhomme, Jean   1:08:31But.
+576072292608Chinmay Palei   1:08:37what we'll be building.
+576072292608Bonhomme, Jean   1:08:40Okay, so considering the...
+576072292608Robichaud, Laura   1:08:40Right, and the CapEx stuff is going to flow through the procurement company.
+576072292608Chinmay Palei   1:08:46Okay.
+576072292608Robichaud, Laura   1:08:46So I think those are the big dollar ones.
+576072292608Chinmay Palei   1:08:51Yeah, so if Jain, if we can talk to Marie and see that would be part of this scope, then we could look at the entire process from there and what we can get it from there.
+576072292608Bonhomme, Jean   1:08:51Okay.OK, perfect.
+576072292608Chinmay Palei   1:09:06Sounds good. Let's have that as soon as Lorie, you have the samples. We'll schedule sometime next week, Tuesday. Just give us three, four days. And then we'll do a quick demo of that. And in the meantime, Jean.
+576072292608Marion, Lori   1:09:22I'm going to give you some invoices that are passed because we've already got copies of them on the drive. So they're going to be older invoices, but they'll give you a good example to look at. That's okay.
+576072292608Chinmay Palei   1:09:33Sounds good. Sounds good.
+576072292608Bonhomme, Jean   1:09:34Fout.
+576072292608Marion, Lori   1:09:36Right.
+576072292608Chinmay Palei   1:09:37And then, Jain, if you could talk to Mary and see if that's the path, the other, you know, company that you are working, if that's the path and we don't want to include this, I think we'll just probably proceed with this stuff.
+576072292608Bonhomme, Jean   1:09:37Right.
+576072292608Marion, Lori   1:09:51I love that.
+576072292608Chinmay Palei   1:09:53And if they want to include this one here, let's have a follow-up meeting to go through that process entirely.
+576072292608Bonhomme, Jean   1:10:02Want to twin with her when she comes back, so, and talk to her about the constraints also that you mentioned, Laura, about the downstream and the...
+576072292608Marion, Lori   1:10:03It.
+576072292608Chinmay Palei   1:10:04Sounds good.
+576072292608Marion, Lori   1:10:04Open.
+576072292608Robichaud, Laura   1:10:10Yes, happy to have, we can have a separate call internally about it. I've done a lot of research because of some of the other efficiencies that we've been doing in taxes. I just don't want to waste anyone's time if it doesn't make any sense. And it's such a small, it's such a small number.
+576072292608Marion, Lori   1:10:19No.Like.
+576072292608Robichaud, Laura   1:10:27You know?
+576072292608Bonhomme, Jean   1:10:29Perfect, thank you.
+576072292608Robichaud, Laura   1:10:29I hate for us to do all this work and to be like, we saved $2,000. Yeah.
+576072292608Marion, Lori   1:10:31All the.
+576072292608Chinmay Palei   1:10:31I see.
+576072292608Marion, Lori   1:10:33Yeah.
+576072292608Bonhomme, Jean   1:10:34It.Thank you, everyone.
+576072292608Chinmay Palei   1:10:36Yeah, whatever Laura have higher ROI impact, absolutely want to look at because this is the POC, right? We are not going to productionize, as Janeth said, right? Let's see whatever best we could do. At the end, we'll just pick up the events that we created with higher impacts and then try to productionize later.
+576072292608Robichaud, Laura   1:10:46Yeah.Yeah.
+576072292608Chinmay Palei   1:10:54Part of time.
+576072292608Robichaud, Laura   1:10:55Yeah, yep.
+576072292608Chinmay Palei   1:10:56So right time to just let's talk it through internally and then if you can just go through the process, we'll help you there.
+576072292608Bonhomme, Jean   1:11:08Perfect. Thank you, everyone.
+576072292608Chinmay Palei   1:11:10Thank you. Thanks. Thanks, everyone.
+576072292608Marion, Lori   1:11:12Thank you.
+576072292608Bonhomme, Jean   1:11:12Bye.
+576072292608Sameera Sarfaraz   1:11:13Thank you all. Bye.
+576072292608Arvind Rajeswaran   1:11:14Thank you all.
+621792274320Bonhomme, Jean stopped transcription

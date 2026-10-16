@@ -1,0 +1,4 @@
+﻿invoice_id,code,type,line_id,detail
+TEST-INVOICE,DQ,Missing Evidence / Uncertainty,1,Approved coding or an unambiguous catalog classification is unavailable
+TEST-INVOICE,E4,Policy Review,1,Policy application is unresolved; Finance decision is required
+TEST-INVOICE,DQ,Missing Evidence / Uncertainty,,Input coverage gaps: Test catalog unavailable; No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete

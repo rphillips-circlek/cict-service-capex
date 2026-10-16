@@ -1,0 +1,3641 @@
+{
+  "schema_version": "autarch.capex-flow.maf.v2",
+  "engine": "maf",
+  "model": "gpt-5.4",
+  "generated_at": "2026-10-02T18:17:23.941580+00:00",
+  "advisory_only": true,
+  "capitalization_threshold": null,
+  "source_directory": "C:\\Users\\rphillips\\OneDrive - Microsoft\\Repos\\autarch-framework-v0.12.0\\examples\\data\\capex",
+  "task_catalog_count": 761,
+  "source_warnings": [
+    "No approved policy excerpts supplied; capitalization must remain REVIEW",
+    "No historical capitalized assets/invoices supplied; bundling coverage is incomplete"
+  ],
+  "reference_source": "Not supplied",
+  "review_count": 0,
+  "learning_confirmations": 50,
+  "candidate_rules": [],
+  "invoices": [
+    {
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea",
+      "transaction_id": "135d03ac-3598-498a-83fe-d273d046bfea",
+      "invoice_number": "INV12-62027",
+      "invoice_date": "2026-08-26",
+      "vendor": "Bruegmann USA, Inc.",
+      "country": "US",
+      "region": "North America",
+      "state": "MN",
+      "currency": "USD",
+      "total": 1627.5,
+      "afe_number": "",
+      "project_number": "",
+      "business_capex_opex": "",
+      "lines": [
+        {
+          "line_id": "1",
+          "description": "Layover FR 4PK, 727x886\n15 degree front retainer rail slot\nSimplified\nNon-Anodized\nWidth: 28.6 (727mm)\nDepth: 34.9\" (886mm)\nColor: Black",
+          "quantity": 1.0,
+          "unit_price": 253.71,
+          "amount": 253.71,
+          "actual_task": "",
+          "asset_type": "Shelving/display system component",
+          "commodity": "Layover FR shelf/roller rack unit",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.74,
+          "policy_basis": "REVIEW because no capitalization policy excerpts were supplied, so application of new-asset vs repair criteria, capitalization unit, or any company threshold cannot be supported. Evidence suggests this is a shelving/display component aligned to wire shelving and with a 5-year internal book life for task 5225, which could indicate a potentially capitalizable asset component, but without policy support and no approved coding, CAPEX/OPEX cannot be concluded.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:1",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "2",
+          "description": "Layover FR 1PK, 727x886\n15 degree front retainer rail slot\nSimplified\nNon-Anodized\nWidth: 28.6 (727mm)\nDepth: 34.9\" (886mm)\nColor: Black",
+          "quantity": 3.0,
+          "unit_price": 67.27,
+          "amount": 201.81,
+          "actual_task": "",
+          "asset_type": "Shelving/display system component",
+          "commodity": "Layover FR shelf/roller rack unit",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.74,
+          "policy_basis": "REVIEW because no capitalization policy excerpts were supplied, so there is no supported basis to decide whether these Layover FR units are a new capital asset/component or an expense item, nor to apply any capitalization unit or threshold. Evidence points to wire shelving-related hardware under task 5225 with a 5-year internal book life, but that alone is not a policy. No approved coding is present.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:2",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "3",
+          "description": "Reinforced Lock-In 2 Wire divider,\n70x886 50PK\nLayover\nAngled corners\n2-Wire 5mm\nDivider height: 2.75\" (70mm)\nFR depth: 34.9\" (886mm)\nColor: Black",
+          "quantity": 1.0,
+          "unit_price": 98.12,
+          "amount": 98.12,
+          "actual_task": "",
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Wire dividers",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.82,
+          "policy_basis": "REVIEW because the line appears to be a shelving/display accessory component, but no capitalization policy was supplied to determine whether such divider components should be capitalized as part of a larger unit, treated as repair/replacement, or expensed based on company capitalization rules. Task 5225 and internal life evidence are not sufficient without policy support.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:3",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "4",
+          "description": "Reinforced Lock-In 2 Wire divider,\n70x886 10PK\nLayover\nAngled corners\n2-Wire 5mm\nDivider height: 2.75\" (70mm)\nFR depth: 34.9\" (886mm)\nColor: Black",
+          "quantity": 2.0,
+          "unit_price": 20.83,
+          "amount": 41.66,
+          "actual_task": "",
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Wire dividers",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.82,
+          "policy_basis": "REVIEW because this wire divider is evidenced as a shelving/display accessory, yet there is no supplied capitalization policy to assess whether it forms part of a new asset, a betterment, or a repair/replacement expense, and no supported threshold or capitalization unit can be applied. No approved coding is present.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:4",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "5",
+          "description": "FlexRoller Clear Retainer 10PK 90x711\nRetainer height: Medium 3.5\" (90mm)\nRetainer width: 28\" (711mm)",
+          "quantity": 1.0,
+          "unit_price": 41.61,
+          "amount": 41.61,
+          "actual_task": "",
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Clear retainers",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.77,
+          "policy_basis": "REVIEW because the clear retainer is a physical shelving/display accessory, but no capitalization policy excerpts were supplied to determine treatment as CAPEX or OPEX, including whether it is directly attributable to placing a new asset in service or merely a replacement/accessory expense. Task alignment alone is insufficient.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:5",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "6",
+          "description": "FlexRoller Clear Retainer 10PK, 35x711\nRetainer height: Mini 1.375\" (35mm)\nRetainer width: 28\" (711mm)",
+          "quantity": 1.0,
+          "unit_price": 21.75,
+          "amount": 21.75,
+          "actual_task": "",
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Clear retainers",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.77,
+          "policy_basis": "REVIEW because this retainer variant is evidenced as shelving/display hardware, but there is no approved capitalization policy to support capitalization versus expensing, including useful-life, capitalization-unit, and threshold analysis. Without such policy support, a definitive CAPEX/OPEX recommendation cannot be made.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:6",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "7",
+          "description": "FR Back Wire Retainer 70x723 20PK\nHeight: 2.75\" (70mm)\nShelf Width: 28.5\" (723mm)\nColor: Red",
+          "quantity": 1.0,
+          "unit_price": 15.69,
+          "amount": 15.69,
+          "actual_task": "",
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Back wire retainer",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.83,
+          "policy_basis": "REVIEW because the back wire retainer appears to be a shelving/display component, but no supplied policy supports whether this should be capitalized as part of a new shelving unit or expensed as a replacement/accessory. The evidence set explicitly notes missing policy excerpts, so CAPEX/OPEX cannot be supported.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:7",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "8",
+          "description": "Infostrip 10PK\nLabel height: 1.25\" (32mm)\nSingle Wire Mount\nLength: 25.5\" (648mm)\nColor: Black\nWindow displayed at 20 degree to\nback",
+          "quantity": 2.0,
+          "unit_price": 9.07,
+          "amount": 18.14,
+          "actual_task": "",
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Label holder infostrips",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.73,
+          "policy_basis": "REVIEW because the infostrip label holder is a merchandising fixture accessory, but no capitalization policy was provided to determine whether such accessory costs belong in a capitalizable shelving unit or should be expensed. Missing policy support prevents applying new asset, useful life, capitalization unit, or threshold tests.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:8",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "9",
+          "description": "Infostrip 10PK\nLabel height: 1.25\" (32mm)\nDouble Wire Mount\nLength: 27\" (685.8mm)\nColor: BlackOI",
+          "quantity": 1.0,
+          "unit_price": 12.17,
+          "amount": 12.17,
+          "actual_task": "",
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Label holder infostrips",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.73,
+          "policy_basis": "REVIEW because this infostrip accessory is evidenced as part of shelving/display hardware, but there is no supplied company policy to support capitalization versus expense treatment, and no approved coding is available. Task 5225 indicates probable asset class only, not accounting treatment.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:9",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "10",
+          "description": "Reinforced Lock-In Wire divider 20-\nPack, 140x886\nLayover\nAngled Corners\n3-Wire\nDivider height: 5.5\" (140mm)\nFR Depth: 34.88\" (886mm)\nColor: Black",
+          "quantity": 3.0,
+          "unit_price": 58.74,
+          "amount": 176.22,
+          "actual_task": "",
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Wire dividers",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.82,
+          "policy_basis": "REVIEW because the 3-wire divider is a shelving/display component, but no policy excerpts were supplied to determine whether it creates or enhances a capital asset, extends useful life, or is instead a repair/replacement expense. Without company capitalization policy, threshold and capitalization-unit analysis cannot be supported.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:10",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "11",
+          "description": "Reinforced Lock-In Wire divider 10-\nPack, 140x886\nLayover\nAngled Corners\n3-Wire\nDivider height: 5.5\" (140mm)\nFR Depth: 34.88\" (886mm)\nColor: Black",
+          "quantity": 1.0,
+          "unit_price": 30.2,
+          "amount": 30.2,
+          "actual_task": "",
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Wire dividers",
+          "nature": "COMPONENT",
+          "recommended_task": "5225",
+          "recommended_task_description": "WIRE SHELVING",
+          "recommended_asset_class": "SHELVING-WIRE",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.82,
+          "policy_basis": "REVIEW because this wire divider line is evidenced as shelving/display hardware, yet no supplied capitalization policy supports a CAPEX or OPEX conclusion. The absence of policy means new asset versus repair, useful life, capitalization unit, and threshold considerations remain unresolved.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:11",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ]
+        },
+        {
+          "line_id": "12",
+          "description": "Shipping",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 617.09,
+          "actual_task": "",
+          "asset_type": "Inbound logistics",
+          "commodity": "Shipping",
+          "nature": "FREIGHT",
+          "recommended_task": "",
+          "recommended_task_description": "",
+          "recommended_asset_class": "",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": null,
+          "classification_confidence": 0.96,
+          "policy_basis": "REVIEW because the line is explicitly Shipping and freight is not automatically expense; however, no capitalization policy excerpts were supplied to determine whether this freight is directly attributable to acquiring/placing a new shelving asset into service and capitalizable, or should be expensed. The task catalog has no shipping task and policy support is missing.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:12",
+            "source_gaps",
+            "stage:asset_classification",
+            "approved_coding"
+          ]
+        }
+      ],
+      "source": "Bruegmann  - INV1262027.pdf-135d03ac-3598-498a-83fe-d273d046bfea.zip",
+      "source_sha256": "974d61a406edf85e3cadfa75a5177795481d3a82ce962dc414e9d276b885ee5b",
+      "abbyy_confidence": 98.39,
+      "recommendation": "REVIEW",
+      "eligible_total": 0.0,
+      "amounts_by_recommendation": {
+        "CAPEX": "0.00",
+        "OPEX": "0.00",
+        "REVIEW": "1528.17"
+      },
+      "exceptions": [
+        {
+          "code": "DQ",
+          "line_id": "1",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "1",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "2",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:2"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "2",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:2"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "3",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:3"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "3",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:3"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "4",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:4"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:4"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "5",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:5"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "5",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:5"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "6",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:6"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "6",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:6"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "7",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:7"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "7",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:7"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "8",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:8"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "8",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:8"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "9",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:9"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "9",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:9"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "10",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:10"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "10",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:10"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "11",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:11"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "11",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:11"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "12",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:12"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "12",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:12"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "",
+          "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+          "evidence_refs": [
+            "invoice"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        }
+      ],
+      "related_invoice_ids": [],
+      "stage_outputs": {
+        "document_intelligence": {
+          "lines": [
+            {
+              "rationale": "Description indicates a Layover FR pack with specified dimensions and front retainer rail slot, suggesting a physical shelving/roller rack assembly part rather than labor or consumable. Without asset context, it is best understood as a component used in a larger display/shelving system.",
+              "evidence_refs": [
+                "line:1",
+                "source_gaps"
+              ],
+              "confidence": 0.79,
+              "line_id": "1",
+              "asset_type": "Shelving/display system component",
+              "commodity": "Layover FR shelf/roller rack unit",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Same Layover FR item family as line 1, sold as 1-pack units with dimensions and retainer rail slot details, indicating hardware parts for a merchandising/display system.",
+              "evidence_refs": [
+                "line:2",
+                "source_gaps"
+              ],
+              "confidence": 0.79,
+              "line_id": "2",
+              "asset_type": "Shelving/display system component",
+              "commodity": "Layover FR shelf/roller rack unit",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Described as reinforced lock-in 2-wire dividers, packaged quantity, with size and angled corners. This is a physical accessory/part that separates products on shelving, so it is a component rather than service or standalone asset.",
+              "evidence_refs": [
+                "line:3"
+              ],
+              "confidence": 0.92,
+              "line_id": "3",
+              "asset_type": "Shelving/display accessory",
+              "commodity": "Wire dividers",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Same product type as line 3: reinforced lock-in 2-wire dividers for layover shelving, indicating merchandising shelf divider components.",
+              "evidence_refs": [
+                "line:4"
+              ],
+              "confidence": 0.92,
+              "line_id": "4",
+              "asset_type": "Shelving/display accessory",
+              "commodity": "Wire dividers",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "FlexRoller clear retainer with dimensions indicates a physical retaining barrier used with display/shelf roller systems. This is an accessory component.",
+              "evidence_refs": [
+                "line:5"
+              ],
+              "confidence": 0.9,
+              "line_id": "5",
+              "asset_type": "Shelving/display accessory",
+              "commodity": "Clear retainers",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Another FlexRoller clear retainer variant with different height; still a physical shelf/display retainer component.",
+              "evidence_refs": [
+                "line:6"
+              ],
+              "confidence": 0.9,
+              "line_id": "6",
+              "asset_type": "Shelving/display accessory",
+              "commodity": "Clear retainers",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Back wire retainer with dimensions and color indicates a hardware retainer used on shelving/display units. This is a component part.",
+              "evidence_refs": [
+                "line:7"
+              ],
+              "confidence": 0.91,
+              "line_id": "7",
+              "asset_type": "Shelving/display accessory",
+              "commodity": "Back wire retainer",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Infostrip with label height, wire mount, and length indicates a shelf label holder/signage strip used on merchandising fixtures. It is a physical accessory component.",
+              "evidence_refs": [
+                "line:8"
+              ],
+              "confidence": 0.89,
+              "line_id": "8",
+              "asset_type": "Shelving/display accessory",
+              "commodity": "Label holder infostrips",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Infostrip double wire mount is another shelf label strip/accessory, treated as a merchandising fixture component.",
+              "evidence_refs": [
+                "line:9"
+              ],
+              "confidence": 0.89,
+              "line_id": "9",
+              "asset_type": "Shelving/display accessory",
+              "commodity": "Label holder infostrips",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Reinforced lock-in wire dividers, 3-wire and larger height, are physical separator parts for layover shelving systems. This is a component.",
+              "evidence_refs": [
+                "line:10"
+              ],
+              "confidence": 0.92,
+              "line_id": "10",
+              "asset_type": "Shelving/display accessory",
+              "commodity": "Wire dividers",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Same product family as line 10 in a different pack size; clearly a physical divider accessory for shelving/display systems.",
+              "evidence_refs": [
+                "line:11"
+              ],
+              "confidence": 0.92,
+              "line_id": "11",
+              "asset_type": "Shelving/display accessory",
+              "commodity": "Wire dividers",
+              "nature": "COMPONENT"
+            },
+            {
+              "rationale": "Line description is explicitly Shipping, indicating transportation cost rather than a physical item or service task tied to installation.",
+              "evidence_refs": [
+                "line:12"
+              ],
+              "confidence": 0.99,
+              "line_id": "12",
+              "asset_type": "Inbound logistics",
+              "commodity": "Shipping",
+              "nature": "FREIGHT"
+            }
+          ]
+        },
+        "asset_classification": {
+          "lines": [
+            {
+              "rationale": "Layover FR units, wire dividers, retainers, back wire retainers, and infostrips are all described as physical merchandising shelving/display components. Among the supplied North America task catalog, shelving-related options are the closest fit. Because these items appear to be wire/retainer/divider components used with shelving/display systems, WIRE SHELVING is the best-supported exact catalog match, though the catalog does not distinguish these accessories from broader shelving categories.",
+              "evidence_refs": [
+                "invoice",
+                "line:1",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.74,
+              "line_id": "1",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Same Layover FR product family as line 1 and described as a physical shelving/display hardware component. The supplied catalog's closest supported task is WIRE SHELVING. Some uncertainty remains because the catalog is broad and does not explicitly name Layover FR systems.",
+              "evidence_refs": [
+                "invoice",
+                "line:2",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.74,
+              "line_id": "2",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Reinforced lock-in 2-wire dividers are shelf/display separator components. The nearest exact supplied task is WIRE SHELVING, since the catalog contains shelving and wire shelving but no more specific divider/accessory task.",
+              "evidence_refs": [
+                "invoice",
+                "line:3",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.82,
+              "line_id": "3",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Same item type as line 3: reinforced lock-in wire dividers for shelving/display use. WIRE SHELVING is the closest exact supplied catalog task.",
+              "evidence_refs": [
+                "invoice",
+                "line:4",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.82,
+              "line_id": "4",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "FlexRoller clear retainer is a physical shelf/display retainer accessory. The supplied catalog lacks a retainer-specific code; WIRE SHELVING is the closest supported task for this shelving component.",
+              "evidence_refs": [
+                "invoice",
+                "line:5",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.77,
+              "line_id": "5",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "FlexRoller clear retainer variant, still a shelving/display accessory. The closest exact catalog task provided is WIRE SHELVING.",
+              "evidence_refs": [
+                "invoice",
+                "line:6",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.77,
+              "line_id": "6",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Back wire retainer is a wire shelving/display component. The nearest exact supplied task is WIRE SHELVING.",
+              "evidence_refs": [
+                "invoice",
+                "line:7",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.83,
+              "line_id": "7",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Infostrip label holder is a merchandising fixture accessory mounted on wire shelving/display hardware. The catalog does not provide a dedicated signage/label-strip task, so WIRE SHELVING is the closest supported match.",
+              "evidence_refs": [
+                "invoice",
+                "line:8",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.73,
+              "line_id": "8",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Infostrip double wire mount is another shelving/display accessory. WIRE SHELVING is the closest exact supplied catalog task.",
+              "evidence_refs": [
+                "invoice",
+                "line:9",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.73,
+              "line_id": "9",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Reinforced lock-in 3-wire dividers are shelving/display separator components. The closest exact supplied task is WIRE SHELVING.",
+              "evidence_refs": [
+                "invoice",
+                "line:10",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.82,
+              "line_id": "10",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Same product family as line 10: wire divider accessory for shelving/display systems. The nearest exact catalog task is WIRE SHELVING.",
+              "evidence_refs": [
+                "invoice",
+                "line:11",
+                "stage:document_intelligence",
+                "task:5225"
+              ],
+              "confidence": 0.82,
+              "line_id": "11",
+              "task_code": "5225",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "The line is explicitly Shipping. The supplied task catalog contains no freight, delivery, logistics, or shipping task, so no supported exact classification is available from the provided catalog.",
+              "evidence_refs": [
+                "invoice",
+                "line:12",
+                "source_gaps"
+              ],
+              "confidence": 0.96,
+              "line_id": "12",
+              "task_code": null,
+              "asset_class_code": null,
+              "status": "UNAVAILABLE"
+            }
+          ]
+        },
+        "coding_validation": {
+          "lines": [
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 1 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:1",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "1",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 2 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:2",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "2",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 3 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:3",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "3",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 4 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:4",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "4",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 5 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:5",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "5",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 6 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:6",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "6",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 7 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:7",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "7",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 8 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:8",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "8",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 9 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:9",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "9",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 10 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:10",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "10",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 11 because approved_coding is empty.",
+              "evidence_refs": [
+                "line:11",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "11",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification has no populated task code for line 12, and no approved task code is present because approved_coding is empty.",
+              "evidence_refs": [
+                "line:12",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "12",
+              "status": "MISSING"
+            }
+          ]
+        },
+        "capitalization_decision": {
+          "lines": [
+            {
+              "rationale": "REVIEW because no capitalization policy excerpts were supplied, so application of new-asset vs repair criteria, capitalization unit, or any company threshold cannot be supported. Evidence suggests this is a shelving/display component aligned to wire shelving and with a 5-year internal book life for task 5225, which could indicate a potentially capitalizable asset component, but without policy support and no approved coding, CAPEX/OPEX cannot be concluded.",
+              "evidence_refs": [
+                "line:1",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "1",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because no capitalization policy excerpts were supplied, so there is no supported basis to decide whether these Layover FR units are a new capital asset/component or an expense item, nor to apply any capitalization unit or threshold. Evidence points to wire shelving-related hardware under task 5225 with a 5-year internal book life, but that alone is not a policy. No approved coding is present.",
+              "evidence_refs": [
+                "line:2",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "2",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because the line appears to be a shelving/display accessory component, but no capitalization policy was supplied to determine whether such divider components should be capitalized as part of a larger unit, treated as repair/replacement, or expensed based on company capitalization rules. Task 5225 and internal life evidence are not sufficient without policy support.",
+              "evidence_refs": [
+                "line:3",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "3",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because this wire divider is evidenced as a shelving/display accessory, yet there is no supplied capitalization policy to assess whether it forms part of a new asset, a betterment, or a repair/replacement expense, and no supported threshold or capitalization unit can be applied. No approved coding is present.",
+              "evidence_refs": [
+                "line:4",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "4",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because the clear retainer is a physical shelving/display accessory, but no capitalization policy excerpts were supplied to determine treatment as CAPEX or OPEX, including whether it is directly attributable to placing a new asset in service or merely a replacement/accessory expense. Task alignment alone is insufficient.",
+              "evidence_refs": [
+                "line:5",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "5",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because this retainer variant is evidenced as shelving/display hardware, but there is no approved capitalization policy to support capitalization versus expensing, including useful-life, capitalization-unit, and threshold analysis. Without such policy support, a definitive CAPEX/OPEX recommendation cannot be made.",
+              "evidence_refs": [
+                "line:6",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "6",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because the back wire retainer appears to be a shelving/display component, but no supplied policy supports whether this should be capitalized as part of a new shelving unit or expensed as a replacement/accessory. The evidence set explicitly notes missing policy excerpts, so CAPEX/OPEX cannot be supported.",
+              "evidence_refs": [
+                "line:7",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "7",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because the infostrip label holder is a merchandising fixture accessory, but no capitalization policy was provided to determine whether such accessory costs belong in a capitalizable shelving unit or should be expensed. Missing policy support prevents applying new asset, useful life, capitalization unit, or threshold tests.",
+              "evidence_refs": [
+                "line:8",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "8",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because this infostrip accessory is evidenced as part of shelving/display hardware, but there is no supplied company policy to support capitalization versus expense treatment, and no approved coding is available. Task 5225 indicates probable asset class only, not accounting treatment.",
+              "evidence_refs": [
+                "line:9",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "9",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because the 3-wire divider is a shelving/display component, but no policy excerpts were supplied to determine whether it creates or enhances a capital asset, extends useful life, or is instead a repair/replacement expense. Without company capitalization policy, threshold and capitalization-unit analysis cannot be supported.",
+              "evidence_refs": [
+                "line:10",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "10",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because this wire divider line is evidenced as shelving/display hardware, yet no supplied capitalization policy supports a CAPEX or OPEX conclusion. The absence of policy means new asset versus repair, useful life, capitalization unit, and threshold considerations remain unresolved.",
+              "evidence_refs": [
+                "line:11",
+                "stage:asset_classification",
+                "task:5225",
+                "source_gaps",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "11",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW because the line is explicitly Shipping and freight is not automatically expense; however, no capitalization policy excerpts were supplied to determine whether this freight is directly attributable to acquiring/placing a new shelving asset into service and capitalizable, or should be expensed. The task catalog has no shipping task and policy support is missing.",
+              "evidence_refs": [
+                "line:12",
+                "source_gaps",
+                "stage:asset_classification",
+                "approved_coding"
+              ],
+              "confidence": 0.97,
+              "line_id": "12",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            }
+          ]
+        },
+        "asset_relationship": {
+          "rationale": "All merchandise lines appear to be shelving/display components or accessories associated with wire shelving, suggesting the invoice could represent components/additions for a shelving setup. However, there are no supplied history_candidates, no asset_id, and no AFE/project linkage, so there is no evidentiary basis to match this invoice to an existing capitalized asset or prior invoice. Per the supplied evidence, bundling coverage is incomplete and any possible bundle must remain a human exception rather than an automatic conclusion.",
+          "evidence_refs": [
+            "line:1",
+            "line:2",
+            "line:3",
+            "line:4",
+            "line:5",
+            "line:6",
+            "line:7",
+            "line:8",
+            "line:9",
+            "line:10",
+            "line:11",
+            "line:12",
+            "task:5225",
+            "source_gaps",
+            "invoice"
+          ],
+          "confidence": 0.67,
+          "bundle_exception": false,
+          "matched_history_ids": []
+        },
+        "exception_management": {
+          "exceptions": [
+            {
+              "code": "DQ",
+              "line_id": "1",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:1"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "1",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:1"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "2",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:2"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "2",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:2"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "3",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:3"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "3",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:3"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "4",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:4"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "4",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:4"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "5",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:5"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "5",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:5"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "6",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:6"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "6",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:6"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "7",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:7"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "7",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:7"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "8",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:8"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "8",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:8"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "9",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:9"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "9",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:9"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "10",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:10"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "10",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:10"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "11",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:11"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "11",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:11"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "12",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:12"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "12",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:12"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "",
+              "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+              "evidence_refs": [
+                "invoice"
+              ]
+            }
+          ],
+          "summary": "All required exceptions preserved. Every line lacks approved coding, and capitalization treatment remains unresolved due to missing policy support. Invoice-level data quality gap remains for missing policy excerpts and incomplete historical bundling coverage."
+        }
+      },
+      "automatic_posting": false,
+      "reference_sha256": "94a5515f7f7ec58886919ca3668322e93b4d84ed3931a671e9bda7de166548aa",
+      "model": "gpt-5.4",
+      "case_digest": "54eaaa925969a50d4e99ae97225271c94b2f8ca8626b020f75d6726451201465",
+      "review_status": "PENDING",
+      "review_decision": "",
+      "final_decision": null
+    },
+    {
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203",
+      "transaction_id": "58aceec5-f35a-48a7-8faa-2f1a195af203",
+      "invoice_number": "36764068-GRP005",
+      "invoice_date": "2026-07-31",
+      "vendor": "KIMLEY-HORN AND ASSOCIATES, INC.",
+      "country": "US",
+      "region": "North America",
+      "state": "CA",
+      "currency": "USD",
+      "total": 28805.0,
+      "afe_number": "",
+      "project_number": "",
+      "business_capex_opex": "",
+      "lines": [
+        {
+          "line_id": "1",
+          "description": "LINE 1 ENVIRONMENTAL ASSESSMENT FORM",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 2625.0,
+          "actual_task": "",
+          "asset_type": "Environmental consulting deliverable",
+          "commodity": "Environmental assessment",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.99,
+          "policy_basis": "REVIEW required for line 1 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line appears to be an environmental consulting service rather than a new physical asset, repair, or directly attributable installation cost, but without a supplied policy there is no support to conclude CAPEX or OPEX, assess capitalization unit, or apply any threshold rule.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:1",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        },
+        {
+          "line_id": "2",
+          "description": "LINE 2 AIR QUALITY & GREENHOUSE GAS\nEMISSIONS ASSESSME",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 5120.0,
+          "actual_task": "",
+          "asset_type": "Environmental consulting deliverable",
+          "commodity": "Air quality and GHG emissions assessment",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.99,
+          "policy_basis": "REVIEW required for line 2 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line is an air quality and greenhouse gas emissions assessment service, not clearly a new asset or repair, but useful life, direct-attribution treatment, capitalization unit, and thresholds cannot be applied without an actual policy.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:2",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        },
+        {
+          "line_id": "3",
+          "description": "LINE 3 BIOLOGICAL RESOURCES ASSESSMENT",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.0,
+          "actual_task": "",
+          "asset_type": "Environmental consulting deliverable",
+          "commodity": "Biological resources assessment",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.98,
+          "policy_basis": "REVIEW required for line 3 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line description indicates a biological resources assessment service, with no evidence of a tangible asset, repair, or installation. Policy support is missing, so CAPEX/OPEX cannot be determined.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:3",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        },
+        {
+          "line_id": "4",
+          "description": "LINE 4 CUTLURAL RESOURCES ASSESSMENT",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 3760.0,
+          "actual_task": "",
+          "asset_type": "Environmental consulting deliverable",
+          "commodity": "Cultural resources assessment",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.97,
+          "policy_basis": "REVIEW required for line 4 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line is a cultural resources assessment service, not clearly a new asset or repair. Without policy language, there is insufficient support to decide capitalization, useful life treatment, capitalization unit, or threshold application.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:4",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        },
+        {
+          "line_id": "5",
+          "description": "LINE 5 HEALTH RISK ASSESSMENT",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 3400.0,
+          "actual_task": "",
+          "asset_type": "Environmental consulting deliverable",
+          "commodity": "Health risk assessment",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.97,
+          "policy_basis": "REVIEW required for line 5 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The health risk assessment appears to be a professional service, but absent policy guidance there is no supported basis to conclude whether such pre-acquisition, compliance, or study costs are capitalizable or expensable.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:5",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        },
+        {
+          "line_id": "6",
+          "description": "LINE 6 NOISE & VIBRATION",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 5400.0,
+          "actual_task": "",
+          "asset_type": "Environmental consulting deliverable",
+          "commodity": "Noise and vibration assessment",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.94,
+          "policy_basis": "REVIEW required for line 6 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line reads as noise and vibration consulting/testing service rather than a physical asset or repair. However, direct-attribution, useful life, capitalization unit, and threshold conclusions cannot be made without a supplied policy.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:6",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        },
+        {
+          "line_id": "7",
+          "description": "LINE 7 WESTERN JOSHUA TREE PROJECT SITE\nCENSUS",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 6300.0,
+          "actual_task": "",
+          "asset_type": "Environmental field service",
+          "commodity": "Project site census / biological survey",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.95,
+          "policy_basis": "REVIEW required for line 7 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The Western Joshua Tree project site census appears to be an environmental field survey service, not a standalone asset or repair. No policy is provided to determine whether this could be directly attributable to a capital project.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:7",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        },
+        {
+          "line_id": "8",
+          "description": "LINE 8 WESTERN JOSHUA TREE CONSERVATION\nACT INCIDENTAL",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 0.0,
+          "actual_task": "",
+          "asset_type": "Environmental/regulatory consulting deliverable",
+          "commodity": "Conservation Act incidental compliance work",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.78,
+          "policy_basis": "REVIEW required for line 8 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The truncated description suggests environmental/regulatory compliance service, but the incomplete wording adds uncertainty. Without policy support, capitalization treatment, useful life, capitalization unit, and threshold analysis cannot be supported.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:8",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        },
+        {
+          "line_id": "9",
+          "description": "LINE 9 ENVRIONMENTAL PROJECT MGMT,\nMEETINGS, HEARINGS",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 1700.0,
+          "actual_task": "",
+          "asset_type": "Project management service",
+          "commodity": "Environmental project management, meetings, hearings",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.96,
+          "policy_basis": "REVIEW required for line 9 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. Environmental project management, meetings, and hearings are service activities, but whether they are directly attributable to creation of a new asset cannot be concluded from the supplied evidence and cannot be evaluated against policy because none is provided.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:9",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        },
+        {
+          "line_id": "10",
+          "description": "LINE 10 LEVEL REIMBURSABLE EXPENSES",
+          "quantity": 0.0,
+          "unit_price": 0.0,
+          "amount": 500.0,
+          "actual_task": "",
+          "asset_type": "Reimbursable pass-through charge",
+          "commodity": "Reimbursable expenses",
+          "nature": "SERVICE",
+          "recommended_task": "0007",
+          "recommended_task_description": "ENVIRONMENTAL",
+          "recommended_asset_class": "ENG/PERM",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": 60,
+          "classification_confidence": 0.62,
+          "policy_basis": "REVIEW required for line 10 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line is reimbursable expenses with insufficient detail; freight or installation are not automatically expense, but here the underlying items are unidentified. Without policy and without detail on the capitalization unit or direct attribution, CAPEX/OPEX cannot be supported.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:10",
+            "source_gaps",
+            "stage:document_intelligence"
+          ]
+        }
+      ],
+      "source": "Kimley Hor - 36764068GRP005.pdf-58aceec5-f35a-48a7-8faa-2f1a195af203.zip",
+      "source_sha256": "ede8b96961483673d0e06d8d73f684a835f05d9a061f67a8bcb84b98be445292",
+      "abbyy_confidence": 100.0,
+      "recommendation": "REVIEW",
+      "eligible_total": 0.0,
+      "amounts_by_recommendation": {
+        "CAPEX": "0.00",
+        "OPEX": "0.00",
+        "REVIEW": "28805.00"
+      },
+      "exceptions": [
+        {
+          "code": "DQ",
+          "line_id": "1",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "1",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "2",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:2"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "2",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:2"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "3",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:3"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "3",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:3"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "4",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:4"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:4"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "5",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:5"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "5",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:5"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "6",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:6"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "6",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:6"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "7",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:7"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "7",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:7"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "8",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:8"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "8",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:8"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "9",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:9"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "9",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:9"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "10",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:10"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "10",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:10"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "",
+          "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+          "evidence_refs": [
+            "invoice"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "DQ",
+          "line_id": "8",
+          "detail": "Line description is truncated, so classification remains uncertain even though earlier stages tentatively matched environmental task 0007",
+          "evidence_refs": [
+            "line:8",
+            "source_gaps",
+            "stage:asset_classification",
+            "stage:document_intelligence"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "DQ",
+          "line_id": "10",
+          "detail": "Reimbursable expenses lack underlying item detail, so coding and treatment remain uncertain despite tentative environmental classification",
+          "evidence_refs": [
+            "line:10",
+            "source_gaps",
+            "stage:asset_classification",
+            "stage:document_intelligence"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        }
+      ],
+      "related_invoice_ids": [],
+      "stage_outputs": {
+        "document_intelligence": {
+          "lines": [
+            {
+              "rationale": "Environmental assessment form appears to be a professional study/deliverable rather than a physical item or repair activity. The line does not identify equipment, materials, or freight, so it is best understood as an environmental consulting service.",
+              "evidence_refs": [
+                "line:1"
+              ],
+              "confidence": 0.97,
+              "line_id": "1",
+              "asset_type": "Environmental consulting deliverable",
+              "commodity": "Environmental assessment",
+              "nature": "SERVICE"
+            },
+            {
+              "rationale": "Air quality and greenhouse gas emissions assessment is described as an assessment study. This indicates consulting/engineering analysis, not a tangible asset, component, or maintenance activity.",
+              "evidence_refs": [
+                "line:2"
+              ],
+              "confidence": 0.98,
+              "line_id": "2",
+              "asset_type": "Environmental consulting deliverable",
+              "commodity": "Air quality and GHG emissions assessment",
+              "nature": "SERVICE"
+            },
+            {
+              "rationale": "Biological resources assessment is named as an assessment service. No evidence indicates a physical asset or repair; despite the zero amount, the line's nature is still best understood as a service line.",
+              "evidence_refs": [
+                "line:3"
+              ],
+              "confidence": 0.95,
+              "line_id": "3",
+              "asset_type": "Environmental consulting deliverable",
+              "commodity": "Biological resources assessment",
+              "nature": "SERVICE"
+            },
+            {
+              "rationale": "Cultural resources assessment is an assessment/study service. The description supports classification as professional environmental/cultural review rather than a new asset or component.",
+              "evidence_refs": [
+                "line:4"
+              ],
+              "confidence": 0.97,
+              "line_id": "4",
+              "asset_type": "Environmental consulting deliverable",
+              "commodity": "Cultural resources assessment",
+              "nature": "SERVICE"
+            },
+            {
+              "rationale": "Health risk assessment is clearly a study/analysis service. No evidence suggests physical goods, installation, repair, or consumables.",
+              "evidence_refs": [
+                "line:5"
+              ],
+              "confidence": 0.98,
+              "line_id": "5",
+              "asset_type": "Environmental consulting deliverable",
+              "commodity": "Health risk assessment",
+              "nature": "SERVICE"
+            },
+            {
+              "rationale": "Noise and vibration work is described without any physical equipment references and fits consulting/testing/assessment activity. That supports a service understanding.",
+              "evidence_refs": [
+                "line:6"
+              ],
+              "confidence": 0.91,
+              "line_id": "6",
+              "asset_type": "Environmental consulting deliverable",
+              "commodity": "Noise and vibration assessment",
+              "nature": "SERVICE"
+            },
+            {
+              "rationale": "Project site census for Western Joshua Tree indicates field survey/census work. This is a professional environmental field service, not an asset purchase or routine repair.",
+              "evidence_refs": [
+                "line:7"
+              ],
+              "confidence": 0.94,
+              "line_id": "7",
+              "asset_type": "Environmental field service",
+              "commodity": "Project site census / biological survey",
+              "nature": "SERVICE"
+            },
+            {
+              "rationale": "Western Joshua Tree Conservation Act incidental work is truncated, but it appears related to regulatory/environmental compliance activity. Because the description is incomplete, service is the most supported interpretation, with some uncertainty noted.",
+              "evidence_refs": [
+                "line:8",
+                "source_gaps"
+              ],
+              "confidence": 0.73,
+              "line_id": "8",
+              "asset_type": "Environmental/regulatory consulting deliverable",
+              "commodity": "Conservation Act incidental compliance work",
+              "nature": "SERVICE"
+            },
+            {
+              "rationale": "Environmental project management, meetings, and hearings are professional management/coordination activities. These are services, not assets, repairs, or freight.",
+              "evidence_refs": [
+                "line:9"
+              ],
+              "confidence": 0.99,
+              "line_id": "9",
+              "asset_type": "Project management service",
+              "commodity": "Environmental project management, meetings, hearings",
+              "nature": "SERVICE"
+            },
+            {
+              "rationale": "Reimbursable expenses indicates pass-through costs associated with the engagement. The description does not identify freight specifically, nor a tangible item, so this is best treated as a service-related reimbursable charge with uncertainty due to lack of detail.",
+              "evidence_refs": [
+                "line:10",
+                "source_gaps"
+              ],
+              "confidence": 0.68,
+              "line_id": "10",
+              "asset_type": "Reimbursable pass-through charge",
+              "commodity": "Reimbursable expenses",
+              "nature": "SERVICE"
+            }
+          ]
+        },
+        "asset_classification": {
+          "lines": [
+            {
+              "rationale": "Invoice is for environmental consulting services in the US/North America, and line 1 is explicitly an environmental assessment form. The supplied task catalog includes a direct environmental task code 0007, which is a stronger fit than property management or any physical asset/improvement task.",
+              "evidence_refs": [
+                "invoice",
+                "line:1",
+                "task:0007"
+              ],
+              "confidence": 0.99,
+              "line_id": "1",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Line 2 describes an air quality and greenhouse gas emissions assessment, which is environmental consulting/assessment work. Among the supplied US task codes, 0007 ENVIRONMENTAL is the direct catalog match.",
+              "evidence_refs": [
+                "invoice",
+                "line:2",
+                "task:0007"
+              ],
+              "confidence": 0.99,
+              "line_id": "2",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Line 3 is a biological resources assessment, which is environmental study work. The available catalog has a direct environmental code 0007; no more specific biological assessment task is supplied.",
+              "evidence_refs": [
+                "invoice",
+                "line:3",
+                "task:0007"
+              ],
+              "confidence": 0.98,
+              "line_id": "3",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Line 4 is a cultural resources assessment, a type of environmental/permitting study. The supplied catalog's closest and direct match is task 0007 ENVIRONMENTAL.",
+              "evidence_refs": [
+                "invoice",
+                "line:4",
+                "task:0007"
+              ],
+              "confidence": 0.97,
+              "line_id": "4",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Line 5 is a health risk assessment, which fits environmental consulting/assessment services. The provided US task catalog includes 0007 ENVIRONMENTAL as the best supported match.",
+              "evidence_refs": [
+                "invoice",
+                "line:5",
+                "task:0007"
+              ],
+              "confidence": 0.97,
+              "line_id": "5",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Line 6 states noise and vibration work without indicating equipment or installation. In context of the invoice's environmental consulting scope, task 0007 ENVIRONMENTAL is the best catalog fit.",
+              "evidence_refs": [
+                "invoice",
+                "line:6",
+                "task:0007"
+              ],
+              "confidence": 0.94,
+              "line_id": "6",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Line 7 is a Western Joshua Tree project site census, which is an environmental field survey/service. The supplied catalog does not provide a more specific ecology/survey code, so 0007 ENVIRONMENTAL is the best supported match.",
+              "evidence_refs": [
+                "invoice",
+                "line:7",
+                "task:0007"
+              ],
+              "confidence": 0.95,
+              "line_id": "7",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "The truncated description references Western Joshua Tree Conservation Act incidental work, which appears to be environmental/regulatory compliance service. Although the wording is incomplete, the available catalog's best supported selection remains 0007 ENVIRONMENTAL.",
+              "evidence_refs": [
+                "invoice",
+                "line:8",
+                "source_gaps",
+                "task:0007"
+              ],
+              "confidence": 0.78,
+              "line_id": "8",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "AMBIGUOUS"
+            },
+            {
+              "rationale": "Line 9 is environmental project management, meetings, and hearings. That is still environmental consulting/support activity, and the supplied task catalog's direct fit is 0007 ENVIRONMENTAL.",
+              "evidence_refs": [
+                "invoice",
+                "line:9",
+                "task:0007"
+              ],
+              "confidence": 0.96,
+              "line_id": "9",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "MATCHED"
+            },
+            {
+              "rationale": "Line 10 is reimbursable expenses. Because the description lacks detail, it could include mixed pass-through items, but in the context of this environmental consulting invoice there is insufficient evidence to assign a more specific supplied task than 0007 ENVIRONMENTAL. The selection is therefore uncertain.",
+              "evidence_refs": [
+                "invoice",
+                "line:10",
+                "source_gaps",
+                "task:0007"
+              ],
+              "confidence": 0.62,
+              "line_id": "10",
+              "task_code": "0007",
+              "asset_class_code": null,
+              "status": "AMBIGUOUS"
+            }
+          ]
+        },
+        "coding_validation": {
+          "lines": [
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 1 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:1",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "1",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 2 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:2",
+                "approved_coding"
+              ],
+              "confidence": 0.99,
+              "line_id": "2",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 3 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:3",
+                "approved_coding"
+              ],
+              "confidence": 0.98,
+              "line_id": "3",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 4 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:4",
+                "approved_coding"
+              ],
+              "confidence": 0.97,
+              "line_id": "4",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 5 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:5",
+                "approved_coding"
+              ],
+              "confidence": 0.97,
+              "line_id": "5",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 6 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:6",
+                "approved_coding"
+              ],
+              "confidence": 0.94,
+              "line_id": "6",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 7 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:7",
+                "approved_coding"
+              ],
+              "confidence": 0.95,
+              "line_id": "7",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 8 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:8",
+                "approved_coding"
+              ],
+              "confidence": 0.78,
+              "line_id": "8",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 9 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:9",
+                "approved_coding"
+              ],
+              "confidence": 0.96,
+              "line_id": "9",
+              "status": "MISSING"
+            },
+            {
+              "rationale": "Prior classification assigned task_code 0007, but no approved business coding is populated for line 10 and approved_coding is empty, so comparison status is MISSING.",
+              "evidence_refs": [
+                "line:10",
+                "approved_coding"
+              ],
+              "confidence": 0.62,
+              "line_id": "10",
+              "status": "MISSING"
+            }
+          ]
+        },
+        "capitalization_decision": {
+          "lines": [
+            {
+              "rationale": "REVIEW required for line 1 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line appears to be an environmental consulting service rather than a new physical asset, repair, or directly attributable installation cost, but without a supplied policy there is no support to conclude CAPEX or OPEX, assess capitalization unit, or apply any threshold rule.",
+              "evidence_refs": [
+                "line:1",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.99,
+              "line_id": "1",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW required for line 2 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line is an air quality and greenhouse gas emissions assessment service, not clearly a new asset or repair, but useful life, direct-attribution treatment, capitalization unit, and thresholds cannot be applied without an actual policy.",
+              "evidence_refs": [
+                "line:2",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.99,
+              "line_id": "2",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW required for line 3 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line description indicates a biological resources assessment service, with no evidence of a tangible asset, repair, or installation. Policy support is missing, so CAPEX/OPEX cannot be determined.",
+              "evidence_refs": [
+                "line:3",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.98,
+              "line_id": "3",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW required for line 4 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line is a cultural resources assessment service, not clearly a new asset or repair. Without policy language, there is insufficient support to decide capitalization, useful life treatment, capitalization unit, or threshold application.",
+              "evidence_refs": [
+                "line:4",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.98,
+              "line_id": "4",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW required for line 5 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The health risk assessment appears to be a professional service, but absent policy guidance there is no supported basis to conclude whether such pre-acquisition, compliance, or study costs are capitalizable or expensable.",
+              "evidence_refs": [
+                "line:5",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.98,
+              "line_id": "5",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW required for line 6 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line reads as noise and vibration consulting/testing service rather than a physical asset or repair. However, direct-attribution, useful life, capitalization unit, and threshold conclusions cannot be made without a supplied policy.",
+              "evidence_refs": [
+                "line:6",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.95,
+              "line_id": "6",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW required for line 7 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The Western Joshua Tree project site census appears to be an environmental field survey service, not a standalone asset or repair. No policy is provided to determine whether this could be directly attributable to a capital project.",
+              "evidence_refs": [
+                "line:7",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.96,
+              "line_id": "7",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW required for line 8 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The truncated description suggests environmental/regulatory compliance service, but the incomplete wording adds uncertainty. Without policy support, capitalization treatment, useful life, capitalization unit, and threshold analysis cannot be supported.",
+              "evidence_refs": [
+                "line:8",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.8,
+              "line_id": "8",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW required for line 9 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. Environmental project management, meetings, and hearings are service activities, but whether they are directly attributable to creation of a new asset cannot be concluded from the supplied evidence and cannot be evaluated against policy because none is provided.",
+              "evidence_refs": [
+                "line:9",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.97,
+              "line_id": "9",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            },
+            {
+              "rationale": "REVIEW required for line 10 because no capitalization policy excerpts are supplied, and the evidence explicitly states capitalization must remain REVIEW. The line is reimbursable expenses with insufficient detail; freight or installation are not automatically expense, but here the underlying items are unidentified. Without policy and without detail on the capitalization unit or direct attribution, CAPEX/OPEX cannot be supported.",
+              "evidence_refs": [
+                "line:10",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.74,
+              "line_id": "10",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            }
+          ]
+        },
+        "asset_relationship": {
+          "rationale": "The invoice lines are environmental consulting, assessments, surveys, project management, and reimbursable expenses, which do not themselves identify a physical component or addition to an existing asset. There is also no AFE number, project number, or asset_id supplied to link these services to a known capital asset. Because no history_candidates were supplied, there is no evidence of a matching prior capitalized asset/invoice by vendor, description, amount, or project linkage. Therefore a possible bundle/addition relationship cannot be supported from the supplied evidence; missing history coverage is explicitly noted.",
+          "evidence_refs": [
+            "invoice",
+            "line:1",
+            "line:2",
+            "line:4",
+            "line:5",
+            "line:6",
+            "line:7",
+            "line:8",
+            "line:9",
+            "line:10",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "confidence": 0.95,
+          "bundle_exception": false,
+          "matched_history_ids": []
+        },
+        "exception_management": {
+          "exceptions": [
+            {
+              "code": "DQ",
+              "line_id": "1",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:1"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "1",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:1"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "2",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:2"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "2",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:2"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "3",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:3"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "3",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:3"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "4",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:4"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "4",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:4"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "5",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:5"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "5",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:5"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "6",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:6"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "6",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:6"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "7",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:7"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "7",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:7"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "8",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:8"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "8",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:8"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "9",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:9"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "9",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:9"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "10",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:10"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "10",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:10"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "",
+              "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+              "evidence_refs": [
+                "invoice"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "8",
+              "detail": "Line description is truncated, so classification remains uncertain even though earlier stages tentatively matched environmental task 0007",
+              "evidence_refs": [
+                "line:8",
+                "source_gaps",
+                "stage:asset_classification",
+                "stage:document_intelligence"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "10",
+              "detail": "Reimbursable expenses lack underlying item detail, so coding and treatment remain uncertain despite tentative environmental classification",
+              "evidence_refs": [
+                "line:10",
+                "source_gaps",
+                "stage:asset_classification",
+                "stage:document_intelligence"
+              ]
+            }
+          ],
+          "summary": "Preserved all required exceptions. Added DQ for lines 8 and 10 because earlier stages marked those lines ambiguous/uncertain due to truncated or insufficient detail. No E1/E2/E3/E5 exceptions were added because supplied earlier stages support missing approved coding, unresolved policy application, and incomplete history coverage, but do not support a coding mismatch, bundle exception, or inter-stage disagreement."
+        }
+      },
+      "automatic_posting": false,
+      "reference_sha256": "94a5515f7f7ec58886919ca3668322e93b4d84ed3931a671e9bda7de166548aa",
+      "model": "gpt-5.4",
+      "case_digest": "dcb9403bf10de31f9ed9da3c451a34748a33105d420315fc416516c1fffc0209",
+      "review_status": "PENDING",
+      "review_decision": "",
+      "final_decision": null
+    },
+    {
+      "invoice_id": "452c56f4-aec3-43a0-bbea-e0d58675e5c2",
+      "transaction_id": "452c56f4-aec3-43a0-bbea-e0d58675e5c2",
+      "invoice_number": "101820",
+      "invoice_date": "46203",
+      "vendor": "TRAFIKKTEKNIKK AS",
+      "country": "NO",
+      "region": "Europe",
+      "state": "",
+      "currency": "NOK",
+      "total": 500000.0,
+      "afe_number": "",
+      "project_number": "",
+      "business_capex_opex": "",
+      "lines": [
+        {
+          "line_id": "1",
+          "description": "Invoice 2",
+          "quantity": 1.0,
+          "unit_price": 400000.0,
+          "amount": 500000.0,
+          "actual_task": "",
+          "asset_type": "Unknown",
+          "commodity": "Unknown",
+          "nature": "UNKNOWN",
+          "recommended_task": "",
+          "recommended_task_description": "",
+          "recommended_asset_class": "",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": null,
+          "classification_confidence": 0.08,
+          "policy_basis": "REVIEW because no applicable company capitalization policy was supplied, and the evidence does not identify whether line 1 is a new asset, repair, service, or other directly attributable cost. The description \"Invoice 2\" is insufficient to assess useful life, capitalization unit, or any policy threshold. The provided scenario threshold is not an approved policy, so it cannot support CAPEX or OPEX.",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:1",
+            "invoice",
+            "source_gaps"
+          ]
+        }
+      ],
+      "source": "Cases.xlsx:EU",
+      "source_sha256": "6b34fdd3ff115bd8a2fb920713649100d41a4cbb451b21c31609bd9f894e1dd0",
+      "abbyy_confidence": 1.0,
+      "recommendation": "REVIEW",
+      "eligible_total": 0.0,
+      "amounts_by_recommendation": {
+        "CAPEX": "0.00",
+        "OPEX": "0.00",
+        "REVIEW": "500000.00"
+      },
+      "exceptions": [
+        {
+          "code": "DQ",
+          "line_id": "1",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "1",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "",
+          "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+          "evidence_refs": [
+            "invoice"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "DQ",
+          "line_id": "1",
+          "detail": "Earlier specialist stages indicate the line description is too generic to determine asset class, nature, or coding, so classification and coding remain uncertain.",
+          "evidence_refs": [
+            "line:1",
+            "stage:asset_classification",
+            "stage:coding_validation",
+            "stage:document_intelligence"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        }
+      ],
+      "related_invoice_ids": [],
+      "stage_outputs": {
+        "document_intelligence": {
+          "lines": [
+            {
+              "rationale": "The line description is only \"Invoice 2\" with no indication of what was purchased, no task details, and no asset/service context. Because the evidence does not identify the object, commodity, or whether this is a new asset, repair, service, freight, etc., the line cannot be classified beyond unknown.",
+              "evidence_refs": [
+                "invoice",
+                "line:1",
+                "source_gaps"
+              ],
+              "confidence": 0.08,
+              "line_id": "1",
+              "asset_type": "Unknown",
+              "commodity": "Unknown",
+              "nature": "UNKNOWN"
+            }
+          ]
+        },
+        "asset_classification": {
+          "lines": [
+            {
+              "rationale": "Europe invoice, but no asset_classes catalog was supplied and the line description \"Invoice 2\" provides no identifiable asset class. Therefore classification is unavailable.",
+              "evidence_refs": [
+                "invoice",
+                "line:1",
+                "source_gaps",
+                "stage:document_intelligence"
+              ],
+              "confidence": 0.08,
+              "line_id": "1",
+              "task_code": null,
+              "asset_class_code": null,
+              "status": "UNAVAILABLE"
+            }
+          ]
+        },
+        "coding_validation": {
+          "lines": [
+            {
+              "rationale": "Prior classification for line 1 has no populated task code, and no approved business coding is supplied for this line. With either code absent, the comparison result is MISSING.",
+              "evidence_refs": [
+                "line:1",
+                "approved_coding",
+                "stage:asset_classification"
+              ],
+              "confidence": 0.99,
+              "line_id": "1",
+              "status": "MISSING"
+            }
+          ]
+        },
+        "capitalization_decision": {
+          "lines": [
+            {
+              "rationale": "REVIEW because no applicable company capitalization policy was supplied, and the evidence does not identify whether line 1 is a new asset, repair, service, or other directly attributable cost. The description \"Invoice 2\" is insufficient to assess useful life, capitalization unit, or any policy threshold. The provided scenario threshold is not an approved policy, so it cannot support CAPEX or OPEX.",
+              "evidence_refs": [
+                "line:1",
+                "invoice",
+                "source_gaps"
+              ],
+              "confidence": 0.99,
+              "line_id": "1",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            }
+          ]
+        },
+        "asset_relationship": {
+          "rationale": "No prior capitalized assets or invoices were supplied in history_candidates, so there is no evidence that line 1 relates to an existing asset as a component, addition, or bundle. The invoice and line description are too generic (\"Invoice 2\") and provide no asset ID, AFE, project, or descriptive link to any existing asset. Because bundling review depends on matching supplied history and none was provided, a bundle exception cannot be identified from the available evidence.",
+          "evidence_refs": [
+            "invoice",
+            "line:1",
+            "source_gaps"
+          ],
+          "confidence": 0.2,
+          "bundle_exception": false,
+          "matched_history_ids": []
+        },
+        "exception_management": {
+          "exceptions": [
+            {
+              "code": "DQ",
+              "line_id": "1",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:1"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "1",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:1"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "",
+              "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+              "evidence_refs": [
+                "invoice"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "1",
+              "detail": "Earlier specialist stages indicate the line description is too generic to determine asset class, nature, or coding, so classification and coding remain uncertain.",
+              "evidence_refs": [
+                "line:1",
+                "stage:asset_classification",
+                "stage:coding_validation",
+                "stage:document_intelligence"
+              ]
+            }
+          ],
+          "summary": "Preserved all required exceptions. Earlier specialist outputs support unresolved classification, coding, and policy application for line 1. No supported E1, E2, E3, or E5 exception can be added from the supplied evidence."
+        }
+      },
+      "automatic_posting": false,
+      "reference_sha256": "94a5515f7f7ec58886919ca3668322e93b4d84ed3931a671e9bda7de166548aa",
+      "model": "gpt-5.4",
+      "case_digest": "a6f29f2656bfd33b71e157cfc48e242d1000c687fd859c8db0453765750bd83f",
+      "review_status": "PENDING",
+      "review_decision": "",
+      "final_decision": null
+    }
+  ],
+  "exceptions": [
+    {
+      "code": "DQ",
+      "line_id": "1",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "1",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "2",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:2"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "2",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:2"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "3",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:3"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "3",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:3"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "4",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:4"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:4"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "5",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:5"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "5",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:5"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "6",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:6"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "6",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:6"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "7",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:7"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "7",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:7"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "8",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:8"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "8",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:8"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "9",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:9"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "9",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:9"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "10",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:10"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "10",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:10"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "11",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:11"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "11",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:11"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "12",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:12"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "E4",
+      "line_id": "12",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:12"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "",
+      "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+      "evidence_refs": [
+        "invoice"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea"
+    },
+    {
+      "code": "DQ",
+      "line_id": "1",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "1",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "2",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:2"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "2",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:2"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "3",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:3"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "3",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:3"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "4",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:4"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:4"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "5",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:5"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "5",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:5"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "6",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:6"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "6",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:6"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "7",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:7"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "7",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:7"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "8",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:8"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "8",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:8"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "9",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:9"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "9",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:9"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "10",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:10"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "E4",
+      "line_id": "10",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:10"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "",
+      "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+      "evidence_refs": [
+        "invoice"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "8",
+      "detail": "Line description is truncated, so classification remains uncertain even though earlier stages tentatively matched environmental task 0007",
+      "evidence_refs": [
+        "line:8",
+        "source_gaps",
+        "stage:asset_classification",
+        "stage:document_intelligence"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "10",
+      "detail": "Reimbursable expenses lack underlying item detail, so coding and treatment remain uncertain despite tentative environmental classification",
+      "evidence_refs": [
+        "line:10",
+        "source_gaps",
+        "stage:asset_classification",
+        "stage:document_intelligence"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203"
+    },
+    {
+      "code": "DQ",
+      "line_id": "1",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "452c56f4-aec3-43a0-bbea-e0d58675e5c2"
+    },
+    {
+      "code": "E4",
+      "line_id": "1",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "452c56f4-aec3-43a0-bbea-e0d58675e5c2"
+    },
+    {
+      "code": "DQ",
+      "line_id": "",
+      "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+      "evidence_refs": [
+        "invoice"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "452c56f4-aec3-43a0-bbea-e0d58675e5c2"
+    },
+    {
+      "code": "DQ",
+      "line_id": "1",
+      "detail": "Earlier specialist stages indicate the line description is too generic to determine asset class, nature, or coding, so classification and coding remain uncertain.",
+      "evidence_refs": [
+        "line:1",
+        "stage:asset_classification",
+        "stage:coding_validation",
+        "stage:document_intelligence"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "452c56f4-aec3-43a0-bbea-e0d58675e5c2"
+    }
+  ],
+  "audit_trace": [
+    {
+      "stage": 0,
+      "agent": "intake",
+      "framework": "Python source reader",
+      "model": "gpt-5.4",
+      "why_id": "why_47bdd1c59a5f",
+      "input_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "output_sha256": "834209334a532d23732d443a4e89b0fc6a73520afbf9e46c7395bc096a1bb4dc",
+      "automatic_posting": false
+    },
+    {
+      "stage": 1,
+      "agent": "document_intelligence",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_7362da0ef1d7",
+      "input_sha256": "2e2cb72a6ddb3c790b8c80429dc6fca2f626806ccaff1bae8819ddb5f4e5cf2f",
+      "output_sha256": "aa3f2ca6e89fd8ddd5d16d0dac49508f20edd20c17dddf44c722217fe65f7e7e",
+      "automatic_posting": false
+    },
+    {
+      "stage": 2,
+      "agent": "asset_classification",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_9cb7e6313f9b",
+      "input_sha256": "fb203ac5e5b3307725c1fd57d36e716495f1e1629ddb6d28302c2e8430a51287",
+      "output_sha256": "e8aaa2bdac39df33bec24a46421a3cdc7601dd077fe67c214cf6229c0c68ca1c",
+      "automatic_posting": false
+    },
+    {
+      "stage": 3,
+      "agent": "coding_validation",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_329d6cf4dcf5",
+      "input_sha256": "4325844d6b4426fff29a10cfdd52be321ccfb03157cb948d43b50519a013e01c",
+      "output_sha256": "f0ec41109fc54aa90051e08559c0e87be545c335d6cf8850f780f9c17dbf9995",
+      "automatic_posting": false
+    },
+    {
+      "stage": 4,
+      "agent": "capitalization_decision",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_a538b30d87bc",
+      "input_sha256": "20ace5d00ebff1eb7dea89ed8559c93f5b231b8e58f2aa83956fc4825d809fa6",
+      "output_sha256": "8c3266fbff767fdb77311df5d607fd54fece9a193cd8f7c9b21f4c8cb54d24fa",
+      "automatic_posting": false
+    },
+    {
+      "stage": 5,
+      "agent": "asset_relationship",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_38a6f6854e45",
+      "input_sha256": "5934e36ab097df345c6e360c6ae6ee9c9e473e63649c5edb400a1c6406ebe807",
+      "output_sha256": "d0fcc63b17f8c3f8357aa0e53ba80d6751f38314bbcb5a1ce39bea1b570fb95f",
+      "automatic_posting": false
+    },
+    {
+      "stage": 6,
+      "agent": "exception_management",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_cbbf2b011ff0",
+      "input_sha256": "1e177a030d46b54119863dca2412b565f56fae35ce4d94009b379426e41b6348",
+      "output_sha256": "173fb525a265ed3200f7f0e40a7960c1a04ebd0602a6d54aa663947221820eac",
+      "automatic_posting": false
+    },
+    {
+      "stage": 1,
+      "agent": "document_intelligence",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_8b4ce2a04ae5",
+      "input_sha256": "0109ca80ce732b32555b4f6389e05e7bb9b78d6dfce0b9dbab9ab49c8436f579",
+      "output_sha256": "9fdca3644285d01f1a0c1f62ad00e1f164be72d133642c662880e2c31be95e07",
+      "automatic_posting": false
+    },
+    {
+      "stage": 2,
+      "agent": "asset_classification",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_fd5776f829de",
+      "input_sha256": "2474289a70987b00500751f5116e476e03bae258ecef132aea7b37a809e2c601",
+      "output_sha256": "7a9026873ba846b2e0029ee2ac7ec7334a6d741b6338bfd5d2b4308b47db75cc",
+      "automatic_posting": false
+    },
+    {
+      "stage": 3,
+      "agent": "coding_validation",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_700bbda11419",
+      "input_sha256": "b8a226f94e851ab7965fb77d55dcb66a90f61fd45b34eb5fc814eb8a61149dc5",
+      "output_sha256": "865f76995ee915cf0d94c0c6b7172985d700769fcf0e9cbe79351e0cc3808158",
+      "automatic_posting": false
+    },
+    {
+      "stage": 4,
+      "agent": "capitalization_decision",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_683afdf3efa1",
+      "input_sha256": "bb21f776c33ca21df4084e048ba755930bce9cc0db18e677bbb9cd55a525abdf",
+      "output_sha256": "d95a2cd8c7eaace6245fb2bb78b6149ed6eb145fed3104ca4bce4261f89502fd",
+      "automatic_posting": false
+    },
+    {
+      "stage": 5,
+      "agent": "asset_relationship",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_ca6124c5dec9",
+      "input_sha256": "f1c4b8248349f080bcce91cc380d211b2d4dc2fef68d81b44bbce0cb5712baa6",
+      "output_sha256": "22970441257ac9881c791808639d828b16975cc0a3c8a57047ef9ffcea2889a7",
+      "automatic_posting": false
+    },
+    {
+      "stage": 6,
+      "agent": "exception_management",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_c7a96283c8ff",
+      "input_sha256": "5e91e148e177b64480bbec53364ebb8381cc05ad0d36cbe261cc8dcd1f012648",
+      "output_sha256": "02e791822eecee83c305e2af192d03f8d69ca2c8bb21b257052c66a5855fdd46",
+      "automatic_posting": false
+    },
+    {
+      "stage": 1,
+      "agent": "document_intelligence",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_3e099638ce61",
+      "input_sha256": "643520d4056e4dcd3fe5c5ae82f94962c36a5050025ba34c6023fd00d43a1762",
+      "output_sha256": "c28328c182d186f07179bbd930fe97a714099dd8b2e01c367976f2e557d3a135",
+      "automatic_posting": false
+    },
+    {
+      "stage": 2,
+      "agent": "asset_classification",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_076568e02960",
+      "input_sha256": "fe719677b5e33c249e9fd1049ef192865552ac0b34e73982bf8d1c2bef551871",
+      "output_sha256": "edcb6ce889d40c1cf8aafc4e4e62002505820af1de9640bb694bc92fdfc97d67",
+      "automatic_posting": false
+    },
+    {
+      "stage": 3,
+      "agent": "coding_validation",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_9f69bb0a13a4",
+      "input_sha256": "2752b8e24b8add765d8288128dbcafe62fcf280a031fcf494bf4ea27d1b81819",
+      "output_sha256": "b666a53a5939b101b15d96e4bb7a80e459bc9c3b5a89ec19e84c690ec3bdbd6f",
+      "automatic_posting": false
+    },
+    {
+      "stage": 4,
+      "agent": "capitalization_decision",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_24b96c7cffbb",
+      "input_sha256": "f1612498e6ca13d1a81447e28523dae287135f4563313a14433db0825728b8ed",
+      "output_sha256": "297add179187af08eb8ba25ca185e932856c565298ec71dfb43a0698bf8812cd",
+      "automatic_posting": false
+    },
+    {
+      "stage": 5,
+      "agent": "asset_relationship",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_74ed042f8b7b",
+      "input_sha256": "5f5af1032ea5383fcd0ced340c4dfdea79c320c8789c1d882d2466710fef7b92",
+      "output_sha256": "5369e52e0b17628506cd87e4747eb3727ad7864aa20280d70b0ae5599d3b2fef",
+      "automatic_posting": false
+    },
+    {
+      "stage": 6,
+      "agent": "exception_management",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_a3f9753a6faf",
+      "input_sha256": "be90f05271a03ed8f168dec232842d66f4482648f3073ec783f2c4ecb06d874c",
+      "output_sha256": "672766b4d350267e20e829648bbdee4068779573f63c02eb0ddf046b9ca6823d",
+      "automatic_posting": false
+    },
+    {
+      "stage": 7,
+      "agent": "continuous_learning",
+      "framework": "Microsoft Agent Framework",
+      "model": "gpt-5.4",
+      "why_id": "why_7d57dd8e8abe",
+      "input_sha256": "9e8807a4057758e55ef51cee29e4341c0ba3f7546724d378c7081b26ecef5f08",
+      "output_sha256": "a6399b47c965d87f316cf76b3c9ca6b7bb6b10af3dc96bef7e0ff5c29d52abbd",
+      "automatic_posting": false
+    }
+  ],
+  "governance": {
+    "run_id": "f35fc33eb6c24c51a867765b51bd8d1d",
+    "chain_verified": true,
+    "signatures_verified": true,
+    "record_count": 20,
+    "audit_path": "sandbox\\capex_flow-gpt54-smoke\\governance\\f35fc33eb6c24c51a867765b51bd8d1d\\signed_audit.jsonl",
+    "budget": {
+      "calls": "20/100"
+    },
+    "forbidden_capabilities": [
+      "erp.post",
+      "payment.send",
+      "finance.approve",
+      "rule.activate",
+      "file.delete"
+    ]
+  }
+}

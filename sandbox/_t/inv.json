@@ -1,0 +1,946 @@
+﻿
+==========================================================================
+MICROSOFT AGENT FRAMEWORK - reasoning  |  autarch - governance
+==========================================================================
+environment variable APPLICATIONINSIGHTS_CONNECTION_STRING not set.
+environment variable AGENT_PROJECT_RESOURCE_ID not set.
+  reasoning engine: Microsoft Agent Framework on 'gpt-4.1-rp' (auth Entra ID)
+
+==========================================================================
+1) GOVERNED READ - Cbe Capito - R3645629.pdf
+==========================================================================
+  read OK: 0 characters   |   read-only guarantee holds: True
+  signed why-record: why_fb25c7022574
+  no text layer found (scanned/image-only PDF) - running governed vision-OCR fallback ...
+  vision OCR recovered 3,280 characters
+{
+  "fields": {
+    "vendor_name": "CBE, INC.",
+    "invoice_number": "R3645629",
+    "invoice_date": "03/11/2025",
+    "po_number": "2543082",
+    "afe_number": "AFE2543082",
+    "total_amount": "2636.54",
+    "currency": "USD",
+    "state": "MO",
+    "site_number": "HL4701649",
+    "tax_charged": "134.19",
+    "description": "BOSCH TRITECH 360 PIR WHT, HONEYWELL GLASSBREAK DETECTOR, 22/4 STRANDED NON-SHIELDED, 200' BOX, 2-TN SIREN IN SS ENCL 11BD, 18/2 STRANDED NON-SHIELDED, 200' BOX, ELK 12VDC STROBE - BLUE, CONTACT, SURFACE MOUNT 1-1/4\" GAP GRAY, HARDWARE KIT, INSTALL ALARM, INSTALL ALARM TRAVEL (PO), FUEL SURCHARGE, system upgrade to full burglary and panic, install/test all zones, cable and sensor installation, verified operations."
+  },
+  "lines": [
+    {
+      "n": 1,
+      "description": "BOSCH TRITECH 360 PIR WHT",
+      "quantity": "3.00",
+      "amount": 420.0,
+      "amount_raw": "420.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Security system installation, new PIR motion sensors",
+      "existing_task_ok": false,
+      "class_rationale": "New PIR sensors are security device components capitalized as part of system upgrade, not a routine repair.",
+      "item_type": "IT & Electronics",
+      "taxable": null,
+      "tax_verdict": "A",
+      "tax_verdict_label": "Ambiguous - requires review",
+      "tax_basis": "matrix MO/IT & Electronics = Ambiguous",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.04225,
+      "expected_tax_amount": null,
+      "tax_exception": true,
+      "tax_exception_reason": "IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.",
+      "tax_rationale": "",
+      "confidence": 0.5,
+      "route": "SME_REVIEW",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 2,
+      "description": "HONEYWELL GLASSBREAK DETECTOR",
+      "quantity": "3.00",
+      "amount": 267.0,
+      "amount_raw": "267.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Security system installation, new glassbreak sensors",
+      "existing_task_ok": false,
+      "class_rationale": "Glassbreak detectors are newly installed as part of large system upgrade; capitalizable security hardware.",
+      "item_type": "IT & Electronics",
+      "taxable": null,
+      "tax_verdict": "A",
+      "tax_verdict_label": "Ambiguous - requires review",
+      "tax_basis": "matrix MO/IT & Electronics = Ambiguous",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.04225,
+      "expected_tax_amount": null,
+      "tax_exception": true,
+      "tax_exception_reason": "IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.",
+      "tax_rationale": "",
+      "confidence": 0.5,
+      "route": "SME_REVIEW",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 3,
+      "description": "22/4 STRANDED NON-SHIELDED, 200' BOX",
+      "quantity": "3.00",
+      "amount": 207.0,
+      "amount_raw": "207.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Cable for new security system installation",
+      "existing_task_ok": false,
+      "class_rationale": "Cable is directly installed into new security/alarm asset, included in capitalized acquisition/installation.",
+      "item_type": "IT & Electronics",
+      "taxable": null,
+      "tax_verdict": "A",
+      "tax_verdict_label": "Ambiguous - requires review",
+      "tax_basis": "matrix MO/IT & Electronics = Ambiguous",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.04225,
+      "expected_tax_amount": null,
+      "tax_exception": true,
+      "tax_exception_reason": "IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.",
+      "tax_rationale": "",
+      "confidence": 0.5,
+      "route": "SME_REVIEW",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 4,
+      "description": "2-TN SIREN IN SS ENCL 11BD",
+      "quantity": "1.00",
+      "amount": 120.0,
+      "amount_raw": "120.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Alarm siren as part of new system",
+      "existing_task_ok": false,
+      "class_rationale": "Siren is a component of new alarm/security system, capitalized with system installation.",
+      "item_type": "IT & Electronics",
+      "taxable": null,
+      "tax_verdict": "A",
+      "tax_verdict_label": "Ambiguous - requires review",
+      "tax_basis": "matrix MO/IT & Electronics = Ambiguous",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.04225,
+      "expected_tax_amount": null,
+      "tax_exception": true,
+      "tax_exception_reason": "IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.",
+      "tax_rationale": "",
+      "confidence": 0.5,
+      "route": "SME_REVIEW",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 5,
+      "description": "18/2 STRANDED NON-SHIELDED, 200' BOX",
+      "quantity": "1.00",
+      "amount": 75.0,
+      "amount_raw": "75.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Cable for new security system installation",
+      "existing_task_ok": false,
+      "class_rationale": "Cable directly installed and integrated into new alarm system build-out, capitalizable as part of asset.",
+      "item_type": "IT & Electronics",
+      "taxable": null,
+      "tax_verdict": "A",
+      "tax_verdict_label": "Ambiguous - requires review",
+      "tax_basis": "matrix MO/IT & Electronics = Ambiguous",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.04225,
+      "expected_tax_amount": null,
+      "tax_exception": true,
+      "tax_exception_reason": "IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.",
+      "tax_rationale": "",
+      "confidence": 0.5,
+      "route": "SME_REVIEW",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 6,
+      "description": "ELK 12VDC STROBE - BLUE",
+      "quantity": "1.00",
+      "amount": 45.0,
+      "amount_raw": "45.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Strobe for alarm system",
+      "existing_task_ok": false,
+      "class_rationale": "Strobe is a component in new security system build; capitalizable with other installed hardware.",
+      "item_type": "IT & Electronics",
+      "taxable": null,
+      "tax_verdict": "A",
+      "tax_verdict_label": "Ambiguous - requires review",
+      "tax_basis": "matrix MO/IT & Electronics = Ambiguous",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.04225,
+      "expected_tax_amount": null,
+      "tax_exception": true,
+      "tax_exception_reason": "IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.",
+      "tax_rationale": "",
+      "confidence": 0.5,
+      "route": "SME_REVIEW",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 7,
+      "description": "CONTACT, SURFACE MOUNT 1-1/4\" GAP GRAY",
+      "quantity": "3.00",
+      "amount": 36.0,
+      "amount_raw": "36.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Magnetic contact for alarm system",
+      "existing_task_ok": false,
+      "class_rationale": "Magnetic sensors part of installed security asset; not a repair; capitalized in upgrade.",
+      "item_type": "IT & Electronics",
+      "taxable": null,
+      "tax_verdict": "A",
+      "tax_verdict_label": "Ambiguous - requires review",
+      "tax_basis": "matrix MO/IT & Electronics = Ambiguous",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.04225,
+      "expected_tax_amount": null,
+      "tax_exception": true,
+      "tax_exception_reason": "IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.",
+      "tax_rationale": "",
+      "confidence": 0.5,
+      "route": "SME_REVIEW",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 8,
+      "description": "HARDWARE KIT",
+      "quantity": "1.00",
+      "amount": 29.0,
+      "amount_raw": "29.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Hardware required for system installation",
+      "existing_task_ok": false,
+      "class_rationale": "Hardware kit supports installation of security/alarm equipment, capitalizable as part of new asset.",
+      "item_type": "IT & Electronics",
+      "taxable": null,
+      "tax_verdict": "A",
+      "tax_verdict_label": "Ambiguous - requires review",
+      "tax_basis": "matrix MO/IT & Electronics = Ambiguous",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.04225,
+      "expected_tax_amount": null,
+      "tax_exception": true,
+      "tax_exception_reason": "IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.",
+      "tax_rationale": "",
+      "confidence": 0.5,
+      "route": "SME_REVIEW",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 9,
+      "description": "INSTALL ALARM",
+      "quantity": "9.00",
+      "amount": 882.0,
+      "amount_raw": "882.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Alarm system installation labor - capitalized with physical assets",
+      "existing_task_ok": false,
+      "class_rationale": "Installation labor for new system build, directly capitalized with security equipment.",
+      "item_type": "Professional Services",
+      "taxable": false,
+      "tax_verdict": "E",
+      "tax_verdict_label": "Exempt",
+      "tax_basis": "matrix MO/Professional Services = Exempt",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.0,
+      "expected_tax_amount": 0.0,
+      "tax_exception": false,
+      "tax_exception_reason": "",
+      "tax_rationale": "Professional Services is exempt in MO per the taxability matrix.",
+      "confidence": 0.97,
+      "route": "AUTO_POST",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 10,
+      "description": "INSTALL ALARM TRAVEL (PO)",
+      "quantity": "2.00",
+      "amount": 196.0,
+      "amount_raw": "196.00",
+      "capex_opex": "CapEx",
+      "capex_basis": "task TC-5020 (cap_eligible=True)",
+      "capex_conflict": false,
+      "asset_category": "Security Systems",
+      "task_code": "TC-5020",
+      "useful_life_months": 84,
+      "depreciation": "straight-line",
+      "suggested_task": "Travel for installation labor (directly related, capitalizable)",
+      "existing_task_ok": false,
+      "class_rationale": "Travel costs directly related to installation of new capital asset, allowable to capitalize.",
+      "item_type": "Professional Services",
+      "taxable": false,
+      "tax_verdict": "E",
+      "tax_verdict_label": "Exempt",
+      "tax_basis": "matrix MO/Professional Services = Exempt",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.0,
+      "expected_tax_amount": 0.0,
+      "tax_exception": false,
+      "tax_exception_reason": "",
+      "tax_rationale": "Professional Services is exempt in MO per the taxability matrix.",
+      "confidence": 0.92,
+      "route": "AUTO_POST",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "capitalize to asset: Security Systems",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 11,
+      "description": "FUEL SURCHARGE",
+      "quantity": "1.00",
+      "amount": 10.0,
+      "amount_raw": "10.00",
+      "capex_opex": "OpEx",
+      "capex_basis": "task TC-9010 (cap_eligible=False)",
+      "capex_conflict": false,
+      "asset_category": "Maintenance",
+      "task_code": "TC-9010",
+      "useful_life_months": 0,
+      "depreciation": "expensed",
+      "suggested_task": "Fuel surcharge - not integral to asset, not capitalizable",
+      "existing_task_ok": false,
+      "class_rationale": "Fuel surcharges are incidental operating expenses, not capitalizable per IRS/GAAP rules.",
+      "item_type": "Vehicles & Heavy Equipment",
+      "taxable": true,
+      "tax_verdict": "T",
+      "tax_verdict_label": "Taxable",
+      "tax_basis": "matrix MO/Vehicles & Heavy Equipment = Taxable @ 0.04225",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.04225,
+      "expected_tax_amount": 0.42,
+      "tax_exception": false,
+      "tax_exception_reason": "",
+      "tax_rationale": "Vehicles & Heavy Equipment is taxable in MO per the taxability matrix.",
+      "confidence": 0.9,
+      "route": "AUTO_POST",
+      "charged_tax_alloc": 134.19,
+      "tax_delta": -133.77,
+      "posting_target": "expense to GL",
+      "use_tax_to_allocate": 0.0
+    },
+    {
+      "n": 12,
+      "description": "Shipping",
+      "quantity": "",
+      "amount": 211.35,
+      "amount_raw": "211.35",
+      "capex_opex": "OpEx",
+      "capex_basis": "task TC-9020 (cap_eligible=False)",
+      "capex_conflict": false,
+      "asset_category": "Supplies",
+      "task_code": "TC-9020",
+      "useful_life_months": 0,
+      "depreciation": "expensed",
+      "suggested_task": "Shipping costs \u2013 not capitalized (for this type of asset)",
+      "existing_task_ok": false,
+      "class_rationale": "Shipping is normally expensed unless directly rolled into project asset value; here treated as OpEx.",
+      "item_type": "Professional Services",
+      "taxable": false,
+      "tax_verdict": "E",
+      "tax_verdict_label": "Exempt",
+      "tax_basis": "matrix MO/Professional Services = Exempt",
+      "jurisdiction_state": "MO",
+      "expected_tax_rate": 0.0,
+      "expected_tax_amount": 0.0,
+      "tax_exception": false,
+      "tax_exception_reason": "",
+      "tax_rationale": "Professional Services is exempt in MO per the taxability matrix.",
+      "confidence": 0.9,
+      "route": "AUTO_POST",
+      "charged_tax_alloc": 0.0,
+      "tax_delta": 0.0,
+      "posting_target": "expense to GL",
+      "use_tax_to_allocate": 0.0
+    }
+  ],
+  "rollup": {
+    "capex_total": 2277.0,
+    "opex_total": 221.35,
+    "expected_tax_total": 0.42,
+    "tax_charged": 134.19,
+    "use_tax_owed": 0.0,
+    "over_collected": 133.77,
+    "tax_status": "over_collected",
+    "tax_recon_exception": true,
+    "tax_tolerance": 2.68,
+    "tax_shortfall": false,
+    "n_lines": 12,
+    "n_exceptions": 9,
+    "n_sme": 8,
+    "route": "SME_REVIEW"
+  },
+  "po": {
+    "matched": true,
+    "score": 0.858,
+    "how": "id",
+    "record": {
+      "po_number": "PO-CK-2025-3645",
+      "afe_number": "AFE-NA-2025-0629",
+      "project_name": "Store #2847 Equipment Upgrade \u2014 Raleigh NC",
+      "vendor_name": "CBE Capitol",
+      "task_code": "TC-6020",
+      "asset_class": "Store Fixtures",
+      "location_state": "NC",
+      "budget_amount": 45000.0
+    },
+    "discrepancies": [
+      "ship-to state MO != PO state NC",
+      "no line matches PO task TC-6020 (Store Fixtures); lines use ['TC-5020', 'TC-9010', 'TC-9020']"
+    ]
+  },
+  "multi_jurisdiction": {
+    "flag": false,
+    "states": [
+      "MO"
+    ]
+  },
+  "precedent": {
+    "summary": {
+      "count": 5,
+      "avg_confidence": 0.907,
+      "routing": {
+        "auto_approved": 4,
+        "auto_with_review": 1
+      },
+      "taxability": {
+        "Taxable": 5
+      },
+      "example": "Network cabling \u2014 standard taxable"
+    },
+    "matches": [
+      {
+        "invoice_number": "177891",
+        "ship_to_state": "TX",
+        "item_type": "IT & Electronics",
+        "routing_result": "auto_approved",
+        "overall_confidence": 0.951,
+        "taxability": "Taxable",
+        "scenario_label": "Network cabling \u2014 standard taxable"
+      },
+      {
+        "invoice_number": "119401",
+        "ship_to_state": "NC",
+        "item_type": "IT & Electronics",
+        "routing_result": "auto_approved",
+        "overall_confidence": 0.918,
+        "taxability": "Taxable",
+        "scenario_label": "POS terminal batch \u2014 standard match"
+      },
+      {
+        "invoice_number": "178100",
+        "ship_to_state": "TX",
+        "item_type": "IT & Electronics",
+        "routing_result": "auto_with_review",
+        "overall_confidence": 0.782,
+        "taxability": "Taxable",
+        "scenario_label": "VoIP system \u2014 software vs hardware split ambiguous"
+      },
+      {
+        "invoice_number": "178190",
+        "ship_to_state": "TX",
+        "item_type": "IT & Electronics",
+        "routing_result": "auto_approved",
+        "overall_confidence": 0.941,
+        "taxability": "Taxable",
+        "scenario_label": "Additional network switches"
+      },
+      {
+        "invoice_number": "119650",
+        "ship_to_state": "NC",
+        "item_type": "IT & Electronics",
+        "routing_result": "auto_approved",
+        "overall_confidence": 0.945,
+        "taxability": "Taxable",
+        "scenario_label": "Replacement card readers"
+      }
+    ]
+  },
+  "reference": {
+    "loaded": [
+      "history",
+      "po_records",
+      "task_codes",
+      "taxability"
+    ],
+    "guarantee_read_only": true,
+    "signed_reads": 4
+  },
+  "confidence": {
+    "overall": 0.5,
+    "threshold": 0.85,
+    "per_line": {
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5,
+      "4": 0.5,
+      "5": 0.5,
+      "6": 0.5,
+      "7": 0.5,
+      "8": 0.5,
+      "9": 0.97,
+      "10": 0.92,
+      "11": 0.9,
+      "12": 0.9
+    }
+  },
+  "routing": "HUMAN_REVIEW",
+  "grounding": {
+    "all_grounded": true,
+    "flagged": []
+  },
+  "safety": {
+    "passed": true,
+    "score": 1.0,
+    "rows": [
+      [
+        "prompt_injection",
+        1.0,
+        true,
+        "no injection patterns detected"
+      ],
+      [
+        "pii_exposure",
+        1.0,
+        true,
+        "no PII detected"
+      ],
+      [
+        "harmful_content",
+        1.0,
+        true,
+        "The output contains invoice and item details related to security systems, hardware, installation, and associated services; there is no violence, hate, unfairness, sexual content, self-harm, harassment, or dangerous instructions present. All content is strictly business-related and benign."
+      ],
+      [
+        "governance",
+        1.0,
+        true,
+        "all checks passed"
+      ]
+    ],
+    "skipped": []
+  },
+  "quality": {
+    "passed": true,
+    "score": 0.992,
+    "rows": [
+      [
+        "completeness",
+        1.0,
+        true,
+        "all checks passed"
+      ],
+      [
+        "groundedness",
+        1.0,
+        true,
+        "all 10 claim(s) grounded in the source"
+      ],
+      [
+        "accuracy",
+        0.98,
+        true,
+        "All non-empty values are factually supported and placed in the correct fields. The vendor, invoice number/date, PO#, AFE#, amounts, currency, site number, and tax charged are accurate. The state is correctly inferred from the service site address and the MO alarms license note. The description precisely summarizes listed parts and service notes without inventing extra details. Minor deduction for 'site_number' being used instead of the more standard 'store_number', but the value matches the invoice and context."
+      ],
+      [
+        "soundness",
+        0.98,
+        true,
+        "CapEx vs OpEx calls are reasoned: all asset builds are new system installation, clearly capitalizable, whereas fuel surcharge and shipping are correctly OpEx. Asset categories align with line items (Security Systems, Maintenance, Supplies). Tax determinations: specific taxability matrix rationale is cited per item, and ambiguous items are flagged for SME review with 'Ambiguous' verdict, consistent for IT & Electronics in MO. Professional Services are appropriately exempt. Vehicles & Heavy Equipment taxable correctly at expected rate, with clear math showing over-collected tax and exception flag. Rollup accurately tallies capex, opex, and tax, identifying exceptions. The only minor gap is using actual charged tax from an invoice without reconciling in full with item-specific expectations, but this is acknowledged. All internal logic/reasoning is sound and consistent."
+      ],
+      [
+        "format",
+        1.0,
+        true,
+        "all checks passed"
+      ]
+    ],
+    "skipped": []
+  },
+  "verdicts": [
+    [
+      "vendor_name",
+      "yes",
+      "yes",
+      "OK",
+      "Vendor name 'CBE, INC.' appears clearly at the top of the invoice."
+    ],
+    [
+      "invoice_number",
+      "yes",
+      "yes",
+      "OK",
+      "Invoice number 'R3645629' is shown after 'INVOICE -'."
+    ],
+    [
+      "invoice_date",
+      "yes",
+      "yes",
+      "OK",
+      "Invoice date '03/11/2025' is listed under 'Invoice Date'."
+    ],
+    [
+      "po_number",
+      "yes",
+      "yes",
+      "OK",
+      "PO number '2543082' matches 'Purchase Order: 2543082' on the invoice."
+    ],
+    [
+      "afe_number",
+      "yes",
+      "yes",
+      "OK",
+      "AFE number 'AFE2543082' is confirmed in the note: 'P.O. SYSTEM REF: AFE2543082'."
+    ],
+    [
+      "total_amount",
+      "yes",
+      "yes",
+      "OK",
+      "Total amount '2636.54' matches 'Invoice Total   2,636.54'."
+    ],
+    [
+      "currency",
+      "yes",
+      "n/a",
+      "OK",
+      "Currency 'USD' is stated as 'Amounts payable in U.S. Dollars (USD)'."
+    ],
+    [
+      "state",
+      "yes",
+      "yes",
+      "OK",
+      "State 'MO' is supported by 'Service Site' address (DES PERES, MO 63131-1801)."
+    ],
+    [
+      "site_number",
+      "yes",
+      "yes",
+      "OK",
+      "Site number 'HL4701649' matches 'CIRCLE K HL 4701649' in the Service Site."
+    ],
+    [
+      "tax_charged",
+      "yes",
+      "yes",
+      "OK",
+      "Tax charged '134.19' matches 'Tax Amount        134.19'."
+    ],
+    [
+      "description",
+      "yes",
+      "yes",
+      "WARNING",
+      "Most items in the extracted description are supported by line items, but 's' at the end is unclear or extraneous."
+    ]
+  ],
+  "usage": {
+    "rows": [
+      [
+        "gpt-4.1-rp",
+        9,
+        16738,
+        3963,
+        0.06518
+      ]
+    ],
+    "total": [
+      9,
+      16738,
+      3963,
+      0.06518,
+      false
+    ],
+    "calls": [
+      [
+        1,
+        "main",
+        "maf",
+        "gpt-4.1-rp",
+        "17:17:58.185",
+        "17:18:08.348",
+        "10.16s",
+        30,
+        2,
+        7.6e-05,
+        false
+      ],
+      [
+        2,
+        "main",
+        "vision_ocr:p1",
+        "gpt-4.1-rp",
+        "17:18:10.018",
+        "17:18:29.728",
+        "19.71s",
+        842,
+        1062,
+        0.01018,
+        false
+      ],
+      [
+        3,
+        "main",
+        "extract_invoice",
+        "gpt-4.1-rp",
+        "17:18:30.013",
+        "17:18:31.835",
+        "1.82s",
+        1246,
+        257,
+        0.004548,
+        false
+      ],
+      [
+        4,
+        "main",
+        "extract_lines",
+        "gpt-4.1-rp",
+        "17:18:31.836",
+        "17:18:34.898",
+        "3.06s",
+        1184,
+        570,
+        0.006928,
+        false
+      ],
+      [
+        5,
+        "main",
+        "classify_lines",
+        "gpt-4.1-rp",
+        "17:18:34.900",
+        "17:18:46.036",
+        "11.14s",
+        1749,
+        1251,
+        0.013506,
+        false
+      ],
+      [
+        6,
+        "eval",
+        "quality_judges",
+        "gpt-4.1-rp",
+        "17:18:46.059",
+        "17:18:47.977",
+        "1.92s",
+        1507,
+        114,
+        0.003926,
+        false
+      ],
+      [
+        7,
+        "eval",
+        "quality_judges",
+        "gpt-4.1-rp",
+        "17:18:47.978",
+        "17:18:50.648",
+        "2.67s",
+        4347,
+        182,
+        0.01015,
+        false
+      ],
+      [
+        8,
+        "eval",
+        "safety_judges",
+        "gpt-4.1-rp",
+        "17:18:50.658",
+        "17:18:53.370",
+        "2.71s",
+        4416,
+        68,
+        0.009376,
+        false
+      ],
+      [
+        9,
+        "eval",
+        "field_verdict",
+        "gpt-4.1-rp",
+        "17:18:53.372",
+        "17:18:57.080",
+        "3.71s",
+        1417,
+        457,
+        0.00649,
+        false
+      ]
+    ]
+  },
+  "evidence": {
+    "why_id": "why_fb25c7022574",
+    "provenance_verifies": true,
+    "guarantee_read_only": true,
+    "citations": {
+      "vendor_name": {
+        "value": "CBE, INC.",
+        "quote": "CBE, INC.",
+        "method": "verbatim",
+        "score": 1.0,
+        "start": 0,
+        "end": 9
+      },
+      "invoice_number": {
+        "value": "R3645629",
+        "quote": "INVOICE - R3645629",
+        "method": "verbatim",
+        "score": 1.0,
+        "start": 99,
+        "end": 117
+      },
+      "invoice_date": {
+        "value": "03/11/2025",
+        "quote": "Invoice Date: 03/11/2025",
+        "method": "verbatim",
+        "score": 1.0,
+        "start": 140,
+        "end": 164
+      },
+      "po_number": {
+        "value": "2543082",
+        "quote": "Purchase Order: 2543082",
+        "method": "verbatim",
+        "score": 1.0,
+        "start": 213,
+        "end": 236
+      },
+      "afe_number": {
+        "value": "AFE2543082",
+        "quote": "SYSTEM REF: AFE2543082 = HL4701649 = REQUESTED BY LPM/RILEY DELANO = STORE HAS DMP - PANIC ONLY, PLEASE UPGRADE SYSTEM TO FULL BURGLARY AND PANIC, NEEDS TO HAVE AT LEAST 3 DOOR CONTACTS, 3 GLASSBREAKS, AND 3 MOTION SENSORS, ANY UNUSED/EXTRA PIECES PLEASE SEND BACK.",
+        "method": "verbatim",
+        "score": 1.0,
+        "start": 1791,
+        "end": 2056
+      },
+      "total_amount": {
+        "value": "2636.54",
+        "quote": "Invoice Total   2,636.54",
+        "method": "lexical",
+        "score": 0.5,
+        "start": 3134,
+        "end": 3158
+      },
+      "currency": {
+        "value": "USD",
+        "quote": "Dollars (USD)",
+        "method": "verbatim",
+        "score": 1.0,
+        "start": 3196,
+        "end": 3209
+      },
+      "state": {
+        "value": "MO",
+        "quote": "MONTGOMERY, AL 36102 USA",
+        "method": "verbatim",
+        "score": 1.0,
+        "start": 22,
+        "end": 46
+      },
+      "site_number": {
+        "value": "HL4701649",
+        "quote": "SYSTEM REF: AFE2543082 = HL4701649 = REQUESTED BY LPM/RILEY DELANO = STORE HAS DMP - PANIC ONLY, PLEASE UPGRADE SYSTEM TO FULL BURGLARY AND PANIC, NEEDS TO HAVE AT LEAST 3 DOOR CONTACTS, 3 GLASSBREAKS, AND 3 MOTION SENSORS, ANY UNUSED/EXTRA PIECES PLEASE SEND BACK.",
+        "method": "verbatim",
+        "score": 1.0,
+        "start": 1791,
+        "end": 2056
+      },
+      "tax_charged": {
+        "value": "134.19",
+        "quote": "Tax Amount        134.19",
+        "method": "verbatim",
+        "score": 1.0,
+        "start": 3109,
+        "end": 3133
+      }
+    }
+  }
+}

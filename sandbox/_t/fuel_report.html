@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Fuel Diversion Determination</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;margin:2rem;color:#222}
+h1{color:#0b6}table{border-collapse:collapse;width:100%;margin-top:1rem}
+th,td{border:1px solid #ddd;padding:.5rem;text-align:left;font-size:.9rem;vertical-align:top}
+th{background:#0b6;color:#fff}.muted{color:#888;font-size:.8rem}
+tr.ok td{background:#f2fbf5}tr.warn td{background:#fff8e6}tr.sme td{background:#fdeeee}
+.summary{margin-top:1rem;padding:1rem;background:#f6f6f6;border-radius:8px}</style></head><body>
+<h1>Fuel Diversion Determination</h1>
+<div class='muted'>Reasoning: Microsoft Agent Framework on 'gpt-4.1-rp' (auth Entra ID) &middot; governed read: deliveries, fueltrack, sites, tax_rates, terminals
+(read-only guarantee True, 5 signed reads)</div>
+<div class='summary'><b>7</b> deliveries scanned &middot; <b>5</b> diversions &middot;
+net tax impact <b>$-2,899.70</b> &middot; routing AUTO_READY=1, NOTIFY_CARRIER=2, NO_ACTION=2, PENDING=1, SME_REVIEW=1</div>
+<table><tr><th>BOL</th><th>Carrier</th><th>Load</th><th>Origin &rarr; Planned &rArr; Actual</th><th>Diversion</th>
+<th>Net tax</th><th>Fuel Track #</th><th>Dual val.</th><th>Conf.</th><th>Route</th></tr>
+<tr class='ok'><td>BOL-100234</td><td>Southern Fuel Express<br><span class='muted'>third_party</span></td><td>8000 gal<br><span class='muted'>Unleaded 87</span></td><td>GA &rarr; GA &rArr; <b>SC</b></td><td><b>YES</b></td><td>$-348.00</td><td>FT-2026-778901</td><td>AGREE</td><td>0.97</td><td>AUTO_READY</td></tr><tr class='ok'><td>BOL-100235</td><td>Piedmont Carriers<br><span class='muted'>third_party</span></td><td>7500 gal<br><span class='muted'>Diesel</span></td><td>NC &rarr; NC &rArr; <b>NC</b></td><td>no</td><td>-</td><td>&amp;mdash;</td><td></td><td>1.00</td><td>NO_ACTION</td></tr><tr class='warn'><td>BOL-100236</td><td>Desert Haul Logistics<br><span class='muted'>third_party</span></td><td>8200 gal<br><span class='muted'>Unleaded 87</span></td><td>GA &rarr; GA &rArr; <b>AZ</b></td><td><b>YES</b></td><td>$-1,156.20</td><td>&amp;mdash;</td><td>AGREE</td><td>0.90</td><td>NOTIFY_CARRIER</td></tr><tr class='ok'><td>BOL-100237</td><td>Cactus Fuel Transport<br><span class='muted'>third_party</span></td><td>6000 gal<br><span class='muted'>Diesel</span></td><td>AZ &rarr; AZ &rArr; <b>AZ</b></td><td>no</td><td>-</td><td>&amp;mdash;</td><td></td><td>1.00</td><td>NO_ACTION</td></tr><tr class='sme'><td>BOL-100238</td><td>Cascade Transport<br><span class='muted'>third_party</span></td><td>7800 gal<br><span class='muted'>Unleaded 87</span></td><td>OR &rarr; OR &rArr; <b>SC</b></td><td><b>YES</b></td><td>$-877.50</td><td>FT-2026-889012</td><td>AGREE</td><td>0.50</td><td>SME_REVIEW</td></tr><tr class='warn'><td>BOL-100239</td><td>Circle K Internal Fleet<br><span class='muted'>internal_fleet</span></td><td>7000 gal<br><span class='muted'>Diesel</span></td><td>NC &rarr; NC &rArr; <b>GA</b></td><td><b>YES</b></td><td>$-518.00</td><td>&amp;mdash;</td><td>AGREE</td><td>0.90</td><td>NOTIFY_CARRIER</td></tr><tr class='muted'><td>BOL-100240</td><td>Lone Star Fuel<br><span class='muted'>third_party</span></td><td>8100 gal<br><span class='muted'>Unleaded 87</span></td><td>TX &rarr; TX &rArr; <b>SC</b></td><td><b>YES</b></td><td>-</td><td>&amp;mdash;</td><td></td><td>1.00</td><td>PENDING</td></tr></table>
+<p class='muted'>Illustrative seed data - not tax advice. The PDI form write is a separate governed RPA step.</p>
+</body></html>

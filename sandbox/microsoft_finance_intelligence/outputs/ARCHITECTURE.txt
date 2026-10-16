@@ -1,0 +1,14 @@
+PUBLIC SOURCES
+  SEC 10-K/10-Q/8-K + XBRL | Microsoft IR | FRED | Market | Peers
+                         |
+                         v
+GOVERNED INGESTION + CONTENT-ADDRESSED EVIDENCE CACHE
+                         |
+                         v
+15 CAPABILITY-ATTENUATED SPECIALISTS
+  Quarterly + TTM | Filing Changes | Evidence-linked Core Analysis
+  Performance | Segments | Cash/Capex | Credit | Capital Allocation
+  Valuation | Market Risk | Peers | Accounting | Audit | Tax | AI | Risk
+                         |
+                         v
+SIGNED SYNTHESIS + DIGEST-BOUND NAMED REVIEW + PROFESSIONAL VIEWS

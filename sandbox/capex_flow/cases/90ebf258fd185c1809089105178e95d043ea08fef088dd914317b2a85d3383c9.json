@@ -1,0 +1,1228 @@
+{
+  "country": "US",
+  "currency": "USD",
+  "exceptions": [
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and all specialist outputs confirm the lack of approved coding or direct catalog asset classification for this environmental assessment service line.",
+      "evidence_refs": [
+        "line:1",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "1",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. No approved policy excerpts supplied and no policy_ids available for capitalization determination; must remain REVIEW as per specialist outputs.",
+      "evidence_refs": [
+        "line:1",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "1",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. No approved coding or catalog asset match for this air quality service per coding validation and task catalog output.",
+      "evidence_refs": [
+        "line:2",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "2",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. No policy evidence or company guidance for CAPEX/OPEX; policy application cannot be completed.",
+      "evidence_refs": [
+        "line:2",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "2",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. Specialist and coding validation output show catalog match but absence of approved coding for this biological assessment line.",
+      "evidence_refs": [
+        "line:3",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "3",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. No policy excerpts or policy_ids supplied for classification; capitalization must remain REVIEW.",
+      "evidence_refs": [
+        "line:3",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "3",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs confirm absence of approved coding for this cultural resources assessment line.",
+      "evidence_refs": [
+        "line:4",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "4",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. Source gaps show no company policy supplied for capitalization; decision cannot proceed.",
+      "evidence_refs": [
+        "line:4",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "4",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs confirm there is no approved coding or catalog classification for this health risk assessment service.",
+      "evidence_refs": [
+        "line:5",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "5",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. No policy excerpt/policy_id or company guidance supplied for CAPEX/OPEX determination.",
+      "evidence_refs": [
+        "line:5",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "5",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs confirm no approved coding for this noise & vibration environmental service line.",
+      "evidence_refs": [
+        "line:6",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "6",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. Absence of any policy evidence and policy_ids means capitalization basis cannot be established; remains REVIEW.",
+      "evidence_refs": [
+        "line:6",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "6",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs confirm the lack of approved coding for this site census environmental service line.",
+      "evidence_refs": [
+        "line:7",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "7",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. No approved policy or guidance supplied for capitalization decision; must remain REVIEW.",
+      "evidence_refs": [
+        "line:7",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "7",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs show no approved coding for this environmental compliance administrative service.",
+      "evidence_refs": [
+        "line:8",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "8",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. No evidence of policy supply or asset linkage for capitalization determination; must remain REVIEW.",
+      "evidence_refs": [
+        "line:8",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "8",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs show absence of approved coding for environmental project management/admin line.",
+      "evidence_refs": [
+        "line:9",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "9",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. No approved policy evidence or policy_ids for CAPEX/OPEX application; capitalization decision cannot proceed.",
+      "evidence_refs": [
+        "line:9",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "9",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation output and specialist review confirm no approved coding or catalog classification for reimbursable expense line.",
+      "evidence_refs": [
+        "line:10",
+        "approved_coding",
+        "stage:coding_validation"
+      ],
+      "line_id": "10",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required. No evidence of policy, company guidance, or asset linkage for capitalization determination; must remain REVIEW.",
+      "evidence_refs": [
+        "line:10",
+        "source_gaps",
+        "stage:capitalization_decision"
+      ],
+      "line_id": "10",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete.",
+      "evidence_refs": [
+        "source_gaps",
+        "invoice"
+      ],
+      "line_id": "",
+      "type": "Missing Evidence / Uncertainty"
+    }
+  ],
+  "invoice_id": "58aceec5-f35a-48a7-8faa-2f1a195af203",
+  "invoice_number": "36764068-GRP005",
+  "lines": [
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 2625.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.95,
+      "coding_status": "MISSING",
+      "commodity": "Environmental review",
+      "description": "LINE 1 ENVIRONMENTAL ASSESSMENT FORM",
+      "evidence_refs": [
+        "line:1",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "1",
+      "nature": "SERVICE",
+      "policy_basis": "The description and understanding indicate this is an 'Environmental Assessment Form' service. All supplied evidence (line, invoice, classification, understanding) confirms the line is for professional services with no physical asset, improvement, or directly attributable cost relevant to asset acquisition or enhancement. No policy_id is supplied to support CAPEX classification as required. Capitalization basis cannot be established; scenario threshold is not a company policy. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 5120.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.95,
+      "coding_status": "MISSING",
+      "commodity": "Environmental study",
+      "description": "LINE 2 AIR QUALITY & GREENHOUSE GAS\nEMISSIONS ASSESSME",
+      "evidence_refs": [
+        "line:2",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "2",
+      "nature": "SERVICE",
+      "policy_basis": "This line is an 'Air Quality & Greenhouse Gas Emissions Assessment,' an environmental service/study confirmed by classification and understanding evidence. No asset, improvement, or directly attributable cost is indicated. No supplied policy_id to determine CAPEX/OPEX. Threshold scenario is not sufficient. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 0.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.95,
+      "coding_status": "MISSING",
+      "commodity": "Environmental study",
+      "description": "LINE 3 BIOLOGICAL RESOURCES ASSESSMENT",
+      "evidence_refs": [
+        "line:3",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "3",
+      "nature": "SERVICE",
+      "policy_basis": "'Biological Resources Assessment' is determined by classification and understanding evidence to be a service line. No evidence of new asset, repair, or improvement; zero amount is irrelevant for CAPEX/OPEX determination. No policy_id supplied for assessment. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 3760.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.95,
+      "coding_status": "MISSING",
+      "commodity": "Environmental review",
+      "description": "LINE 4 CUTLURAL RESOURCES ASSESSMENT",
+      "evidence_refs": [
+        "line:4",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "4",
+      "nature": "SERVICE",
+      "policy_basis": "'Cultural Resources Assessment' is a consultancy review; both classification and understanding confirm the service nature. No evidence of asset, improvement, or directly attributable capital cost. No supplied policy_id. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 3400.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.95,
+      "coding_status": "MISSING",
+      "commodity": "Environmental study",
+      "description": "LINE 5 HEALTH RISK ASSESSMENT",
+      "evidence_refs": [
+        "line:5",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "5",
+      "nature": "SERVICE",
+      "policy_basis": "'Health Risk Assessment' is marked as a service environmental study by all classification and understanding evidence. No asset or improvement is indicated. No relevant policy_id supplied for CAPEX/OPEX judgment. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 5400.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.95,
+      "coding_status": "MISSING",
+      "commodity": "Environmental study",
+      "description": "LINE 6 NOISE & VIBRATION",
+      "evidence_refs": [
+        "line:6",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "6",
+      "nature": "SERVICE",
+      "policy_basis": "'Noise & Vibration' line is an environmental study/service, not a physical asset or improvement. Evidence confirms only service nature. CAPEX/OPEX cannot be determined without a supplied policy_id and citation. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 6300.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.95,
+      "coding_status": "MISSING",
+      "commodity": "Site survey",
+      "description": "LINE 7 WESTERN JOSHUA TREE PROJECT SITE\nCENSUS",
+      "evidence_refs": [
+        "line:7",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "7",
+      "nature": "SERVICE",
+      "policy_basis": "'Western Joshua Tree Project Site Census' is a consulting site survey service as shown by classification and understanding evidence. No asset acquisition, improvement, or directly attributable capital cost suggested. No company policy_id is supplied. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 0.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.95,
+      "coding_status": "MISSING",
+      "commodity": "Environmental compliance",
+      "description": "LINE 8 WESTERN JOSHUA TREE CONSERVATION\nACT INCIDENTAL",
+      "evidence_refs": [
+        "line:8",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "8",
+      "nature": "SERVICE",
+      "policy_basis": "'Western Joshua Tree Conservation Act Incidental' is an environmental compliance service and not an asset or improvement, as confirmed by all evidence. Zero value does not impact CAPEX/OPEX determination. No policy_id provided. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 1700.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.95,
+      "coding_status": "MISSING",
+      "commodity": "Environmental management",
+      "description": "LINE 9 ENVRIONMENTAL PROJECT MGMT,\nMEETINGS, HEARINGS",
+      "evidence_refs": [
+        "line:9",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "9",
+      "nature": "SERVICE",
+      "policy_basis": "'Environmental Project Mgmt, Meetings, Hearings' are project management/administrative services. Classification, line evidence, and all understanding confirm this is not a new asset, improvement, or directly attributable capital cost. No CAPEX/OPEX policy_id is provided. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 500.0,
+      "asset_type": "N/A",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.85,
+      "coding_status": "MISSING",
+      "commodity": "Reimbursable expenses",
+      "description": "LINE 10 LEVEL REIMBURSABLE EXPENSES",
+      "evidence_refs": [
+        "line:10",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "10",
+      "nature": "SERVICE",
+      "policy_basis": "Line 10 covers 'Level Reimbursable Expenses,' interpreted as service-related indirect costs. All evidence confirms no physical asset, capital improvement, or directly attributable capital cost. Nature suggests OPEX, but without a supplied policy_id, CAPEX/OPEX cannot be decided. Must return REVIEW.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "ENG/PERM",
+      "recommended_task": "0007",
+      "recommended_task_description": "ENVIRONMENTAL",
+      "unit_price": 0.0,
+      "useful_life_months": 60
+    }
+  ],
+  "model": "gpt-4.1-rp",
+  "recommendation": "REVIEW",
+  "reference_sha256": "94a5515f7f7ec58886919ca3668322e93b4d84ed3931a671e9bda7de166548aa",
+  "source_sha256": "ede8b96961483673d0e06d8d73f684a835f05d9a061f67a8bcb84b98be445292",
+  "stage_outputs": {
+    "asset_classification": {
+      "lines": [
+        {
+          "asset_class_code": null,
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:1",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "1",
+          "rationale": "The description 'ENVIRONMENTAL ASSESSMENT FORM' matches the consulting/service nature of environmental reviews. The task_catalog contains 'ENVIRONMENTAL' (0007) under ENG/PERM, which best fits professional environmental services. No evidence of physical asset or improvements. Classification can be matched to task 0007 per catalog; asset_class_code is unavailable as no European catalog is present.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:2",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "2",
+          "rationale": "'AIR QUALITY & GREENHOUSE GAS EMISSIONS ASSESSMENT' is an environmental study. The task_catalog entry 'ENVIRONMENTAL' (0007) covers environmental consultancy services; no evidence for asset or improvement. Classification matched to task 0007; no asset_class_code available.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:3",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "3",
+          "rationale": "'BIOLOGICAL RESOURCES ASSESSMENT' is a consultancy service for biological evaluation. Task_catalog entry 'ENVIRONMENTAL' (0007) encompasses such services. Amount is zero, but nature matches catalog, so task_code is matched; asset_class_code unavailable.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:4",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "4",
+          "rationale": "'CUTLURAL RESOURCES ASSESSMENT' fits the environmental review/consultancy scope. Task_catalog entry 'ENVIRONMENTAL' (0007) is applicable for such professional reviews. No evidence of asset or improvement; asset_class_code unavailable.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:5",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "5",
+          "rationale": "'HEALTH RISK ASSESSMENT' is a professional environmental study. Task_catalog entry 'ENVIRONMENTAL' (0007) in ENG/PERM category fits these services. No indication of asset or improvement; asset_class_code unavailable.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:6",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "6",
+          "rationale": "'NOISE & VIBRATION' line indicates an environmental study, not a physical asset. Task_catalog entry 'ENVIRONMENTAL' (0007) covers environmental testing/services. No asset_class_code available for Europe.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:7",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "7",
+          "rationale": "'WESTERN JOSHUA TREE PROJECT SITE CENSUS' is a consultancy site survey. Task_catalog entry 'ENVIRONMENTAL' (0007) applies to environmental or site surveys. No evidence for asset/improvement; asset_class_code unavailable.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:8",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "8",
+          "rationale": "'WESTERN JOSHUA TREE CONSERVATION ACT INCIDENTAL' refers to compliance or administrative service. Task_catalog entry 'ENVIRONMENTAL' (0007) can include compliance reviews. Amount is zero, but nature matches; asset_class_code unavailable.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:9",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "9",
+          "rationale": "'ENVRIONMENTAL PROJECT MGMT, MEETINGS, HEARINGS' clearly describes management and administrative environmental services. Catalog task 'ENVIRONMENTAL' (0007) encompasses such services. Asset_class_code not available.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.85,
+          "evidence_refs": [
+            "line:10",
+            "invoice",
+            "task:0007"
+          ],
+          "line_id": "10",
+          "rationale": "'LEVEL REIMBURSABLE EXPENSES' is for service-related reimbursable costs, not a capital item. Best matching task is 'ENVIRONMENTAL' (0007) since expenses relate to environmental services, but this is somewhat ambiguous as 'reimbursable expenses' could cover diverse costs. Asset_class_code unavailable.",
+          "status": "MATCHED",
+          "task_code": "0007"
+        }
+      ]
+    },
+    "asset_relationship": {
+      "bundle_exception": false,
+      "confidence": 0.95,
+      "evidence_refs": [
+        "invoice",
+        "source_gaps"
+      ],
+      "matched_history_ids": [],
+      "rationale": "No history_candidates are supplied, so there are no prior assets or invoices to check for potential bundling with this invoice. All available evidence confirms that the invoice lines represent professional services, environmental studies, reviews, management, or reimbursable expenses. None indicate the creation, improvement, or direct attribution to an existing asset, nor do they reference any AFE/project/asset numbers or prior asset links. Therefore, there is no basis for a possible bundle, and bundle_exception is false. The absence of history_candidates is explained by source_gaps and is evidenced by history_candidates being empty; no other candidates were provided in the evidence."
+    },
+    "capitalization_decision": {
+      "lines": [
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:1",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "1",
+          "policy_ids": [],
+          "rationale": "The description and understanding indicate this is an 'Environmental Assessment Form' service. All supplied evidence (line, invoice, classification, understanding) confirms the line is for professional services with no physical asset, improvement, or directly attributable cost relevant to asset acquisition or enhancement. No policy_id is supplied to support CAPEX classification as required. Capitalization basis cannot be established; scenario threshold is not a company policy. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:2",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "2",
+          "policy_ids": [],
+          "rationale": "This line is an 'Air Quality & Greenhouse Gas Emissions Assessment,' an environmental service/study confirmed by classification and understanding evidence. No asset, improvement, or directly attributable cost is indicated. No supplied policy_id to determine CAPEX/OPEX. Threshold scenario is not sufficient. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:3",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "3",
+          "policy_ids": [],
+          "rationale": "'Biological Resources Assessment' is determined by classification and understanding evidence to be a service line. No evidence of new asset, repair, or improvement; zero amount is irrelevant for CAPEX/OPEX determination. No policy_id supplied for assessment. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:4",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "4",
+          "policy_ids": [],
+          "rationale": "'Cultural Resources Assessment' is a consultancy review; both classification and understanding confirm the service nature. No evidence of asset, improvement, or directly attributable capital cost. No supplied policy_id. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:5",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "5",
+          "policy_ids": [],
+          "rationale": "'Health Risk Assessment' is marked as a service environmental study by all classification and understanding evidence. No asset or improvement is indicated. No relevant policy_id supplied for CAPEX/OPEX judgment. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:6",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "6",
+          "policy_ids": [],
+          "rationale": "'Noise & Vibration' line is an environmental study/service, not a physical asset or improvement. Evidence confirms only service nature. CAPEX/OPEX cannot be determined without a supplied policy_id and citation. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:7",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "7",
+          "policy_ids": [],
+          "rationale": "'Western Joshua Tree Project Site Census' is a consulting site survey service as shown by classification and understanding evidence. No asset acquisition, improvement, or directly attributable capital cost suggested. No company policy_id is supplied. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:8",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "8",
+          "policy_ids": [],
+          "rationale": "'Western Joshua Tree Conservation Act Incidental' is an environmental compliance service and not an asset or improvement, as confirmed by all evidence. Zero value does not impact CAPEX/OPEX determination. No policy_id provided. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:9",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "9",
+          "policy_ids": [],
+          "rationale": "'Environmental Project Mgmt, Meetings, Hearings' are project management/administrative services. Classification, line evidence, and all understanding confirm this is not a new asset, improvement, or directly attributable capital cost. No CAPEX/OPEX policy_id is provided. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.9,
+          "evidence_refs": [
+            "line:10",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "10",
+          "policy_ids": [],
+          "rationale": "Line 10 covers 'Level Reimbursable Expenses,' interpreted as service-related indirect costs. All evidence confirms no physical asset, capital improvement, or directly attributable capital cost. Nature suggests OPEX, but without a supplied policy_id, CAPEX/OPEX cannot be decided. Must return REVIEW.",
+          "recommendation": "REVIEW"
+        }
+      ]
+    },
+    "coding_validation": {
+      "lines": [
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:1"
+          ],
+          "line_id": "1",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:2"
+          ],
+          "line_id": "2",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:3"
+          ],
+          "line_id": "3",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:4"
+          ],
+          "line_id": "4",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:5"
+          ],
+          "line_id": "5",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:6"
+          ],
+          "line_id": "6",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:7"
+          ],
+          "line_id": "7",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:8"
+          ],
+          "line_id": "8",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:9"
+          ],
+          "line_id": "9",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 1.0,
+          "evidence_refs": [
+            "approved_coding",
+            "line:10"
+          ],
+          "line_id": "10",
+          "rationale": "No approved code is present for this line in the approved_coding evidence; both the new and approved coding are absent. Therefore, status is MISSING.",
+          "status": "MISSING"
+        }
+      ]
+    },
+    "document_intelligence": {
+      "lines": [
+        {
+          "asset_type": "N/A",
+          "commodity": "Environmental review",
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:1",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "1",
+          "nature": "SERVICE",
+          "rationale": "The description indicates this is an 'Environmental Assessment Form,' which is a professional service for environmental review. No physical asset or improvement indicated. Based on evidence, this is a service, not a new asset or capital improvement."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Environmental study",
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:2",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "2",
+          "nature": "SERVICE",
+          "rationale": "Line describes an 'Air Quality & Greenhouse Gas Emissions Assessment.' This is an environmental study/service, not a physical asset, component, or improvement. No evidence of material purchase or capital improvement."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Environmental study",
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:3",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "3",
+          "nature": "SERVICE",
+          "rationale": "This line refers to a 'Biological Resources Assessment,' another environmental evaluation service. Zero amount shown; however, nature can still be classified as a service based on description. No evidence of asset or improvement."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Environmental review",
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:4",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "4",
+          "nature": "SERVICE",
+          "rationale": "'Cultural Resources Assessment' is a consultancy/professional service for review or compliance, not a purchase of an asset or improvement. No indication of capital nature."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Environmental study",
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:5",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "5",
+          "nature": "SERVICE",
+          "rationale": "This line describes 'Health Risk Assessment', which is a professional environmental evaluation service. No physical asset is being purchased or improved."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Environmental study",
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:6",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "6",
+          "nature": "SERVICE",
+          "rationale": "'Noise & Vibration' line likely is for a noise study or assessment, not a tangible asset. Description and structure match environmental testing/services. No evidence suggesting capital item."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Site survey",
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:7",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "7",
+          "nature": "SERVICE",
+          "rationale": "The 'Western Joshua Tree Project Site Census' is a site survey or environmental census. This is a consulting service, not a physical asset or improvement."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Environmental compliance",
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:8",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "8",
+          "nature": "SERVICE",
+          "rationale": "Description refers to 'Western Joshua Tree Conservation Act Incidental,' which appears to be related to compliance activity/service. Amount is zero, but nature remains similar. No evidence of asset acquisition or improvement."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Environmental management",
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:9",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "9",
+          "nature": "SERVICE",
+          "rationale": "'Environmental Project Management, Meetings, Hearings' describes management services and administration. No physical asset or improvement is indicated. It is clearly a service."
+        },
+        {
+          "asset_type": "N/A",
+          "commodity": "Reimbursable expenses",
+          "confidence": 0.9,
+          "evidence_refs": [
+            "line:10",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "10",
+          "nature": "SERVICE",
+          "rationale": "Line describes 'Reimbursable Expenses', typically indicating indirect costs or travel/reimbursement associated with services (not asset or improvement). Treated as service-related expenses."
+        }
+      ]
+    },
+    "exception_management": {
+      "exceptions": [
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and all specialist outputs confirm the lack of approved coding or direct catalog asset classification for this environmental assessment service line.",
+          "evidence_refs": [
+            "line:1",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "1"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. No approved policy excerpts supplied and no policy_ids available for capitalization determination; must remain REVIEW as per specialist outputs.",
+          "evidence_refs": [
+            "line:1",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "1"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. No approved coding or catalog asset match for this air quality service per coding validation and task catalog output.",
+          "evidence_refs": [
+            "line:2",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "2"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. No policy evidence or company guidance for CAPEX/OPEX; policy application cannot be completed.",
+          "evidence_refs": [
+            "line:2",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "2"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. Specialist and coding validation output show catalog match but absence of approved coding for this biological assessment line.",
+          "evidence_refs": [
+            "line:3",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "3"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. No policy excerpts or policy_ids supplied for classification; capitalization must remain REVIEW.",
+          "evidence_refs": [
+            "line:3",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "3"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs confirm absence of approved coding for this cultural resources assessment line.",
+          "evidence_refs": [
+            "line:4",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "4"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. Source gaps show no company policy supplied for capitalization; decision cannot proceed.",
+          "evidence_refs": [
+            "line:4",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "4"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs confirm there is no approved coding or catalog classification for this health risk assessment service.",
+          "evidence_refs": [
+            "line:5",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "5"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. No policy excerpt/policy_id or company guidance supplied for CAPEX/OPEX determination.",
+          "evidence_refs": [
+            "line:5",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "5"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs confirm no approved coding for this noise & vibration environmental service line.",
+          "evidence_refs": [
+            "line:6",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "6"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. Absence of any policy evidence and policy_ids means capitalization basis cannot be established; remains REVIEW.",
+          "evidence_refs": [
+            "line:6",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "6"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs confirm the lack of approved coding for this site census environmental service line.",
+          "evidence_refs": [
+            "line:7",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "7"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. No approved policy or guidance supplied for capitalization decision; must remain REVIEW.",
+          "evidence_refs": [
+            "line:7",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "7"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs show no approved coding for this environmental compliance administrative service.",
+          "evidence_refs": [
+            "line:8",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "8"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. No evidence of policy supply or asset linkage for capitalization determination; must remain REVIEW.",
+          "evidence_refs": [
+            "line:8",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "8"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation and specialist outputs show absence of approved coding for environmental project management/admin line.",
+          "evidence_refs": [
+            "line:9",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "9"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. No approved policy evidence or policy_ids for CAPEX/OPEX application; capitalization decision cannot proceed.",
+          "evidence_refs": [
+            "line:9",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "9"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable. Coding validation output and specialist review confirm no approved coding or catalog classification for reimbursable expense line.",
+          "evidence_refs": [
+            "line:10",
+            "approved_coding",
+            "stage:coding_validation"
+          ],
+          "line_id": "10"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required. No evidence of policy, company guidance, or asset linkage for capitalization determination; must remain REVIEW.",
+          "evidence_refs": [
+            "line:10",
+            "source_gaps",
+            "stage:capitalization_decision"
+          ],
+          "line_id": "10"
+        },
+        {
+          "code": "DQ",
+          "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete.",
+          "evidence_refs": [
+            "source_gaps",
+            "invoice"
+          ],
+          "line_id": ""
+        }
+      ],
+      "summary": "All invoice lines remain in REVIEW due to lack of approved coding and absent company policy guidance. No definitive CAPEX/OPEX determination is possible and all lines require further Finance policy decision. Coding validation for every line is MISSING, and asset classification can only be matched to catalog task 'ENVIRONMENTAL' (0007) but not to approved coding or capital asset classes. No evidence for bundling or asset linkage is present. These gaps and uncertainties are cited and all required exceptions are preserved with supporting evidence references."
+    }
+  },
+  "total": 28805.0,
+  "vendor": "KIMLEY-HORN AND ASSOCIATES, INC."
+}

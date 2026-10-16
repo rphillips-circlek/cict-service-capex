@@ -1,0 +1,247 @@
+﻿
+==========================================================================
+MICROSOFT AGENT FRAMEWORK - reasoning  |  autarch - governance
+==========================================================================
+environment variable APPLICATIONINSIGHTS_CONNECTION_STRING not set.
+environment variable AGENT_PROJECT_RESOURCE_ID not set.
+  reasoning engine: Microsoft Agent Framework on 'gpt-4.1-rp' (auth Entra ID)
+  line->task check   : semantic cross-check / validator (learned: azure:text-embedding-3-small)
+
+==========================================================================
+1) GOVERNED READ - Cbe Capito - R3645629.pdf
+==========================================================================
+  read OK: 0 characters   |   read-only guarantee holds: True
+  signed why-record: why_8626476dd1ee
+
+==========================================================================
+1b) DOCUMENT INTELLIGENCE - prebuilt-invoice  |  Cbe Capito - R3645629.pdf
+==========================================================================
+  endpoint: https://circlekdoci.cognitiveservices.azure.com/
+  DI OK: 7 header field(s), 11 line item(s), 1 page(s), 2,686 chars OCR
+  field confidence (min 0.88): vendor_name 0.93, invoice_number 0.93, invoice_date 0.93, po_number 0.92, total_amount 0.91, tax_charged 0.93, state 0.88
+  governing state MO from ServiceAddress (ship-to, not bill-to)
+  using DI OCR content (2,686 chars) for grounding
+
+==========================================================================
+INVOICE
+==========================================================================
+  vendor      : CBE
+  invoice #   : R3645629   date: 2025-03-11
+  PO / AFE    : 2543082 / 2543082
+  site / state: 4701649 / MO
+  total       : $2,636.54   tax billed: $134.19
+  extraction  : Azure Document Intelligence (prebuilt-invoice) - 11 line(s), field confidence min 0.88, state via ServiceAddress
+
+==========================================================================
+LINE-ITEM CLASSIFICATION & TAX  (steps 3-5: classify -> tax -> confidence -> route)
+==========================================================================
+  [1] BOSCH TRITECH 360 PIR WHT                                                 $420.00
+        step3  CapEx  asset: Safety Equipment   task: TC-2010 (existing OK: no)  [task TC-2010 (cap_eligible=True)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item IT & Electronics 0.332, task TC-5020 0.297)  ** semantic index disagrees on a TAX-RELEVANT item type -> SME review
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step8-9  dual validation: ** DIVERGE - engine=exempt but model reads taxable -> analyst review (do NOT auto-post/credit)
+                 model: Physical security equipment is taxable tangible personal property in
+                 Missouri.
+        step5  confidence 0.95  ->  SME REVIEW
+  [2] HONEYWELL GLASSBREAK DETECTOR                                             $267.00
+        step3  CapEx  asset: Safety Equipment   task: TC-2010 (existing OK: no)  [task TC-2010 (cap_eligible=True)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item IT & Electronics 0.435, task TC-2010 0.343)  ** semantic index disagrees on a TAX-RELEVANT item type -> SME review
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step8-9  dual validation: ** DIVERGE - engine=exempt but model reads taxable -> analyst review (do NOT auto-post/credit)
+                 model: Physical security equipment is taxable tangible personal property in
+                 Missouri.
+        step5  confidence 0.95  ->  SME REVIEW
+  [3] 22/4 STRANDED NON-SHIELDED, 200' BOX                                      $207.00
+        step3  CapEx  asset: Network Equipment   task: TC-5030 (existing OK: no)  [task TC-5030 (cap_eligible=True)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item Safety Equipment 0.267, task TC-1030 0.285)  ** semantic index disagrees on a TAX-RELEVANT item type -> SME review
+        step4  taxable=None  IT & Electronics @4.2%   expected -   charged~$0.00   ╬ö $0.00  [matrix MO/IT & Electronics = Ambiguous]   ** EXCEPTION
+               IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.
+        step8-9  dual validation: engine call is ambiguous -> analyst review
+        step5  confidence 0.50  ->  SME REVIEW
+  [4] 2-TN SIREN IN SS ENCL 118DB                                               $120.00
+        step3  CapEx  asset: Safety Equipment   task: TC-2010 (existing OK: no)  [task TC-2010 (cap_eligible=True)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item IT & Electronics 0.33, task TC-2010 0.321)  ** semantic index disagrees on a TAX-RELEVANT item type -> SME review
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step8-9  dual validation: ** DIVERGE - engine=exempt but model reads taxable -> analyst review (do NOT auto-post/credit)
+                 model: Alarm siren is taxable tangible personal property in Missouri.
+        step5  confidence 0.95  ->  SME REVIEW
+  [5] 18/2 STRANDED NON-SHIELDED, 200' BOX                                       $79.00
+        step3  CapEx  asset: Network Equipment   task: TC-5030 (existing OK: no)  [task TC-5030 (cap_eligible=True)]  {cached}
+               map: LLM pick, semantic confirmed (index nearest: item IT & Electronics 0.284, task TC-5030 0.304)
+        step4  taxable=None  IT & Electronics @4.2%   expected -   charged~$0.00   ╬ö $0.00  [matrix MO/IT & Electronics = Ambiguous]   ** EXCEPTION
+               IT & Electronics in MO is AMBIGUOUS in the taxability matrix - requires SME review.
+        step8-9  dual validation: engine call is ambiguous -> analyst review
+        step5  confidence 0.50  ->  SME REVIEW
+  [6] ELK 12VDC STROBE - BLUE                                                    $45.00
+        step3  CapEx  asset: Safety Equipment   task: TC-2010 (existing OK: no)  [task TC-2010 (cap_eligible=True)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item IT & Electronics 0.375, task TC-3090 0.293)  ** semantic index disagrees on a TAX-RELEVANT item type -> SME review
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step8-9  dual validation: ** DIVERGE - engine=exempt but model reads taxable -> analyst review (do NOT auto-post/credit)
+                 model: Alarm strobe is taxable tangible personal property in Missouri.
+        step5  confidence 0.95  ->  SME REVIEW
+  [7] FUEL SURCHARGE                                                             $10.00
+        step3  OpEx   asset: Services   task: TC-9030 (existing OK: no)  [task TC-9030 (cap_eligible=False)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item Fuel Equipment 0.459, task TC-5060 0.496)  ** semantic index disagrees on a TAX-RELEVANT item type -> SME review
+        step4  taxable=False  Professional Services @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Professional Services = Exempt]
+        step8-9  dual validation: AGREE (engine=exempt, model=exempt)
+        step5  confidence 0.80  ->  SME REVIEW
+  [8] CONTACT, SURFACE MOUNT 1-1/4" GAP GRAY                                     $36.00
+        step3  CapEx  asset: Safety Equipment   task: TC-2010 (existing OK: no)  [task TC-2010 (cap_eligible=True)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item Construction Materials 0.297, task TC-3070 0.288)  ** semantic index disagrees on a TAX-RELEVANT item type -> SME review
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step8-9  dual validation: ** DIVERGE - engine=exempt but model reads taxable -> analyst review (do NOT auto-post/credit)
+                 model: Door contact part is taxable tangible personal property in Missouri.
+        step5  confidence 0.95  ->  SME REVIEW
+  [9] HARDWARE KIT                                                               $29.00
+        step3  CapEx  asset: Safety Equipment   task: TC-2010 (existing OK: no)  [task TC-2010 (cap_eligible=True)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item Construction Materials 0.401, task TC-6050 0.408)  ** semantic index disagrees on a TAX-RELEVANT item type -> SME review
+        step4  taxable=False  Safety Equipment @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Safety Equipment = Exempt]
+        step8-9  dual validation: ** DIVERGE - engine=exempt but model reads taxable -> analyst review (do NOT auto-post/credit)
+                 model: Hardware kit is taxable tangible personal property.
+        step5  confidence 0.90  ->  SME REVIEW
+  [10] INSTALL ALARM                                                            $882.00
+        step3  CapEx  asset: Safety Equipment   task: TC-2010 (existing OK: no)  [task TC-2010 (cap_eligible=True)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item IT & Electronics 0.446, task TC-6050 0.45)  ** semantic index disagrees on a TAX-RELEVANT item type -> SME review
+        step4  taxable=False  Professional Services @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Professional Services = Exempt]
+        step8-9  dual validation: ** DIVERGE - engine=exempt but model reads taxable -> analyst review (do NOT auto-post/credit)
+                 model: Alarm installation is taxable in Missouri if installation is to tangible
+                 property and not a new construction; presumed taxable unless further evidence of
+                 exemption.
+        step5  confidence 0.93  ->  SME REVIEW
+  [11] INSTALL ALARM TRAVEL (PO)                                                $196.00
+        step3  OpEx   asset: Services   task: TC-9030 (existing OK: no)  [task TC-9030 (cap_eligible=False)]  {cached}
+               map: LLM pick, semantic DISAGREES (index nearest: item Professional Services 0.402, task TC-6050 0.379)  ** semantic index suggests a different mapping (non-material)
+        step4  taxable=False  Professional Services @0.0%   expected $0.00   charged~$0.00   ╬ö $0.00  [matrix MO/Professional Services = Exempt]
+        step8-9  dual validation: AGREE (engine=exempt, model=exempt)
+        step5  confidence 0.80  ->  SME REVIEW
+
+==========================================================================
+INVOICE ROLLUP
+==========================================================================
+  CapEx total     : $2,085.00      OpEx total: $206.00
+  expected tax    : $0.00   vs charged $134.19
+  tax reconciliation: ** DUAL-VALIDATION DIVERGENCE on 7 line(s) - the tax engine and the model disagree on taxability
+                      expected $0.00 vs charged $134.19 (╬ö $134.19) is UNRESOLVED -> analyst review; do NOT seek credit / self-assess until the taxability is confirmed
+  lines           : 11   tax exceptions: 3   to SME review: 11
+  precedent       : 5 similar past decision(s), avg confidence 0.864  (auto_approved:4, auto_with_review:1)
+
+==========================================================================
+PO / AFE RECONCILIATION  (governed PO master)
+==========================================================================
+  matched PO      : PO-CK-2025-3645  (score 0.97, via id+vendor)
+  project / AFE   : Store #2847 Equipment Upgrade ΓÇö Raleigh NC  /  AFE-NA-2025-0629
+  PO vendor/state : CBE Capitol  /  NC
+  PO task / asset : TC-6020  /  Store Fixtures   budget $45,000.00
+  ** discrepancies vs the invoice:
+       - ship-to state MO != PO state NC
+       - no line matches PO task TC-6020 (Store Fixtures); lines use ['TC-2010', 'TC-5030', 'TC-9030']
+
+==========================================================================
+ANTI-HALLUCINATION
+==========================================================================
+  every extracted value is grounded in the signed source.
+
+==========================================================================
+QUALITY - deterministic checks + LLM judges
+==========================================================================
+  completeness   1.00  PASS  all checks passed
+  groundedness   1.00  PASS  all 10 claim(s) grounded in the source
+  accuracy       1.00  PASS  All extracted fields are accurately supported by the invoice. vendor_name (CBE), invoice_number (R3645629), invoice_date (2025-03-11), po_number and afe_number (2543082), total_amount (2636.54), currency (USD), state (MO, inferred from service site address), site_number (4701649), tax_charged (134.19), and description are factually correct, relevant, and properly placed. No invented, misattributed, or misformatted values.
+  soundness      0.85  PASS  The output is internally consistent in its distinction between CapEx and OpEx based on asset creation versus expense, and the asset categories generally match the line item usage. Capitalization logic is sound, with clear rationale and GL mappings. Tax exemption for Safety/Professional Services is applied per the MO matrix, with careful flagging of ambiguous/exception cases for IT & Electronics. Arithmetic is coherent (tax calculated at 0%), and the rollup reconciles capex/opex and overcollected tax. However, the prevalence of mapping conflicts, semantic disagreements, and SME review flags, and tax ambiguity lines slightly lowers confidence, indicating that some reasoning depends on matrix curation or further SME input rather than clear determination from invoice context alone.
+  format         1.00  PASS  all checks passed
+  -> quality: PASS   mean score 0.97
+
+==========================================================================
+SAFETY - governance + content safety
+==========================================================================
+  prompt_injection 1.00  PASS  no injection patterns detected
+  pii_exposure     1.00  PASS  no PII detected
+  harmful_content  1.00  PASS  The output contains only technical details and item descriptions related to an alarm system installation invoice. There is no content referencing violence, hate, sexual material, self-harm, harassment, or dangerous instructions.
+  governance       1.00  PASS  all checks passed
+  -> safety: PASS
+
+==========================================================================
+FIELD-BY-FIELD VERDICT - per-field judge status
+==========================================================================
+  field          present grounded judge reason
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  vendor_name      yes     yes      OK  CBE is clearly listed as the vendor at the top of the invoice.
+  invoice_number   yes     yes      OK  Invoice number R3645629 matches 'INVOICE - R3645629' on the document.
+  invoice_date     yes     yes      OK  Invoice date matches '03/11/2025' found in the invoice.
+  po_number        yes     yes      OK  Purchase Order number 2543082 matches the 'Purchase Order' field.
+  afe_number       yes     yes      OK  AFE#2543082 is referenced in the invoice notes and per site details.
+  total_amount     yes     yes      OK  Invoice Total is 2,636.54, matching the extracted field.
+  currency         yes     n/a      OK  Amounts payable in U.S. Dollars (USD) is stated at the bottom.
+  state            yes     yes      OK  MO is listed as part of the site address and referenced in MO ALARMS LICENSE
+                                        note.
+  site_number      yes     yes      OK  Site/store number 4701649 referenced multiple times (Site, Notes, etc.).
+  tax_charged      yes     yes      OK  Tax Amount is 134.19 as shown in the summary section.
+  description      yes     yes      OK  Line item descriptions include all the components listed; text matches itemized
+                                        breakdown.
+
+==========================================================================
+SOURCE CITATIONS - supporting passage per field
+==========================================================================
+  vendor_name     "CBE"
+                  [chars 0-3 ┬╖ verbatim 1.00]
+  invoice_number  "INVOICE - R3645629"
+                  [chars 14-32 ┬╖ verbatim 1.00]
+  invoice_date    "03/11/2025"
+                  [chars 200-210 ┬╖ lexical 1.00]
+  po_number       "2543082"
+                  [chars 232-239 ┬╖ verbatim 1.00]
+  afe_number      "2543082"
+                  [chars 232-239 ┬╖ verbatim 1.00]
+  total_amount    "2,636.54"
+                  [chars 2640-2648 ┬╖ lexical 0.50]
+  currency        "Dollars (USD)"
+                  [chars 2673-2686 ┬╖ verbatim 1.00]
+  state           "MONTGOMERY, AL 36102 USA"
+                  [chars 45-69 ┬╖ verbatim 1.00]
+  site_number     "Store Number: 4701649"
+                  [chars 309-330 ┬╖ verbatim 1.00]
+  tax_charged     "134.19"
+                  [chars 2619-2625 ┬╖ verbatim 1.00]
+
+==========================================================================
+GOVERNANCE & CONFIDENCE
+==========================================================================
+  read-only guarantee : True  (agent cannot write or delete)
+  signed why-record   : why_8626476dd1ee  (provenance verifies: True)
+  reference data      : history, po_records, task_codes, taxability  (read-only guarantee True, 4 signed reads)
+  line->task check    : semantic cross-check (azure:text-embedding-3-small (learned)) - learned second opinion; tax-relevant disagreements route to review
+  decision cache      : 11 reproduced (deterministic) + 0 newly classified & persisted  (11 known lines)
+  all values grounded : True
+  quality panel       : PASS  (mean 0.97)
+  safety panel        : PASS  (mean 1.0)
+  per-line confidence : L1:0.95  L2:0.95  L3:0.50  L4:0.95  L5:0.50  L6:0.95  L7:0.80  L8:0.95  L9:0.90  L10:0.93  L11:0.80   ->  worst 0.50
+
+==========================================================================
+TOKEN USAGE & COST - per model (cost estimated from list prices)
+==========================================================================
+  model                    calls       input      output      est.$
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  gpt-4.1-rp                   8      16,796       3,040     0.0579
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  TOTAL                        8      16,796       3,040     0.0579
+
+  per LLM call:
+    # kind phase                  start        end              dur    input   output    est.$
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    1 main maf                    06:34:12.996 06:34:18.350   5.35s       30        2   0.0001 
+    2 main extract_invoice        06:35:10.362 06:35:12.819   2.46s    1,232      234   0.0043 
+    3 main classify_lines         06:35:12.819 06:35:24.686  11.87s    1,711    1,101   0.0122 
+    4 main tax_lines              06:35:24.686 06:35:33.844   9.16s      720      965   0.0092 
+    5 eval quality_judges         06:35:41.388 06:35:43.486   2.10s    1,468      122   0.0039 
+    6 eval quality_judges         06:35:43.488 06:35:47.305   3.82s    5,113      161   0.0115 
+    7 eval safety_judges          06:35:47.305 06:35:48.936   1.63s    5,124       54   0.0107 
+    8 eval field_verdict          06:35:48.938 06:35:53.122   4.18s    1,398      401   0.0060 
+
+==========================================================================
+DECISION
+==========================================================================
+  ROUTE TO SME REVIEW  (11 line(s) to SME review; dual-validation divergence on 7 line(s) - taxability disputed; 2 PO discrepancy(ies); worst-line confidence 0.50 < 0.85).
+  High-confidence lines can auto-post; flagged lines carry evidence + a recommendation,
+  and the reviewer's correction feeds the loop.
+
+  model usage: 8 call(s), 16796 prompt + 3040 completion tokens

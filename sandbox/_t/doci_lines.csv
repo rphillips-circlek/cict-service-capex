@@ -1,0 +1,2 @@
+﻿n,description,quantity,amount,capex_opex,capex_basis,task_code,asset_category,useful_life_months,depreciation,existing_task_ok,item_type,mapping_basis,mapping_conflict,taxable,tax_verdict,jurisdiction_state,expected_tax_rate,expected_tax_amount,charged_tax_alloc,tax_delta,use_tax_to_allocate,tax_basis,tax_exception,tax_exception_reason,posting_target,confidence,route
+ROLLUP,0 line(s); 0 exception(s); 0 to SME; route AUTO_POST,,,CapEx 0,,,OpEx 0,,,,,,,,,,,0,0.0,0.0,,,,,,,AUTO_POST

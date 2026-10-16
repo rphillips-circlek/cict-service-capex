@@ -1,0 +1,11 @@
+DATA: SEC | MARKET | NEWS | MACRO
+              |
+              v
+SPECIALISTS: FUNDAMENTALS | VALUATION | AUDIT | AML/FRAUD
+             RISK | COMPLIANCE | MANIPULATION | PEERS
+              |
+              v
+MULTI-AGENT SYNTHESIS + SIGNED EVIDENCE CHAIN
+              |
+              v
+CONSUMERS: INVESTMENT | AUDIT | BANK | REGULATOR

@@ -1,0 +1,335 @@
+{
+  "schema_version": "autarch.capex-flow.maf.v2",
+  "engine": "maf",
+  "model": "test-transport-not-Azure",
+  "generated_at": "2026-09-09T20:04:02.495212+00:00",
+  "advisory_only": true,
+  "capitalization_threshold": null,
+  "source_directory": "C:\\Users\\deepakbalan\\OneDrive - Microsoft\\Documents\\autarch-framework-v0.12.0\\autarch-framework\\examples\\data\\capex",
+  "task_catalog_count": 0,
+  "source_warnings": [
+    "Test catalog unavailable",
+    "No approved policy excerpts supplied; capitalization must remain REVIEW",
+    "No historical capitalized assets/invoices supplied; bundling coverage is incomplete"
+  ],
+  "reference_source": "Not supplied",
+  "review_count": 1,
+  "learning_confirmations": 50,
+  "candidate_rules": [],
+  "invoices": [
+    {
+      "invoice_id": "TEST-INVOICE",
+      "invoice_number": "TEST-001",
+      "vendor": "Test vendor",
+      "country": "US",
+      "region": "North America",
+      "state": "MN",
+      "currency": "USD",
+      "total": 150.0,
+      "invoice_date": "2026-09-01",
+      "source": "test fixture",
+      "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "afe_number": "",
+      "project_number": "",
+      "lines": [
+        {
+          "line_id": "1",
+          "description": "Oven door",
+          "amount": 150.0,
+          "quantity": 1,
+          "unit_price": 150.0,
+          "asset_type": "Oven",
+          "commodity": "Food equipment",
+          "nature": "COMPONENT",
+          "recommended_task": "",
+          "recommended_task_description": "",
+          "recommended_asset_class": "",
+          "actual_task": "",
+          "actual_asset_class": "",
+          "coding_status": "MISSING",
+          "capex_opex": "REVIEW",
+          "useful_life_months": null,
+          "classification_confidence": 0.5,
+          "policy_basis": "Supplied evidence is insufficient",
+          "policy_ids": [],
+          "evidence_refs": [
+            "line:1"
+          ]
+        }
+      ],
+      "recommendation": "REVIEW",
+      "eligible_total": 0.0,
+      "amounts_by_recommendation": {
+        "CAPEX": "0.00",
+        "OPEX": "0.00",
+        "REVIEW": "150.00"
+      },
+      "exceptions": [
+        {
+          "code": "DQ",
+          "line_id": "1",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        },
+        {
+          "code": "E4",
+          "line_id": "1",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "type": "Policy Review"
+        },
+        {
+          "code": "DQ",
+          "line_id": "",
+          "detail": "Input coverage gaps: Test catalog unavailable; No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+          "evidence_refs": [
+            "invoice"
+          ],
+          "type": "Missing Evidence / Uncertainty"
+        }
+      ],
+      "related_invoice_ids": [],
+      "stage_outputs": {
+        "document_intelligence": {
+          "lines": [
+            {
+              "rationale": "Supplied evidence is insufficient",
+              "evidence_refs": [
+                "line:1"
+              ],
+              "confidence": 0.5,
+              "line_id": "1",
+              "asset_type": "Oven",
+              "commodity": "Food equipment",
+              "nature": "COMPONENT"
+            }
+          ]
+        },
+        "asset_classification": {
+          "lines": [
+            {
+              "rationale": "Supplied evidence is insufficient",
+              "evidence_refs": [
+                "line:1"
+              ],
+              "confidence": 0.5,
+              "line_id": "1",
+              "task_code": null,
+              "asset_class_code": null,
+              "status": "UNAVAILABLE"
+            }
+          ]
+        },
+        "coding_validation": {
+          "lines": [
+            {
+              "rationale": "Supplied evidence is insufficient",
+              "evidence_refs": [
+                "line:1"
+              ],
+              "confidence": 0.5,
+              "line_id": "1",
+              "status": "MISSING"
+            }
+          ]
+        },
+        "capitalization_decision": {
+          "lines": [
+            {
+              "rationale": "Supplied evidence is insufficient",
+              "evidence_refs": [
+                "line:1"
+              ],
+              "confidence": 0.5,
+              "line_id": "1",
+              "recommendation": "REVIEW",
+              "policy_ids": []
+            }
+          ]
+        },
+        "asset_relationship": {
+          "rationale": "Supplied evidence is insufficient",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "confidence": 0.5,
+          "bundle_exception": false,
+          "matched_history_ids": []
+        },
+        "exception_management": {
+          "exceptions": [
+            {
+              "code": "DQ",
+              "line_id": "1",
+              "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+              "evidence_refs": [
+                "line:1"
+              ]
+            },
+            {
+              "code": "E4",
+              "line_id": "1",
+              "detail": "Policy application is unresolved; Finance decision is required",
+              "evidence_refs": [
+                "line:1"
+              ]
+            },
+            {
+              "code": "DQ",
+              "line_id": "",
+              "detail": "Input coverage gaps: Test catalog unavailable; No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+              "evidence_refs": [
+                "invoice"
+              ]
+            }
+          ],
+          "summary": "Finance review required"
+        }
+      },
+      "automatic_posting": false,
+      "reference_sha256": "94a5515f7f7ec58886919ca3668322e93b4d84ed3931a671e9bda7de166548aa",
+      "model": "test-transport-not-Azure",
+      "case_digest": "e51786d3faee8d5d2f22cc7f69bcae8c86d7668f1efa4954d72220bd9ca7f0ab",
+      "review_status": "RECLASSIFY",
+      "review_decision": "RECLASSIFY",
+      "final_decision": "OPEX"
+    }
+  ],
+  "exceptions": [
+    {
+      "code": "DQ",
+      "line_id": "1",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "TEST-INVOICE"
+    },
+    {
+      "code": "E4",
+      "line_id": "1",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "type": "Policy Review",
+      "invoice_id": "TEST-INVOICE"
+    },
+    {
+      "code": "DQ",
+      "line_id": "",
+      "detail": "Input coverage gaps: Test catalog unavailable; No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+      "evidence_refs": [
+        "invoice"
+      ],
+      "type": "Missing Evidence / Uncertainty",
+      "invoice_id": "TEST-INVOICE"
+    }
+  ],
+  "audit_trace": [
+    {
+      "stage": 0,
+      "agent": "intake",
+      "framework": "Python source reader",
+      "model": "test-transport-not-Azure",
+      "why_id": "why_0933fc0e0d77",
+      "input_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "output_sha256": "f10f24757982f4b2a597d52113c37c473a84f3eaf3960f6d97b780c851c73791",
+      "automatic_posting": false
+    },
+    {
+      "stage": 1,
+      "agent": "document_intelligence",
+      "framework": "Microsoft Agent Framework",
+      "model": "test-transport-not-Azure",
+      "why_id": "why_64576fc89098",
+      "input_sha256": "b4f92b23fdd7e566ac6173574078ea753e9c4220397f19bb1b27e69a7e148e04",
+      "output_sha256": "0820d109843705e9e44bebdd338e228e72fe50c0a5eabe4c219d9b823d9860c4",
+      "automatic_posting": false
+    },
+    {
+      "stage": 2,
+      "agent": "asset_classification",
+      "framework": "Microsoft Agent Framework",
+      "model": "test-transport-not-Azure",
+      "why_id": "why_f7dbfde4e5be",
+      "input_sha256": "e91a86bf538d64526ed1fc2e309968a40b1b8e7513174772e1cdd73f2279f02f",
+      "output_sha256": "a4adf87a0e6fd36e8d8d3cae334cba27f8b3e26ed06296f9b1df8d77b1936b39",
+      "automatic_posting": false
+    },
+    {
+      "stage": 3,
+      "agent": "coding_validation",
+      "framework": "Microsoft Agent Framework",
+      "model": "test-transport-not-Azure",
+      "why_id": "why_dd1fd6cd9735",
+      "input_sha256": "a37cf447d57c7f18b7093913aedfa58e848173f71a2567ea17f2ec65297c7eb5",
+      "output_sha256": "169f115e7c729cb267b69b167761d1e8c1c21b808b51fd1935faadf3653c8d62",
+      "automatic_posting": false
+    },
+    {
+      "stage": 4,
+      "agent": "capitalization_decision",
+      "framework": "Microsoft Agent Framework",
+      "model": "test-transport-not-Azure",
+      "why_id": "why_41b54e0b5329",
+      "input_sha256": "d631111feb9168bd58555b1852928ae2313fe3dc71aaa90aa48e49ccecc4e969",
+      "output_sha256": "29fbc6e4e67b47921a64bf28b96c3acb2ed2edc09733b810e38f3a91ceb5fdc0",
+      "automatic_posting": false
+    },
+    {
+      "stage": 5,
+      "agent": "asset_relationship",
+      "framework": "Microsoft Agent Framework",
+      "model": "test-transport-not-Azure",
+      "why_id": "why_cd5e2c340b25",
+      "input_sha256": "72edd451344353b9dc4163364e09bc2d3f7ace1ced3cb5eabf7bfd7a175b7a9c",
+      "output_sha256": "b4d326e5eb7f4bd579db63c3c658bc0cc4737029e8c6dcb2c8bc6d72188b8e75",
+      "automatic_posting": false
+    },
+    {
+      "stage": 6,
+      "agent": "exception_management",
+      "framework": "Microsoft Agent Framework",
+      "model": "test-transport-not-Azure",
+      "why_id": "why_395eff1d2626",
+      "input_sha256": "55656c1c5ef391f1e8d487f7988cfffc6be43887bea9c74a64c9f1894fb9d814",
+      "output_sha256": "d020710ffedaa38a0f7de86bfcc42b45e905e0ad3ad82f175b3b600b86259c40",
+      "automatic_posting": false
+    },
+    {
+      "stage": 7,
+      "agent": "continuous_learning",
+      "framework": "Microsoft Agent Framework",
+      "model": "test-transport-not-Azure",
+      "why_id": "why_259218d953ce",
+      "input_sha256": "9e8807a4057758e55ef51cee29e4341c0ba3f7546724d378c7081b26ecef5f08",
+      "output_sha256": "a6399b47c965d87f316cf76b3c9ca6b7bb6b10af3dc96bef7e0ff5c29d52abbd",
+      "automatic_posting": false
+    }
+  ],
+  "governance": {
+    "run_id": "04502230b9f44aafac36e581795d939a",
+    "chain_verified": true,
+    "signatures_verified": true,
+    "record_count": 8,
+    "audit_path": "C:\\Users\\deepakbalan\\AppData\\Local\\Temp\\pytest-of-deepakbalan\\pytest-27\\test_real_maf_sdk_runs_all_spe0\\governance\\04502230b9f44aafac36e581795d939a\\signed_audit.jsonl",
+    "budget": {
+      "calls": "8/100"
+    },
+    "forbidden_capabilities": [
+      "erp.post",
+      "payment.send",
+      "finance.approve",
+      "rule.activate",
+      "file.delete"
+    ]
+  },
+  "learning_status": "Finance review changed; rerun MAF analysis to refresh proposals"
+}

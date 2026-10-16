@@ -1,0 +1,200 @@
+{
+  "country": "NO",
+  "currency": "NOK",
+  "exceptions": [
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "line_id": "1",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "line_id": "1",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+      "evidence_refs": [
+        "invoice"
+      ],
+      "line_id": "",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "DQ",
+      "detail": "Earlier specialist stages indicate the line description is too generic to determine asset class, nature, or coding, so classification and coding remain uncertain.",
+      "evidence_refs": [
+        "line:1",
+        "stage:asset_classification",
+        "stage:coding_validation",
+        "stage:document_intelligence"
+      ],
+      "line_id": "1",
+      "type": "Missing Evidence / Uncertainty"
+    }
+  ],
+  "invoice_id": "452c56f4-aec3-43a0-bbea-e0d58675e5c2",
+  "invoice_number": "101820",
+  "lines": [
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 500000.0,
+      "asset_type": "Unknown",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.08,
+      "coding_status": "MISSING",
+      "commodity": "Unknown",
+      "description": "Invoice 2",
+      "evidence_refs": [
+        "line:1",
+        "invoice",
+        "source_gaps"
+      ],
+      "line_id": "1",
+      "nature": "UNKNOWN",
+      "policy_basis": "REVIEW because no applicable company capitalization policy was supplied, and the evidence does not identify whether line 1 is a new asset, repair, service, or other directly attributable cost. The description \"Invoice 2\" is insufficient to assess useful life, capitalization unit, or any policy threshold. The provided scenario threshold is not an approved policy, so it cannot support CAPEX or OPEX.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "",
+      "recommended_task": "",
+      "recommended_task_description": "",
+      "unit_price": 400000.0,
+      "useful_life_months": null
+    }
+  ],
+  "model": "gpt-5.4",
+  "recommendation": "REVIEW",
+  "reference_sha256": "94a5515f7f7ec58886919ca3668322e93b4d84ed3931a671e9bda7de166548aa",
+  "source_sha256": "6b34fdd3ff115bd8a2fb920713649100d41a4cbb451b21c31609bd9f894e1dd0",
+  "stage_outputs": {
+    "asset_classification": {
+      "lines": [
+        {
+          "asset_class_code": null,
+          "confidence": 0.08,
+          "evidence_refs": [
+            "invoice",
+            "line:1",
+            "source_gaps",
+            "stage:document_intelligence"
+          ],
+          "line_id": "1",
+          "rationale": "Europe invoice, but no asset_classes catalog was supplied and the line description \"Invoice 2\" provides no identifiable asset class. Therefore classification is unavailable.",
+          "status": "UNAVAILABLE",
+          "task_code": null
+        }
+      ]
+    },
+    "asset_relationship": {
+      "bundle_exception": false,
+      "confidence": 0.2,
+      "evidence_refs": [
+        "invoice",
+        "line:1",
+        "source_gaps"
+      ],
+      "matched_history_ids": [],
+      "rationale": "No prior capitalized assets or invoices were supplied in history_candidates, so there is no evidence that line 1 relates to an existing asset as a component, addition, or bundle. The invoice and line description are too generic (\"Invoice 2\") and provide no asset ID, AFE, project, or descriptive link to any existing asset. Because bundling review depends on matching supplied history and none was provided, a bundle exception cannot be identified from the available evidence."
+    },
+    "capitalization_decision": {
+      "lines": [
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:1",
+            "invoice",
+            "source_gaps"
+          ],
+          "line_id": "1",
+          "policy_ids": [],
+          "rationale": "REVIEW because no applicable company capitalization policy was supplied, and the evidence does not identify whether line 1 is a new asset, repair, service, or other directly attributable cost. The description \"Invoice 2\" is insufficient to assess useful life, capitalization unit, or any policy threshold. The provided scenario threshold is not an approved policy, so it cannot support CAPEX or OPEX.",
+          "recommendation": "REVIEW"
+        }
+      ]
+    },
+    "coding_validation": {
+      "lines": [
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:1",
+            "approved_coding",
+            "stage:asset_classification"
+          ],
+          "line_id": "1",
+          "rationale": "Prior classification for line 1 has no populated task code, and no approved business coding is supplied for this line. With either code absent, the comparison result is MISSING.",
+          "status": "MISSING"
+        }
+      ]
+    },
+    "document_intelligence": {
+      "lines": [
+        {
+          "asset_type": "Unknown",
+          "commodity": "Unknown",
+          "confidence": 0.08,
+          "evidence_refs": [
+            "invoice",
+            "line:1",
+            "source_gaps"
+          ],
+          "line_id": "1",
+          "nature": "UNKNOWN",
+          "rationale": "The line description is only \"Invoice 2\" with no indication of what was purchased, no task details, and no asset/service context. Because the evidence does not identify the object, commodity, or whether this is a new asset, repair, service, freight, etc., the line cannot be classified beyond unknown."
+        }
+      ]
+    },
+    "exception_management": {
+      "exceptions": [
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "line_id": "1"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "line_id": "1"
+        },
+        {
+          "code": "DQ",
+          "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+          "evidence_refs": [
+            "invoice"
+          ],
+          "line_id": ""
+        },
+        {
+          "code": "DQ",
+          "detail": "Earlier specialist stages indicate the line description is too generic to determine asset class, nature, or coding, so classification and coding remain uncertain.",
+          "evidence_refs": [
+            "line:1",
+            "stage:asset_classification",
+            "stage:coding_validation",
+            "stage:document_intelligence"
+          ],
+          "line_id": "1"
+        }
+      ],
+      "summary": "Preserved all required exceptions. Earlier specialist outputs support unresolved classification, coding, and policy application for line 1. No supported E1, E2, E3, or E5 exception can be added from the supplied evidence."
+    }
+  },
+  "total": 500000.0,
+  "vendor": "TRAFIKKTEKNIKK AS"
+}

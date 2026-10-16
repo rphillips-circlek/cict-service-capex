@@ -1,0 +1,102 @@
+{
+  "chain": {
+    "broken_sequence": null,
+    "verified": true
+  },
+  "events": [
+    {
+      "created_at": 1788383618.2899365,
+      "event_hash": "a371c16ab4fd97b11d918be008a3110e0fbc00efb36e08f4a22b93aaf3270fe2",
+      "event_type": "submitted",
+      "payload": {
+        "artifact_digest": "5fc1d66b1ab2f9743aede3cb04b26520653c367589ba913cee91313e0f5e6697",
+        "expires_at": 1790975618.2899365,
+        "quorum": 2,
+        "release_key": "MSFT:0001193125-26-323660:institutional-release",
+        "required_reviewers": [
+          "finance-review-lead",
+          "risk-review-lead"
+        ]
+      },
+      "previous_hash": "",
+      "request_id": "review_a0ec80736006",
+      "sequence": 1
+    },
+    {
+      "created_at": 1788390651.1010947,
+      "event_hash": "10a768eeb4aaead0c1d498d59753435710cb8dc613509cb9e65661b151679900",
+      "event_type": "superseded",
+      "payload": {
+        "replacement_digest": "9574c65f6b005e5856c946ad46d211a6a64d4928952aa1e9b946eee5f9dfe7c4",
+        "replacement_id": "review_70d13f538597"
+      },
+      "previous_hash": "a371c16ab4fd97b11d918be008a3110e0fbc00efb36e08f4a22b93aaf3270fe2",
+      "request_id": "review_a0ec80736006",
+      "sequence": 2
+    },
+    {
+      "created_at": 1788390651.1010947,
+      "event_hash": "6e73452d275e18f6a150141220e7d2cd67bf229968deb5969a1a7da3aa45f6ed",
+      "event_type": "submitted",
+      "payload": {
+        "artifact_digest": "9574c65f6b005e5856c946ad46d211a6a64d4928952aa1e9b946eee5f9dfe7c4",
+        "expires_at": 1790982651.1010947,
+        "quorum": 2,
+        "release_key": "MSFT:0001193125-26-323660:institutional-release",
+        "required_reviewers": [
+          "finance-review-lead",
+          "risk-review-lead"
+        ]
+      },
+      "previous_hash": "10a768eeb4aaead0c1d498d59753435710cb8dc613509cb9e65661b151679900",
+      "request_id": "review_70d13f538597",
+      "sequence": 3
+    }
+  ],
+  "exported_at": 1788393177.0631385,
+  "reviews": [
+    {
+      "artifact_digest": "9574c65f6b005e5856c946ad46d211a6a64d4928952aa1e9b946eee5f9dfe7c4",
+      "comments": [],
+      "created_at": 1788390651.1010947,
+      "decided_at": null,
+      "expires_at": 1790982651.1010947,
+      "id": "review_70d13f538597",
+      "quorum": 2,
+      "rationale": "Accountable release requires finance and risk review of exact source, fact, analysis, and persona content.",
+      "release_key": "MSFT:0001193125-26-323660:institutional-release",
+      "requested_by": "autarch-finance-intelligence",
+      "required_reviewers": [
+        "finance-review-lead",
+        "risk-review-lead"
+      ],
+      "status": "pending",
+      "subject": "Microsoft institutional intelligence release \u2014 FY2026",
+      "superseded_by": "",
+      "votes": [],
+      "votes_remaining": 2
+    },
+    {
+      "artifact_digest": "5fc1d66b1ab2f9743aede3cb04b26520653c367589ba913cee91313e0f5e6697",
+      "comments": [],
+      "created_at": 1788383618.2899365,
+      "decided_at": 1788390651.1010947,
+      "expires_at": 1790975618.2899365,
+      "id": "review_a0ec80736006",
+      "quorum": 2,
+      "rationale": "Accountable release requires finance and risk review of exact source, fact, analysis, and persona content.",
+      "release_key": "MSFT:0001193125-26-323660:institutional-release",
+      "requested_by": "autarch-finance-intelligence",
+      "required_reviewers": [
+        "finance-review-lead",
+        "risk-review-lead"
+      ],
+      "status": "superseded",
+      "subject": "Microsoft institutional intelligence release \u2014 FY2026",
+      "superseded_by": "review_70d13f538597",
+      "votes": [],
+      "votes_remaining": 2
+    }
+  ],
+  "schema_version": "autarch.release-review.v1"
+}

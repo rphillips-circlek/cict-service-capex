@@ -1,0 +1,116 @@
+{
+  "sessionId": "209bb9e4-10e0-4d12-bf36-984a1283fd3a",
+  "createdUtc": "2026-10-08T19:07:07.3165861Z",
+  "lastModifiedUtc": "2026-10-08T19:09:57.2819322Z",
+  "currentPhase": null,
+  "completedPhases": [
+    "prereq"
+  ],
+  "statusSummary": "1 component, stack: Python 3.9+ CLI/batch workflow, health: ready with caveats",
+  "intent": {
+    "userPrompt": "Looking at these transcripts/recordings from most of our meetings and the latest architectural diagrams for this CapEx use case, what do I need to do in order to use this workflow to try to get some good results for this use case. \r\n\r\nI am also unsure what Azure resources we will be using for what. Can you help me out with this so that I can get a demo done for the client by next Friday?",
+    "description": "Prepare a credible client demo of the Circle K CapEx/CIP validation workflow using the latest Phase 1 architecture and meeting decisions.",
+    "users": "Finance analysts and client architecture stakeholders",
+    "auth": "Microsoft Entra ID for Azure resources; current local reviewer identity is not authenticated",
+    "scale": "Controlled demo: 1-20 invoices per run, a few runs per day",
+    "refinedFromScan": true,
+    "scanDiscoveredFacts": [
+      "The current workflow consumes ABBYY/Vantage extracted invoice data and does not require invoice OCR.",
+      "The live MAF path uses Azure OpenAI through Microsoft Agent Framework with Entra authentication.",
+      "The workflow produces a static HTML dashboard, CSV facts, JSON decision package, review queue, and signed audit output.",
+      "Human review is implemented as a local CLI command with an attributed reviewer name.",
+      "The repository Dockerfile packages the generic Autarch mesh server, not the CapEx workflow."
+    ]
+  },
+  "components": [
+    {
+      "name": "capex-flow",
+      "path": "examples",
+      "stack": {
+        "language": "Python",
+        "framework": "Microsoft Agent Framework + Autarch",
+        "version": "Python >=3.9; demo guidance requires 3.10+"
+      },
+      "readiness": {
+        "status": "fixesApplied",
+        "fixes": [
+          "Added a dedicated non-root CapEx batch image in Dockerfile.capex.",
+          "Added a repository .dockerignore without changing the generic Autarch image."
+        ]
+      },
+      "verdicts": {
+        "build": "PASS",
+        "completeness": "PASS",
+        "deployability": "PASS"
+      },
+      "findings": [
+        {
+          "category": "build",
+          "verdict": "PASS",
+          "summary": "The root pyproject defines the CapEx optional dependency set and a supported Python range.",
+          "fix": null
+        },
+        {
+          "category": "completeness",
+          "verdict": "PASS",
+          "summary": "The CapEx CLI entry point, live and rules engines, sample ABBYY data, output generation, review command, documentation, and focused tests are present.",
+          "fix": null
+        },
+        {
+          "category": "deployability",
+          "verdict": "PASS",
+          "summary": "Dockerfile.capex packages the CapEx workflow and sample ABBYY data as a non-root finite batch container without changing the generic Autarch image.",
+          "fix": null
+        },
+        {
+          "category": "deployability",
+          "verdict": "WARN",
+          "summary": "Workflow state, reviews, dashboards, and audit files are stored under a local sandbox path that is ephemeral in a cloud container.",
+          "fix": "For the demo, mount persistent storage or export outputs to Blob Storage; for the target design, move work state and decisions to Azure SQL and immutable evidence to Blob Storage."
+        },
+        {
+          "category": "completeness",
+          "verdict": "WARN",
+          "summary": "Reviewer names are attributed but are not authenticated identities.",
+          "fix": "Use Entra-authenticated reviewer identity before production use; keep the CLI attribution only for the controlled demo."
+        }
+      ]
+    }
+  ],
+  "azure": {
+    "subscriptionId": "deef6020-a48d-40b8-8e4d-4111856c113b",
+    "subscriptionName": "ME-MngEnvMCAP203181-rphillips-1",
+    "tenantId": "3e41b164-59e6-4ce9-8c15-767e2c81431c",
+    "userDisplayName": "System Administrator",
+    "resourceGroup": "rg_learning",
+    "region": "centralus"
+  },
+  "repo": {
+    "remote": "rachaelph/autarch-framework-v0.12.0",
+    "lastScanCommit": "0b1110c39fc13d6dc2ec0c695103779d9a5778e0"
+  },
+  "app": {
+    "name": "autarch-capex"
+  },
+  "detectedInfra": [
+    "dockerfile",
+    "github-actions"
+  ],
+  "detectedServices": [
+    {
+      "type": "Azure OpenAI",
+      "source": "code"
+    },
+    {
+      "type": "local filesystem workspace",
+      "source": "code"
+    }
+  ],
+  "overrides": [
+    {
+      "key": "azure.resourceGroup",
+      "value": "rg_learning",
+      "reason": "User requested that new demo resources use their existing learning resource group."
+    }
+  ]
+}

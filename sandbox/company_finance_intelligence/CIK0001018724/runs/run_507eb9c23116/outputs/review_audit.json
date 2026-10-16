@@ -1,0 +1,51 @@
+{
+  "chain": {
+    "broken_sequence": null,
+    "verified": true
+  },
+  "events": [
+    {
+      "created_at": 1789391333.8422842,
+      "event_hash": "e05360b8f89feece98ea945122567bfda11fc59a818d24c2c76852c19aaaa946",
+      "event_type": "submitted",
+      "payload": {
+        "artifact_digest": "0ce45f76c1b37fd73b4c77533dfebd12ff16e66d04fcc2e5445be025f23a8fdd",
+        "expires_at": 1791983333.8422842,
+        "quorum": 2,
+        "release_key": "CIK0001018724:consolidated-financial-release",
+        "required_reviewers": [
+          "finance-review-lead",
+          "risk-review-lead"
+        ]
+      },
+      "previous_hash": "",
+      "request_id": "review_f652486f5a2e",
+      "sequence": 1
+    }
+  ],
+  "exported_at": 1789391334.1138892,
+  "reviews": [
+    {
+      "artifact_digest": "0ce45f76c1b37fd73b4c77533dfebd12ff16e66d04fcc2e5445be025f23a8fdd",
+      "comments": [],
+      "created_at": 1789391333.8422842,
+      "decided_at": null,
+      "expires_at": 1791983333.8422842,
+      "id": "review_f652486f5a2e",
+      "quorum": 2,
+      "rationale": "Review consolidated facts, calculations, source coverage, and intended use.",
+      "release_key": "CIK0001018724:consolidated-financial-release",
+      "requested_by": "autarch-company-finance",
+      "required_reviewers": [
+        "finance-review-lead",
+        "risk-review-lead"
+      ],
+      "status": "pending",
+      "subject": "AMAZON COM INC consolidated financial report",
+      "superseded_by": "",
+      "votes": [],
+      "votes_remaining": 2
+    }
+  ],
+  "schema_version": "autarch.release-review.v1"
+}

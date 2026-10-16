@@ -1,0 +1,1422 @@
+{
+  "country": "US",
+  "currency": "USD",
+  "exceptions": [
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "line_id": "1",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:1"
+      ],
+      "line_id": "1",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:2"
+      ],
+      "line_id": "2",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:2"
+      ],
+      "line_id": "2",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:3"
+      ],
+      "line_id": "3",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:3"
+      ],
+      "line_id": "3",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:4"
+      ],
+      "line_id": "4",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:4"
+      ],
+      "line_id": "4",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:5"
+      ],
+      "line_id": "5",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:5"
+      ],
+      "line_id": "5",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:6"
+      ],
+      "line_id": "6",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:6"
+      ],
+      "line_id": "6",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:7"
+      ],
+      "line_id": "7",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:7"
+      ],
+      "line_id": "7",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:8"
+      ],
+      "line_id": "8",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:8"
+      ],
+      "line_id": "8",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:9"
+      ],
+      "line_id": "9",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:9"
+      ],
+      "line_id": "9",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:10"
+      ],
+      "line_id": "10",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:10"
+      ],
+      "line_id": "10",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:11"
+      ],
+      "line_id": "11",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:11"
+      ],
+      "line_id": "11",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+      "evidence_refs": [
+        "line:12"
+      ],
+      "line_id": "12",
+      "type": "Missing Evidence / Uncertainty"
+    },
+    {
+      "code": "E4",
+      "detail": "Policy application is unresolved; Finance decision is required",
+      "evidence_refs": [
+        "line:12"
+      ],
+      "line_id": "12",
+      "type": "Policy Review"
+    },
+    {
+      "code": "DQ",
+      "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+      "evidence_refs": [
+        "invoice"
+      ],
+      "line_id": "",
+      "type": "Missing Evidence / Uncertainty"
+    }
+  ],
+  "invoice_id": "135d03ac-3598-498a-83fe-d273d046bfea",
+  "invoice_number": "INV12-62027",
+  "lines": [
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 253.71,
+      "asset_type": "Shelving/display system component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.74,
+      "coding_status": "MISSING",
+      "commodity": "Layover FR shelf/roller rack unit",
+      "description": "Layover FR 4PK, 727x886\n15 degree front retainer rail slot\nSimplified\nNon-Anodized\nWidth: 28.6 (727mm)\nDepth: 34.9\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:1",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "1",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because no capitalization policy excerpts were supplied, so application of new-asset vs repair criteria, capitalization unit, or any company threshold cannot be supported. Evidence suggests this is a shelving/display component aligned to wire shelving and with a 5-year internal book life for task 5225, which could indicate a potentially capitalizable asset component, but without policy support and no approved coding, CAPEX/OPEX cannot be concluded.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 253.71,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 201.81,
+      "asset_type": "Shelving/display system component",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.74,
+      "coding_status": "MISSING",
+      "commodity": "Layover FR shelf/roller rack unit",
+      "description": "Layover FR 1PK, 727x886\n15 degree front retainer rail slot\nSimplified\nNon-Anodized\nWidth: 28.6 (727mm)\nDepth: 34.9\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:2",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "2",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because no capitalization policy excerpts were supplied, so there is no supported basis to decide whether these Layover FR units are a new capital asset/component or an expense item, nor to apply any capitalization unit or threshold. Evidence points to wire shelving-related hardware under task 5225 with a 5-year internal book life, but that alone is not a policy. No approved coding is present.",
+      "policy_ids": [],
+      "quantity": 3.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 67.27,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 98.12,
+      "asset_type": "Shelving/display accessory",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.82,
+      "coding_status": "MISSING",
+      "commodity": "Wire dividers",
+      "description": "Reinforced Lock-In 2 Wire divider,\n70x886 50PK\nLayover\nAngled corners\n2-Wire 5mm\nDivider height: 2.75\" (70mm)\nFR depth: 34.9\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:3",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "3",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because the line appears to be a shelving/display accessory component, but no capitalization policy was supplied to determine whether such divider components should be capitalized as part of a larger unit, treated as repair/replacement, or expensed based on company capitalization rules. Task 5225 and internal life evidence are not sufficient without policy support.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 98.12,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 41.66,
+      "asset_type": "Shelving/display accessory",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.82,
+      "coding_status": "MISSING",
+      "commodity": "Wire dividers",
+      "description": "Reinforced Lock-In 2 Wire divider,\n70x886 10PK\nLayover\nAngled corners\n2-Wire 5mm\nDivider height: 2.75\" (70mm)\nFR depth: 34.9\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:4",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "4",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because this wire divider is evidenced as a shelving/display accessory, yet there is no supplied capitalization policy to assess whether it forms part of a new asset, a betterment, or a repair/replacement expense, and no supported threshold or capitalization unit can be applied. No approved coding is present.",
+      "policy_ids": [],
+      "quantity": 2.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 20.83,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 41.61,
+      "asset_type": "Shelving/display accessory",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.77,
+      "coding_status": "MISSING",
+      "commodity": "Clear retainers",
+      "description": "FlexRoller Clear Retainer 10PK 90x711\nRetainer height: Medium 3.5\" (90mm)\nRetainer width: 28\" (711mm)",
+      "evidence_refs": [
+        "line:5",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "5",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because the clear retainer is a physical shelving/display accessory, but no capitalization policy excerpts were supplied to determine treatment as CAPEX or OPEX, including whether it is directly attributable to placing a new asset in service or merely a replacement/accessory expense. Task alignment alone is insufficient.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 41.61,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 21.75,
+      "asset_type": "Shelving/display accessory",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.77,
+      "coding_status": "MISSING",
+      "commodity": "Clear retainers",
+      "description": "FlexRoller Clear Retainer 10PK, 35x711\nRetainer height: Mini 1.375\" (35mm)\nRetainer width: 28\" (711mm)",
+      "evidence_refs": [
+        "line:6",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "6",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because this retainer variant is evidenced as shelving/display hardware, but there is no approved capitalization policy to support capitalization versus expensing, including useful-life, capitalization-unit, and threshold analysis. Without such policy support, a definitive CAPEX/OPEX recommendation cannot be made.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 21.75,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 15.69,
+      "asset_type": "Shelving/display accessory",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.83,
+      "coding_status": "MISSING",
+      "commodity": "Back wire retainer",
+      "description": "FR Back Wire Retainer 70x723 20PK\nHeight: 2.75\" (70mm)\nShelf Width: 28.5\" (723mm)\nColor: Red",
+      "evidence_refs": [
+        "line:7",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "7",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because the back wire retainer appears to be a shelving/display component, but no supplied policy supports whether this should be capitalized as part of a new shelving unit or expensed as a replacement/accessory. The evidence set explicitly notes missing policy excerpts, so CAPEX/OPEX cannot be supported.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 15.69,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 18.14,
+      "asset_type": "Shelving/display accessory",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.73,
+      "coding_status": "MISSING",
+      "commodity": "Label holder infostrips",
+      "description": "Infostrip 10PK\nLabel height: 1.25\" (32mm)\nSingle Wire Mount\nLength: 25.5\" (648mm)\nColor: Black\nWindow displayed at 20 degree to\nback",
+      "evidence_refs": [
+        "line:8",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "8",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because the infostrip label holder is a merchandising fixture accessory, but no capitalization policy was provided to determine whether such accessory costs belong in a capitalizable shelving unit or should be expensed. Missing policy support prevents applying new asset, useful life, capitalization unit, or threshold tests.",
+      "policy_ids": [],
+      "quantity": 2.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 9.07,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 12.17,
+      "asset_type": "Shelving/display accessory",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.73,
+      "coding_status": "MISSING",
+      "commodity": "Label holder infostrips",
+      "description": "Infostrip 10PK\nLabel height: 1.25\" (32mm)\nDouble Wire Mount\nLength: 27\" (685.8mm)\nColor: BlackOI",
+      "evidence_refs": [
+        "line:9",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "9",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because this infostrip accessory is evidenced as part of shelving/display hardware, but there is no supplied company policy to support capitalization versus expense treatment, and no approved coding is available. Task 5225 indicates probable asset class only, not accounting treatment.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 12.17,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 176.22,
+      "asset_type": "Shelving/display accessory",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.82,
+      "coding_status": "MISSING",
+      "commodity": "Wire dividers",
+      "description": "Reinforced Lock-In Wire divider 20-\nPack, 140x886\nLayover\nAngled Corners\n3-Wire\nDivider height: 5.5\" (140mm)\nFR Depth: 34.88\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:10",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "10",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because the 3-wire divider is a shelving/display component, but no policy excerpts were supplied to determine whether it creates or enhances a capital asset, extends useful life, or is instead a repair/replacement expense. Without company capitalization policy, threshold and capitalization-unit analysis cannot be supported.",
+      "policy_ids": [],
+      "quantity": 3.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 58.74,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 30.2,
+      "asset_type": "Shelving/display accessory",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.82,
+      "coding_status": "MISSING",
+      "commodity": "Wire dividers",
+      "description": "Reinforced Lock-In Wire divider 10-\nPack, 140x886\nLayover\nAngled Corners\n3-Wire\nDivider height: 5.5\" (140mm)\nFR Depth: 34.88\" (886mm)\nColor: Black",
+      "evidence_refs": [
+        "line:11",
+        "stage:asset_classification",
+        "task:5225",
+        "source_gaps",
+        "approved_coding"
+      ],
+      "line_id": "11",
+      "nature": "COMPONENT",
+      "policy_basis": "REVIEW because this wire divider line is evidenced as shelving/display hardware, yet no supplied capitalization policy supports a CAPEX or OPEX conclusion. The absence of policy means new asset versus repair, useful life, capitalization unit, and threshold considerations remain unresolved.",
+      "policy_ids": [],
+      "quantity": 1.0,
+      "recommended_asset_class": "SHELVING-WIRE",
+      "recommended_task": "5225",
+      "recommended_task_description": "WIRE SHELVING",
+      "unit_price": 30.2,
+      "useful_life_months": 60
+    },
+    {
+      "actual_asset_class": "",
+      "actual_task": "",
+      "amount": 617.09,
+      "asset_type": "Inbound logistics",
+      "capex_opex": "REVIEW",
+      "classification_confidence": 0.96,
+      "coding_status": "MISSING",
+      "commodity": "Shipping",
+      "description": "Shipping",
+      "evidence_refs": [
+        "line:12",
+        "source_gaps",
+        "stage:asset_classification",
+        "approved_coding"
+      ],
+      "line_id": "12",
+      "nature": "FREIGHT",
+      "policy_basis": "REVIEW because the line is explicitly Shipping and freight is not automatically expense; however, no capitalization policy excerpts were supplied to determine whether this freight is directly attributable to acquiring/placing a new shelving asset into service and capitalizable, or should be expensed. The task catalog has no shipping task and policy support is missing.",
+      "policy_ids": [],
+      "quantity": 0.0,
+      "recommended_asset_class": "",
+      "recommended_task": "",
+      "recommended_task_description": "",
+      "unit_price": 0.0,
+      "useful_life_months": null
+    }
+  ],
+  "model": "gpt-5.4",
+  "recommendation": "REVIEW",
+  "reference_sha256": "94a5515f7f7ec58886919ca3668322e93b4d84ed3931a671e9bda7de166548aa",
+  "source_sha256": "974d61a406edf85e3cadfa75a5177795481d3a82ce962dc414e9d276b885ee5b",
+  "stage_outputs": {
+    "asset_classification": {
+      "lines": [
+        {
+          "asset_class_code": null,
+          "confidence": 0.74,
+          "evidence_refs": [
+            "invoice",
+            "line:1",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "1",
+          "rationale": "Layover FR units, wire dividers, retainers, back wire retainers, and infostrips are all described as physical merchandising shelving/display components. Among the supplied North America task catalog, shelving-related options are the closest fit. Because these items appear to be wire/retainer/divider components used with shelving/display systems, WIRE SHELVING is the best-supported exact catalog match, though the catalog does not distinguish these accessories from broader shelving categories.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.74,
+          "evidence_refs": [
+            "invoice",
+            "line:2",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "2",
+          "rationale": "Same Layover FR product family as line 1 and described as a physical shelving/display hardware component. The supplied catalog's closest supported task is WIRE SHELVING. Some uncertainty remains because the catalog is broad and does not explicitly name Layover FR systems.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.82,
+          "evidence_refs": [
+            "invoice",
+            "line:3",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "3",
+          "rationale": "Reinforced lock-in 2-wire dividers are shelf/display separator components. The nearest exact supplied task is WIRE SHELVING, since the catalog contains shelving and wire shelving but no more specific divider/accessory task.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.82,
+          "evidence_refs": [
+            "invoice",
+            "line:4",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "4",
+          "rationale": "Same item type as line 3: reinforced lock-in wire dividers for shelving/display use. WIRE SHELVING is the closest exact supplied catalog task.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.77,
+          "evidence_refs": [
+            "invoice",
+            "line:5",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "5",
+          "rationale": "FlexRoller clear retainer is a physical shelf/display retainer accessory. The supplied catalog lacks a retainer-specific code; WIRE SHELVING is the closest supported task for this shelving component.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.77,
+          "evidence_refs": [
+            "invoice",
+            "line:6",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "6",
+          "rationale": "FlexRoller clear retainer variant, still a shelving/display accessory. The closest exact catalog task provided is WIRE SHELVING.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.83,
+          "evidence_refs": [
+            "invoice",
+            "line:7",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "7",
+          "rationale": "Back wire retainer is a wire shelving/display component. The nearest exact supplied task is WIRE SHELVING.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.73,
+          "evidence_refs": [
+            "invoice",
+            "line:8",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "8",
+          "rationale": "Infostrip label holder is a merchandising fixture accessory mounted on wire shelving/display hardware. The catalog does not provide a dedicated signage/label-strip task, so WIRE SHELVING is the closest supported match.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.73,
+          "evidence_refs": [
+            "invoice",
+            "line:9",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "9",
+          "rationale": "Infostrip double wire mount is another shelving/display accessory. WIRE SHELVING is the closest exact supplied catalog task.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.82,
+          "evidence_refs": [
+            "invoice",
+            "line:10",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "10",
+          "rationale": "Reinforced lock-in 3-wire dividers are shelving/display separator components. The closest exact supplied task is WIRE SHELVING.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.82,
+          "evidence_refs": [
+            "invoice",
+            "line:11",
+            "stage:document_intelligence",
+            "task:5225"
+          ],
+          "line_id": "11",
+          "rationale": "Same product family as line 10: wire divider accessory for shelving/display systems. The nearest exact catalog task is WIRE SHELVING.",
+          "status": "MATCHED",
+          "task_code": "5225"
+        },
+        {
+          "asset_class_code": null,
+          "confidence": 0.96,
+          "evidence_refs": [
+            "invoice",
+            "line:12",
+            "source_gaps"
+          ],
+          "line_id": "12",
+          "rationale": "The line is explicitly Shipping. The supplied task catalog contains no freight, delivery, logistics, or shipping task, so no supported exact classification is available from the provided catalog.",
+          "status": "UNAVAILABLE",
+          "task_code": null
+        }
+      ]
+    },
+    "asset_relationship": {
+      "bundle_exception": false,
+      "confidence": 0.67,
+      "evidence_refs": [
+        "line:1",
+        "line:2",
+        "line:3",
+        "line:4",
+        "line:5",
+        "line:6",
+        "line:7",
+        "line:8",
+        "line:9",
+        "line:10",
+        "line:11",
+        "line:12",
+        "task:5225",
+        "source_gaps",
+        "invoice"
+      ],
+      "matched_history_ids": [],
+      "rationale": "All merchandise lines appear to be shelving/display components or accessories associated with wire shelving, suggesting the invoice could represent components/additions for a shelving setup. However, there are no supplied history_candidates, no asset_id, and no AFE/project linkage, so there is no evidentiary basis to match this invoice to an existing capitalized asset or prior invoice. Per the supplied evidence, bundling coverage is incomplete and any possible bundle must remain a human exception rather than an automatic conclusion."
+    },
+    "capitalization_decision": {
+      "lines": [
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:1",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "1",
+          "policy_ids": [],
+          "rationale": "REVIEW because no capitalization policy excerpts were supplied, so application of new-asset vs repair criteria, capitalization unit, or any company threshold cannot be supported. Evidence suggests this is a shelving/display component aligned to wire shelving and with a 5-year internal book life for task 5225, which could indicate a potentially capitalizable asset component, but without policy support and no approved coding, CAPEX/OPEX cannot be concluded.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:2",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "2",
+          "policy_ids": [],
+          "rationale": "REVIEW because no capitalization policy excerpts were supplied, so there is no supported basis to decide whether these Layover FR units are a new capital asset/component or an expense item, nor to apply any capitalization unit or threshold. Evidence points to wire shelving-related hardware under task 5225 with a 5-year internal book life, but that alone is not a policy. No approved coding is present.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:3",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "3",
+          "policy_ids": [],
+          "rationale": "REVIEW because the line appears to be a shelving/display accessory component, but no capitalization policy was supplied to determine whether such divider components should be capitalized as part of a larger unit, treated as repair/replacement, or expensed based on company capitalization rules. Task 5225 and internal life evidence are not sufficient without policy support.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:4",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "4",
+          "policy_ids": [],
+          "rationale": "REVIEW because this wire divider is evidenced as a shelving/display accessory, yet there is no supplied capitalization policy to assess whether it forms part of a new asset, a betterment, or a repair/replacement expense, and no supported threshold or capitalization unit can be applied. No approved coding is present.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:5",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "5",
+          "policy_ids": [],
+          "rationale": "REVIEW because the clear retainer is a physical shelving/display accessory, but no capitalization policy excerpts were supplied to determine treatment as CAPEX or OPEX, including whether it is directly attributable to placing a new asset in service or merely a replacement/accessory expense. Task alignment alone is insufficient.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:6",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "6",
+          "policy_ids": [],
+          "rationale": "REVIEW because this retainer variant is evidenced as shelving/display hardware, but there is no approved capitalization policy to support capitalization versus expensing, including useful-life, capitalization-unit, and threshold analysis. Without such policy support, a definitive CAPEX/OPEX recommendation cannot be made.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:7",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "7",
+          "policy_ids": [],
+          "rationale": "REVIEW because the back wire retainer appears to be a shelving/display component, but no supplied policy supports whether this should be capitalized as part of a new shelving unit or expensed as a replacement/accessory. The evidence set explicitly notes missing policy excerpts, so CAPEX/OPEX cannot be supported.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:8",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "8",
+          "policy_ids": [],
+          "rationale": "REVIEW because the infostrip label holder is a merchandising fixture accessory, but no capitalization policy was provided to determine whether such accessory costs belong in a capitalizable shelving unit or should be expensed. Missing policy support prevents applying new asset, useful life, capitalization unit, or threshold tests.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:9",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "9",
+          "policy_ids": [],
+          "rationale": "REVIEW because this infostrip accessory is evidenced as part of shelving/display hardware, but there is no supplied company policy to support capitalization versus expense treatment, and no approved coding is available. Task 5225 indicates probable asset class only, not accounting treatment.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:10",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "10",
+          "policy_ids": [],
+          "rationale": "REVIEW because the 3-wire divider is a shelving/display component, but no policy excerpts were supplied to determine whether it creates or enhances a capital asset, extends useful life, or is instead a repair/replacement expense. Without company capitalization policy, threshold and capitalization-unit analysis cannot be supported.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.95,
+          "evidence_refs": [
+            "line:11",
+            "stage:asset_classification",
+            "task:5225",
+            "source_gaps",
+            "approved_coding"
+          ],
+          "line_id": "11",
+          "policy_ids": [],
+          "rationale": "REVIEW because this wire divider line is evidenced as shelving/display hardware, yet no supplied capitalization policy supports a CAPEX or OPEX conclusion. The absence of policy means new asset versus repair, useful life, capitalization unit, and threshold considerations remain unresolved.",
+          "recommendation": "REVIEW"
+        },
+        {
+          "confidence": 0.97,
+          "evidence_refs": [
+            "line:12",
+            "source_gaps",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "12",
+          "policy_ids": [],
+          "rationale": "REVIEW because the line is explicitly Shipping and freight is not automatically expense; however, no capitalization policy excerpts were supplied to determine whether this freight is directly attributable to acquiring/placing a new shelving asset into service and capitalizable, or should be expensed. The task catalog has no shipping task and policy support is missing.",
+          "recommendation": "REVIEW"
+        }
+      ]
+    },
+    "coding_validation": {
+      "lines": [
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:1",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "1",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 1 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:2",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "2",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 2 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:3",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "3",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 3 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:4",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "4",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 4 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:5",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "5",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 5 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:6",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "6",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 6 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:7",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "7",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 7 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:8",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "8",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 8 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:9",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "9",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 9 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:10",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "10",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 10 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:11",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "11",
+          "rationale": "Prior classification assigned task_code 5225, but no approved task code is present for line 11 because approved_coding is empty.",
+          "status": "MISSING"
+        },
+        {
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:12",
+            "stage:asset_classification",
+            "approved_coding"
+          ],
+          "line_id": "12",
+          "rationale": "Prior classification has no populated task code for line 12, and no approved task code is present because approved_coding is empty.",
+          "status": "MISSING"
+        }
+      ]
+    },
+    "document_intelligence": {
+      "lines": [
+        {
+          "asset_type": "Shelving/display system component",
+          "commodity": "Layover FR shelf/roller rack unit",
+          "confidence": 0.79,
+          "evidence_refs": [
+            "line:1",
+            "source_gaps"
+          ],
+          "line_id": "1",
+          "nature": "COMPONENT",
+          "rationale": "Description indicates a Layover FR pack with specified dimensions and front retainer rail slot, suggesting a physical shelving/roller rack assembly part rather than labor or consumable. Without asset context, it is best understood as a component used in a larger display/shelving system."
+        },
+        {
+          "asset_type": "Shelving/display system component",
+          "commodity": "Layover FR shelf/roller rack unit",
+          "confidence": 0.79,
+          "evidence_refs": [
+            "line:2",
+            "source_gaps"
+          ],
+          "line_id": "2",
+          "nature": "COMPONENT",
+          "rationale": "Same Layover FR item family as line 1, sold as 1-pack units with dimensions and retainer rail slot details, indicating hardware parts for a merchandising/display system."
+        },
+        {
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Wire dividers",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "line:3"
+          ],
+          "line_id": "3",
+          "nature": "COMPONENT",
+          "rationale": "Described as reinforced lock-in 2-wire dividers, packaged quantity, with size and angled corners. This is a physical accessory/part that separates products on shelving, so it is a component rather than service or standalone asset."
+        },
+        {
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Wire dividers",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "line:4"
+          ],
+          "line_id": "4",
+          "nature": "COMPONENT",
+          "rationale": "Same product type as line 3: reinforced lock-in 2-wire dividers for layover shelving, indicating merchandising shelf divider components."
+        },
+        {
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Clear retainers",
+          "confidence": 0.9,
+          "evidence_refs": [
+            "line:5"
+          ],
+          "line_id": "5",
+          "nature": "COMPONENT",
+          "rationale": "FlexRoller clear retainer with dimensions indicates a physical retaining barrier used with display/shelf roller systems. This is an accessory component."
+        },
+        {
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Clear retainers",
+          "confidence": 0.9,
+          "evidence_refs": [
+            "line:6"
+          ],
+          "line_id": "6",
+          "nature": "COMPONENT",
+          "rationale": "Another FlexRoller clear retainer variant with different height; still a physical shelf/display retainer component."
+        },
+        {
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Back wire retainer",
+          "confidence": 0.91,
+          "evidence_refs": [
+            "line:7"
+          ],
+          "line_id": "7",
+          "nature": "COMPONENT",
+          "rationale": "Back wire retainer with dimensions and color indicates a hardware retainer used on shelving/display units. This is a component part."
+        },
+        {
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Label holder infostrips",
+          "confidence": 0.89,
+          "evidence_refs": [
+            "line:8"
+          ],
+          "line_id": "8",
+          "nature": "COMPONENT",
+          "rationale": "Infostrip with label height, wire mount, and length indicates a shelf label holder/signage strip used on merchandising fixtures. It is a physical accessory component."
+        },
+        {
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Label holder infostrips",
+          "confidence": 0.89,
+          "evidence_refs": [
+            "line:9"
+          ],
+          "line_id": "9",
+          "nature": "COMPONENT",
+          "rationale": "Infostrip double wire mount is another shelf label strip/accessory, treated as a merchandising fixture component."
+        },
+        {
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Wire dividers",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "line:10"
+          ],
+          "line_id": "10",
+          "nature": "COMPONENT",
+          "rationale": "Reinforced lock-in wire dividers, 3-wire and larger height, are physical separator parts for layover shelving systems. This is a component."
+        },
+        {
+          "asset_type": "Shelving/display accessory",
+          "commodity": "Wire dividers",
+          "confidence": 0.92,
+          "evidence_refs": [
+            "line:11"
+          ],
+          "line_id": "11",
+          "nature": "COMPONENT",
+          "rationale": "Same product family as line 10 in a different pack size; clearly a physical divider accessory for shelving/display systems."
+        },
+        {
+          "asset_type": "Inbound logistics",
+          "commodity": "Shipping",
+          "confidence": 0.99,
+          "evidence_refs": [
+            "line:12"
+          ],
+          "line_id": "12",
+          "nature": "FREIGHT",
+          "rationale": "Line description is explicitly Shipping, indicating transportation cost rather than a physical item or service task tied to installation."
+        }
+      ]
+    },
+    "exception_management": {
+      "exceptions": [
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "line_id": "1"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:1"
+          ],
+          "line_id": "1"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:2"
+          ],
+          "line_id": "2"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:2"
+          ],
+          "line_id": "2"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:3"
+          ],
+          "line_id": "3"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:3"
+          ],
+          "line_id": "3"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:4"
+          ],
+          "line_id": "4"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:4"
+          ],
+          "line_id": "4"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:5"
+          ],
+          "line_id": "5"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:5"
+          ],
+          "line_id": "5"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:6"
+          ],
+          "line_id": "6"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:6"
+          ],
+          "line_id": "6"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:7"
+          ],
+          "line_id": "7"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:7"
+          ],
+          "line_id": "7"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:8"
+          ],
+          "line_id": "8"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:8"
+          ],
+          "line_id": "8"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:9"
+          ],
+          "line_id": "9"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:9"
+          ],
+          "line_id": "9"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:10"
+          ],
+          "line_id": "10"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:10"
+          ],
+          "line_id": "10"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:11"
+          ],
+          "line_id": "11"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:11"
+          ],
+          "line_id": "11"
+        },
+        {
+          "code": "DQ",
+          "detail": "Approved coding or an unambiguous catalog classification is unavailable",
+          "evidence_refs": [
+            "line:12"
+          ],
+          "line_id": "12"
+        },
+        {
+          "code": "E4",
+          "detail": "Policy application is unresolved; Finance decision is required",
+          "evidence_refs": [
+            "line:12"
+          ],
+          "line_id": "12"
+        },
+        {
+          "code": "DQ",
+          "detail": "Input coverage gaps: No approved policy excerpts supplied; capitalization must remain REVIEW; No historical capitalized assets/invoices supplied; bundling coverage is incomplete",
+          "evidence_refs": [
+            "invoice"
+          ],
+          "line_id": ""
+        }
+      ],
+      "summary": "All required exceptions preserved. Every line lacks approved coding, and capitalization treatment remains unresolved due to missing policy support. Invoice-level data quality gap remains for missing policy excerpts and incomplete historical bundling coverage."
+    }
+  },
+  "total": 1627.5,
+  "vendor": "Bruegmann USA, Inc."
+}
